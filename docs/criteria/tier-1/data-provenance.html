@@ -1,0 +1,1347 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="The origin of every dataset used in the analysis is recorded: a citation of the source with its version or vintage, how and when the data were obtained (e.g.&nbsp;the query or API used), and, for data that cannot be shared, how and under what conditions others can obtain the same data. Where possible, identifiers or checksums let a user confirm they hold identical data.">
+
+<title>Data provenance – SocEnRep rubric</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../criteria/tier-1/license.html" rel="next">
+<link href="../../criteria/tier-1/documentation.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e0f14578190b460d380b0f4cc9495f43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SocEnRep rubric</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Criteria</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../graph.html"> 
+<span class="menu-text">Prerequisite graph</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sources.html"> 
+<span class="menu-text">Sources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">How to read</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pipeline.html"> 
+<span class="menu-text">Badge pipeline</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../criteria/tier-1/documentation.html">Tier 1 · Available - Bronze</a></li><li class="breadcrumb-item"><a href="../../criteria/tier-1/data-provenance.html">Data provenance</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 1 · Available - Bronze</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/data-provenance.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Data provenance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/license.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">License</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/code-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/data-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/artifacts-longevity-sustainability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Artifacts longevity/sustainability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 2 · Executable - Silver</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/dependency-resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dependency resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/path-resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Path resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/coding-error-handling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding error handling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/computing-environment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computing environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/code-runs-without-manual-intervention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code runs without manual intervention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/code-annotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code annotation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/dynamic-code-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic code inspection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/workflow-reproduction-tree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflow/reproduction tree</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/commands-logs-traceability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Commands logs traceability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/test-code-coverage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test code coverage</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 3 · Reproducible - Gold</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/codes-consistent-with-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codes consistent with claims</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/numerical-output-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numerical output match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/table-and-figure-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table and figure match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/third-party-certification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Third-party certification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rating" id="toc-rating" class="nav-link active" data-scroll-target="#rating">Rating</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#in-the-corpus" id="toc-in-the-corpus" class="nav-link" data-scroll-target="#in-the-corpus">In the corpus</a></li>
+  <li><a href="#text-evidence-48-quotes" id="toc-text-evidence-48-quotes" class="nav-link" data-scroll-target="#text-evidence-48-quotes">Text evidence (48 quotes)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../criteria/tier-1/documentation.html">Tier 1 · Available - Bronze</a></li><li class="breadcrumb-item"><a href="../../criteria/tier-1/data-provenance.html">Data provenance</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Data provenance</h1>
+<p class="subtitle lead"><span class="badge tier-1">Tier 1 · Available - Bronze</span> <span class="badge status-core">core</span> <span class="badge reason" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least 20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources.</p><a href='../../about.html'>All column definitions</a>">endorsement</span></p>
+</div>
+
+<div>
+  <div class="description">
+    The origin of every dataset used in the analysis is recorded: a citation of the source with its version or vintage, how and when the data were obtained (e.g.&nbsp;the query or API used), and, for data that cannot be shared, how and under what conditions others can obtain the same data. Where possible, identifiers or checksums let a user confirm they hold identical data.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- Generated by build_criteria.R from rubric_draft_02.11.2026.xlsx. Do not edit. -->
+<section id="rating" class="level2">
+<h2 class="anchored" data-anchor-id="rating">Rating</h2>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Every data source used in the analysis is cited with its version or vintage (or a persistent identifier such as a DOI) and mapped to the corresponding files in the replication package. For data that cannot be shared (e.g.&nbsp;proprietary or confidential data), the README states how, where, and under what conditions an independent researcher can obtain the original source data, including any restrictions, requirements, payments, and processing delays. For data collected via an API or web scraping, the README also states the API or query used, the date of collection, and the configuration settings.</p>
+<p><span class="source-note">Supported by: Access info for non-shareable data: <a href="../../sources.html#p42" title="AEA data and code availability policy">#42</a> (how, where, conditions, restrictions, payments, delays), <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a> R1 (provider, DOI, vintage, application procedure), <a href="../../sources.html#p43" title="Dawning of a new age? Economics journals’ data policies on the test bench">#43</a>, <a href="../../sources.html#p105" title="Promoting reproducibility and replicability in political science">#105</a>, <a href="../../sources.html#p138" title="Reproducibility and robustness of economics and political science research">#138</a>, <a href="../../sources.html#p71" title="Teaching for Large-Scale Reproducibility Verification">#71</a>, <a href="../../sources.html#p54" title="WORCS: a workflow for open reproducible code in science">#54</a>. API/scraped data: <a href="../../sources.html#p108" title="Checklists for computational reproducibility in social sciences: insights from literature and survey evaluation">#108</a> (API, date, configuration), <a href="../../sources.html#p89" title="Computational reproducibility in computational social science">#89</a> (API version), <a href="../../sources.html#p34" title="Reproducibility and replicability in economics">#34</a>, <a href="../../sources.html#p26" title="Facilitating reproducible project management and manuscript development in team science: the projects R package">#26</a> ‘frozen’ dataset. PID: <a href="../../sources.html#p55" title="Computational reproducibility: a practical framework for data curators">#55</a>, <a href="../../sources.html#p65" title="Long-term availability of data associated with articles in PLOS ONE">#65</a>, <a href="../../sources.html#p110" title="Data and code availability in political science publications from 1995 to 2022">#110</a>, <a href="../../sources.html#p70" title="The Stark realities of reproducible statistically orientated sociological research: Some newer rules of the sociological method">#70</a>.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled" title="Partially met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Partially met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Data sources are cited, but the information is incomplete: e.g.&nbsp;some sources are not cited, the version/vintage or identifier is missing, or the access conditions for non-shareable data or the collection details for API-extracted data are only partly given.</p>
+<p><span class="source-note">Supported by: <a href="../../sources.html#p14" title="An empirical analysis of journal policy effectiveness for computational reproducibility">#14</a> (79% cite all data; 70% give data location), <a href="../../sources.html#p30" title="Advancing computational reproducibility in the dataverse data repository platform">#30</a> personal-website deposits lack persistent citation, <a href="../../sources.html#p63" title="Toward practical transparent verifiable and long-term reproducible research using guix">#63</a> no integrity check on repository, <a href="../../sources.html#p102" title="In-Class Data Analysis Replications: Teaching Students While Testing Science">#102</a> outdated API.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important callout-titled" title="Not met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Not met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No provenance information available.</p>
+<p><span class="source-note">Supported by: <a href="../../sources.html#p34" title="Reproducibility and replicability in economics">#34</a> query/revision of database cannot be determined, <a href="../../sources.html#p6" title="A manifesto for data sharing in social media research">#6</a> data not referenceable.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Not applicable">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Not applicable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>C1 (simulation)</p>
+</div>
+</div>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<p>Check order: <strong>0</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Builds on</strong></p>
+<p><em>No core prerequisites.</em></p>
+</div><div class="column" style="width:50%;">
+<p><strong>Prerequisite for</strong></p>
+<ul>
+<li><a href="../../criteria/tier-3/third-party-certification.html">Third-party certification</a> (1 source)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="in-the-corpus" class="level2">
+<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Sources</th>
+<th style="text-align: right;">Injunctive</th>
+<th style="text-align: right;">Tacit</th>
+<th style="text-align: right;">Automatable</th>
+<th style="text-align: right;">Manual check</th>
+<th style="text-align: right;">Automation unclear</th>
+<th style="text-align: right;">LLM sources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">48</td>
+<td style="text-align: right;">70.8%</td>
+<td style="text-align: right;">27.1%</td>
+<td style="text-align: right;">10.4%</td>
+<td style="text-align: right;">10.4%</td>
+<td style="text-align: right;">79.2%</td>
+<td style="text-align: right;">0</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="text-evidence-48-quotes" class="level2">
+<h2 class="anchored" data-anchor-id="text-evidence-48-quotes">Text evidence (48 quotes)</h2>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Show quotes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Show quotes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong><a href="../../sources.html#p4">#4</a></strong> Storing reproducible results from computational experiments using scientific python packages · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Chases… are metadata describing the specific code that was used in the computation and how it was called, i.e.&nbsp;they chase the provenance of the results” (p.48)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p6">#6</a></strong> A manifesto for data sharing in social media research · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>Current sharing practices are criticized because “data are thus not presented in a way that advances the social media research field or reproducibility more generally; data are mostly not presented in a sustainable format that can be referenced consistently (e.g.&nbsp;via a DOI)… and datasets lack (standardized) metadata” (p.168, end Sec 2)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p9">#9</a></strong> Using ReproZip for reproducibility and library services · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“ReproZip keeps strict provenance data. For instance, by observing which files were read and by using the software manager in the operating system, ReproZip can identify the software libraries on which the research depends.” (p.3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p12">#12</a></strong> Reproducibility: a primer on semantics and implications for research · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Distribution: Standard methods of distribution are used for others to access the software, data, and documentation.” (Table 4) (p.&nbsp;46)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p14">#14</a></strong> An empirical analysis of journal policy effectiveness for computational reproducibility · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Proper citation of all code and data used, including that generated by the authors” — 79% compliant (Table 2, p.2586); “Data location provided in the acknowledgements” — 70% compliant (Table 3, p.2586)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p18">#18</a></strong> Reproducibility confidentiality data access · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Clear data provenance” (Slide: “Key attributes of a replication archive”) and “Document the access protocol clearly and in a citable, persistent fashion. Ensure access protocol is transparent and predictable” (Slide: “Our recommendations to ADRFs”) and “Provenance of input data to which the researcher has access (data citation, metadata)” (Slide: “Our recommendations to ADRFs”)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p19">#19</a></strong> The ReproRubric: evaluation criteria for the reproducibility of computational analyses · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>Raw data is accompanied by rich metadata including pronevance information</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p26">#26</a></strong> Facilitating reproducible project management and manuscript development in team science: the projects R package · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“a reproducible analytic workflow should if possible incorporate a ‘frozen’ dataset that reflects a given set of queries or data collection forms at a specific point in time” (p.3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p30">#30</a></strong> Advancing computational reproducibility in the dataverse data repository platform · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>personal-website deposits do “not natively provide a standardized persistent citation for referencing and accessing the research materials, nor sufficient metadata to make it discoverable” and lack “long-term accessibility” (p.2, Related Work)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p31">#31</a></strong> Reproducibility, preservation, and access to research with ReproZip and ReproServer · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“…with detailed metadata and provenance information, which ensures high-fidelity, with respect to original functionality and utility.” (p.&nbsp;7)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p32">#32</a></strong> Beyond open data: a model for linking digital artifacts to enable reproducibility of scientific claims · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Links between digital scholarly objects imply the need for immutable versioning, for example through the assignment of a DOI, that are persistent and persistently connected both to claims in the scholarly record” (p.&nbsp;12)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p34">#34</a></strong> Reproducibility and replicability in economics · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“As of this writing, it is not possible through said interface to define the precise revision of the underlying database, the version of the query system used, and the exact query used.” (re: IPUMS) (p.&nbsp;17-18) and “…only if researchers other than the original author can access the nonpublic data can an attempt at reproducibility even be made, if it at some cost.” (p.&nbsp;13)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p39">#39</a></strong> How to make a pie: reproducible research for empirical economics and econometrics · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Citing data with DOI identification from open trusted repositories can also facilitate the reusability of data sets” (p.&nbsp;1141)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p42">#42</a></strong> AEA data and code availability policy · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The data availability statement shall provide detailed information on how, where, and under what conditions an independent researcher can access the original source data… and it must be explicit and accurate about any restrictions, requirements, payments, and processing delays.” (p.&nbsp;819) and “authors must provide a README file listing all included files and documenting the purpose, format, and provenance of each file provided, as well as instructing a user on how replication can be conducted” (p.&nbsp;819)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p43">#43</a></strong> Dawning of a new age? Economics journals’ data policies on the test bench · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“journals need a procedure that regulates these cases. The goal is to permit reproductions in principle, even if the original data cannot be shared for legal reasons… Such a procedure might include providing an identifier of the data used, a contact address from where to obtain the data, information on the availability/access conditions of data, and the program code of the analysis.” (p.&nbsp;9)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p48">#48</a></strong> Challenges of curating for reproducible and FAIR research output · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“We also require full data citations for any original source data used in the analysis data.” (p.11)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p51">#51</a></strong> A reproducible data analysis workflow with R Markdown, Git, Make, and Docker · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“To use checksum validation, checksums for all data files must be created and stored at the time of the original analysis. At the time of reproduction, the current checksum must be compared with the stored checksum to ensure data integrity” (p.19–20)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p54">#54</a></strong> WORCS: a workflow for open reproducible code in science · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“the worcs function closed_data() adds a paragraph to the project readme, indicating how readers can contact the author for access” (p.&nbsp;44)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p55">#55</a></strong> Computational reproducibility: a practical framework for data curators · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“If data was gathered from an online repository, a permanent link to the source should be provided” (p.8); “should therefore be deposited to a well-established repository that registers persistent identifiers” (p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p59">#59</a></strong> Understanding experiments and research practices for reproducibility: an exploratory study · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Paper recommends use of ORCID for researchers and persistent DOIs for datasets, software, and results as identification/provenance practice” (p.18)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p61">#61</a></strong> A collaborative semantic-based provenance management platform for reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“A key factor to support scientific reproducibility is the provenance information that tells about the origin or history of the data. Recording and analysis of provenance data… play a vital role for scientists to know the methods and steps taken to generate the output, to reproduce own results or other scientist’s results” (p.2)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p63">#63</a></strong> Toward practical transparent verifiable and long-term reproducible research using guix · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Data had to be fetched manually because of the lack of public application programming interface (API) on Flowrepository. In addition, Flowrepository does not provide file integrity check so there is no guarantee that the repository remained unchanged after the publication.” (p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p65">#65</a></strong> Long-term availability of data associated with articles in PLOS ONE · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“authors should consider how to ensure long-term viability of the data by ensuring that the URL in the Data Availability Statement will be maintained over time” and “Requiring that researchers include a URL or DOI in documentation such as Data Availability Statements… may help increase the extent to which data are FAIR and accessible on a long-term basis” (p.&nbsp;10-11)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p66">#66</a></strong> Reproducible research publication workflow: a canonical workflow framework and FAIR digital object approach to quality research output · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Assign an ID number to the package as a unique record (persistent identifier, or PID, including the version)” (Step 3, p.311–312)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p67">#67</a></strong> Tools and recommendations for reproducible teaching · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“A simple and recommended way of storing this information is a plain text README file that includes both the provenance and the variable description information” (p.&nbsp;256)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p69">#69</a></strong> The interdependence of data producers and data users: how researchers’ behaviors can support or hinder each other · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Provide information on methods used (e.g., original data sources, data collection methods, physical materials, instrumentation) that complete the description of the provenance for the shared data source” (Table 2, p.23)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p70">#70</a></strong> The Stark realities of reproducible statistically orientated sociological research: Some newer rules of the sociological method · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Clearly identify the version of the dataset and its origins (i.e.&nbsp;where and when it was obtained) using a persistent identifier such as a digital object identifier (DOI).” (Newer Rule ii, p.217)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p71">#71</a></strong> Teaching for Large-Scale Reproducibility Verification · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“When data are not provided, data provenance is even more important, as it must completely describe how the student can obtain the data” (p.278)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p75">#75</a></strong> Reinforcing reproducibility and replicability: an introduction · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The verification of replication packages, which includes not just checks of the computational reproducibility of the provided materials but also documented data provenance and completeness of such materials” (p.2–3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p76">#76</a></strong> Making provenance work for you · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Data provenance also confers or adds value—as trustworthiness—to data, but data provenance can do more: it can be used to reproduce computational analyses and validate scientific conclusions” (p.&nbsp;141–142). Concretely operationalized as: “The INPUTS and OUTPUTS sections list all input and output files, the date they were last modified, and their hash values” (p.&nbsp;145–146); get.input.files returns “location - the path to the original file” (p.&nbsp;152); version history via “the provenance is stored in a unique, time-stamped directory, allowing provenance from multiple executions to be analyzed and compared” (p.&nbsp;146).</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p77">#77</a></strong> Report of the AEA data editor · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“all authors are required to attest… that they have ‘legitimate access to and permission to use the data used’” (p.857) and “We continue to verify that authors cite all datasets they have used and accessed, as required by the AEA DCAP and the AEA’s citation requirements” (p.855)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p78">#78</a></strong> CRRESS - session 4 - reproducibility and confidential data · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Full description of access path – The one you took – The one others might take, if different → Reproducibility of Access” (Slide 27)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p83">#83</a></strong> Reproducibility and transparency versus privacy and confidentiality: Reflections from a data editor · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Authors are required to include a citation to the article sent to the AEA.” (slide “Tools and Guidance” — Depositing Data section)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p88">#88</a></strong> Reproducibility in Management Science · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“In these cases [licensed/proprietary/NDA data], detailed descriptions of data provenance and data set creation are expected.” (p.&nbsp;1345–1346)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p89">#89</a></strong> Computational reproducibility in computational social science · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“When versioning of the API is available, the information should be documented” (p.6)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p93">#93</a></strong> Unintended code errors and computational reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Data citation information is present” / “Data source is provided” (Appendix A, DOCUMENTATION &amp; DATA, p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p95">#95</a></strong> Computational reproducibility in finance: evidence from 1,000 tests · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>Guideline R1(ii): “provide… data provider, database identifier (name, DOI, vintage), application and registration procedures… instructions on which range and variables to pick” (p.&nbsp;3589)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p100">#100</a></strong> Computational and robustness reproducibility of “UN peacekeeping and democratization in conflict-affected countries” · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“We used the replication package provided on APSR’s Dataverse” (p.4)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p102">#102</a></strong> In-Class Data Analysis Replications: Teaching Students While Testing Science · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“data release that does not entirely match the description in the paper or… an incomplete release of the data necessary to reproduce all the results… especially if depending on an outdated automated programming interface (API)” (p.&nbsp;13)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p104">#104</a></strong> Reproduce to validate: a comprehensive study on the reproducibility of economics research · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“clear references to the original data provenance and a description of how to construct the initial data sets” (p.968)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p105">#105</a></strong> Promoting reproducibility and replicability in political science · <em>descriptive</em></p>
+<blockquote class="blockquote">
+<p>“the data editors typically require the authors to provide detailed information describing how other researchers may obtain the data” (p.3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p108">#108</a></strong> Checklists for computational reproducibility in social sciences: insights from literature and survey evaluation · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Documenting the data collection process, i.e., API used, date, and configuration settings…” (Checklist 1) and “Sensitive information needed to recreate the study is provided on request…” (Checklist 3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p110">#110</a></strong> Data and code availability in political science publications from 1995 to 2022 · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“we encourage authors to instead use a permanent archive (e.g., OSF or Dataverse) and supply a persistent DOI for the archive with their published article” (p.&nbsp;343); King’s standard that a reference “be made in the original publication (usually in the first footnote)” (p.&nbsp;341)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p121">#121</a></strong> Statistical perspectives on reproducibility: definitions and challenges · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“following the FAIR (Findable, Accessible, Interoperable and Reproducible) principles [151] for data management can lead to higher reproducibility” (p.&nbsp;17–18)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p131">#131</a></strong> Guide for Accelerating Computational Reproducibility in the Social Sciences · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>In the paper you chose, find references to all data sources used in the analysis. A data source is usually described in narrative form. For example, if in the body of the paper, or the appendix, you see text like “(…) for earnings in 2018 we use the Current Population Survey”, the data source should be recorded as “2018 Current Population Survey”. If the first reference to this data source is found on page 1 of the appendix, you should record its location as “A1”. Do this for all data sources mentioned in the paper. Each row represents a unique data source.</p>
+<p>Data sources also vary by unit of analysis, with some sources matching the same unit of analysis used in the paper (as in previous examples). In contrast, others may be less clear, e.g., “our information on regional minimum wages comes from the Bureau of Labor Statistics.” You should record such data source as “regional minimum wages from the Bureau of Labor Statistics.”</p>
+<p>Next, look at the reproduction package and map the data sources mentioned in the paper to the data files in the reproduction package. In the Location column, record their folder locations relative to the main reproduction folder1. In addition to looking at the existing data files, we recommend that you also review the first lines of all code files (especially cleaning code), looking for lines that call the datasets. Inspecting these scripts may help you understand how different data sources are used, and possibly identify any missing files from the reproduction package. Whenever a data source contains multiple files, enter them in the same cell, separated by semicolon (;).</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p138">#138</a></strong> Reproducibility and robustness of economics and political science research · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“In the event that the authors cannot share some or all the data, they request that information is provided on how other researchers could obtain the datasets.” (Methods, “Journal policy”)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p139">#139</a></strong> PRIMAD-LID: a developed framework for computational reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“dataset identifiers, checksums, and preprocessing steps” p.&nbsp;2; “data provenance and versioning” p.&nbsp;2</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p143">#143</a></strong> What is Computational Reproducibility? · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Documenting methodologies, data sources, and analytical procedures clearly and thoroughly from the start will facilitate all later efforts to reproduce the research.” (p.&nbsp;5–6) and “Many CSS studies rely on data and services accessed through APIs. These dependencies can create barriers when the behavior or the accessibility of these APIs change.” (p.&nbsp;5)</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../criteria/tier-1/documentation.html" class="pagination-link" aria-label="Documentation">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Documentation</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../criteria/tier-1/license.html" class="pagination-link" aria-label="License">
+        <span class="nav-page-text">License</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Generated from rubric_draft_02.11.2026.xlsx</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>
+// Click-to-open explanations, e.g. on the core-reason badge of criterion pages
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+</script>
+
+
+
+
+</body></html>

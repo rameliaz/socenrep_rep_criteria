@@ -1,0 +1,21 @@
+# Quarto
+/.quarto/
+
+# Input workbooks stay local (see README)
+/source/
+
+# Google Drive and R clutter
+desktop.ini
+.Rhistory
+.RData
+.Rproj.user/
+
+# Leftovers of an interrupted render, next to the sources.
+# Scoped so that docs/ (the published site) stays tracked.
+/*.html
+/*_files/
+/criteria/**/*.html
+/criteria/**/*_files/
+/site_libs/
+
+**/*.quarto_ipynb

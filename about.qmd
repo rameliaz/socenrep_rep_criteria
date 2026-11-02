@@ -1,0 +1,8 @@
+---
+title: "How to read the rubric"
+toc: false
+---
+
+Column explanations, N/A conditions and the scope rule, taken from the workbook's `Addinfo` sheet.
+
+{{< include _generated/addinfo.md >}}

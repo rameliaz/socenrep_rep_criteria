@@ -1,0 +1,1683 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>Sources – SocEnRep rubric</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<script src="site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-e0f14578190b460d380b0f4cc9495f43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed fullcontent quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="./index.html">
+    <span class="navbar-title">SocEnRep rubric</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="./index.html" aria-current="page"> 
+<span class="menu-text">Criteria</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./graph.html"> 
+<span class="menu-text">Prerequisite graph</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./sources.html"> 
+<span class="menu-text">Sources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./about.html"> 
+<span class="menu-text">How to read</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./pipeline.html"> 
+<span class="menu-text">Badge pipeline</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Sources</li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 1 · Available - Bronze</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/data-provenance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data provenance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/license.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">License</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/code-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/data-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-1/artifacts-longevity-sustainability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Artifacts longevity/sustainability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 2 · Executable - Silver</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/dependency-resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dependency resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/path-resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Path resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/coding-error-handling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding error handling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/computing-environment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computing environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/code-runs-without-manual-intervention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code runs without manual intervention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/code-annotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code annotation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/dynamic-code-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic code inspection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/workflow-reproduction-tree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflow/reproduction tree</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/commands-logs-traceability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Commands logs traceability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-2/test-code-coverage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test code coverage</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 3 · Reproducible - Gold</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-3/codes-consistent-with-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codes consistent with claims</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-3/numerical-output-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numerical output match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-3/table-and-figure-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table and figure match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./criteria/tier-3/third-party-certification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Third-party certification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Sources</h1>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>The 145 papers of the scoping review corpus. Source IDs such as #42 on the criterion pages link here; the last column lists the criteria each paper is quoted for.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th style="text-align: right;">#</th>
+<th style="text-align: left;">Paper</th>
+<th style="text-align: left;">Text evidence for</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;"><span id="p1"></span>1</td>
+<td style="text-align: left;">Boettiger, Carl (2015). <a href="https://doi.org/10.1145/2723872.2723882">An introduction to docker for reproducible research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p2"></span>2</td>
+<td style="text-align: left;">Santana-Perez, Idafen; Pérez-Hernández, María S. (2015). <a href="https://doi.org/10.1155/2015/243180">Towards reproducibility in scientific workflows: an infrastructure-based approach</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p3"></span>3</td>
+<td style="text-align: left;">Stodden, Victoria (2015). <a href="https://doi.org/10.1146/annurev-statistics-010814-020127">Reproducing statistical results</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p4"></span>4</td>
+<td style="text-align: left;">Oxvig, Christian; Arildsen, Thomas; Larsen, Torben (2016). <a href="https://doi.org/10.25080/Majora-629e541a-006">Storing reproducible results from computational experiments using scientific python packages</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p5"></span>5</td>
+<td style="text-align: left;">Chirigati, Fernando; Rampin, Rémi; Shasha, Dennis et al.&nbsp;(2016). <a href="https://doi.org/10.1145/2882903.2899401">ReproZip: computational reproducibility with ease</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p6"></span>6</td>
+<td style="text-align: left;">Weller, Katrin; Kinder-Kurlanda, Katharina E. (2016). <a href="https://doi.org/10.1145/2908131.2908172">A manifesto for data sharing in social media research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p7"></span>7</td>
+<td style="text-align: left;">Piccolo, Stephen R.; Frampton, Michael B. (2016). <a href="https://doi.org/10.1186/s13742-016-0135-4">Tools and techniques for computational reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p8"></span>8</td>
+<td style="text-align: left;">de la Guardia, Fernando Hoces (2017). <a href="https://doi.org/10.7249/rgsd394">How transparency and reproducibility can increase credibility in policy analysis: a case study of the minimum wage policy estimate</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p9"></span>9</td>
+<td style="text-align: left;">Steeves, Vicky; Rampin, Rémi; Chirigati, Fernando (2017). <a href="https://doi.org/10.29173/iq18">Using ReproZip for reproducibility and library services</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p10"></span>10</td>
+<td style="text-align: left;">Rougier, Nicolas P.; Hinsen, Konrad; Alexandre, Frédéric et al.&nbsp;(2017). <a href="https://doi.org/10.7717/peerj-cs.142">Sustainable computational science: the ReScience initiative</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p11"></span>11</td>
+<td style="text-align: left;">That, Dai Hai Ton; Fils, Gabriel; Yuan, Zhihao et al.&nbsp;(2017). <a href="https://doi.org/10.1109/escience.2017.51">Sciunits: reusable research objects</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p12"></span>12</td>
+<td style="text-align: left;">Edo Pellizzari; Kathleen Lohr; Alan Blatecky et al.&nbsp;(2017). <a href="https://doi.org/10.3768/rtipress.2017.bk.0020.1708">Reproducibility: a primer on semantics and implications for research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p13"></span>13</td>
+<td style="text-align: left;">Hinsen, Konrad (2017). <a href="https://doi.org/10.59350/7xmvp-a5292">Reproducibility does not imply reproduction</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p14"></span>14</td>
+<td style="text-align: left;">Stodden, Victoria; Seiler, Jennifer; Ma, Zhaokun (2018). <a href="https://doi.org/10.1073/pnas.1708290115">An empirical analysis of journal policy effectiveness for computational reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p15"></span>15</td>
+<td style="text-align: left;">Chen, Christopher (2018). Coding be eR: assessing and improving the reproducibility of R-based research with containR</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p16"></span>16</td>
+<td style="text-align: left;">Rampin, Remi; Chirigati, Fernando; Steeves, Vicky et al.&nbsp;(2018). <a href="https://doi.org/10.48550/arxiv.1808.01406">ReproServer: making reproducibility easier and less intensive</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p17"></span>17</td>
+<td style="text-align: left;">Christensen, Garret; Miguel, Edward (2018). <a href="https://doi.org/10.1257/jel.20171350">Transparency, reproducibility, and the credibility of economics research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p18"></span>18</td>
+<td style="text-align: left;">Villhuber, Lars (2018). Reproducibility confidentiality data access</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p19"></span>19</td>
+<td style="text-align: left;">Thorpe, Brandon (2019). <a href="https://doi.org/10.31219/osf.io/thvef">The ReproRubric: evaluation criteria for the reproducibility of computational analyses</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p20"></span>20</td>
+<td style="text-align: left;">Liu, David M.; Salganik, Matthew J. (2019). <a href="https://doi.org/10.1177/2378023119849803">Successes and struggles with computational reproducibility: lessons from the fragile families challenge</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p21"></span>21</td>
+<td style="text-align: left;">Chard, Kyle; Gaffney, Niall; Jones, Matthew B. et al.&nbsp;(2019). <a href="https://doi.org/10.1145/3322790.3330594">Implementing computational reproducibility in the whole tale environment</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p22"></span>22</td>
+<td style="text-align: left;">Chard, Kyle; Gaffney, Niall; Jones, Matthew B. et al.&nbsp;(2019). <a href="https://doi.org/10.1109/eScience.2019.00068">Application of BagIt-serialized research object bundles for packaging and Re-execution of computational analyses</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p23"></span>23</td>
+<td style="text-align: left;">Blischak, John D.; Carbonetto, Peter; Stephens, Matthew (2019). <a href="https://doi.org/10.12688/f1000research.20843.1">Creating and sharing reproducible research code the workflowr way</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p24"></span>24</td>
+<td style="text-align: left;">Hatton, Les; Van Genuchten, Michiel (2019). <a href="https://doi.org/10.1109/MS.2018.2883805">Computational reproducibility: the elephant in the room</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p25"></span>25</td>
+<td style="text-align: left;">Kim, Jenna; Blake, Catherine; Darch, Peter T. (2019). <a href="https://doi.org/10.1002/pra2.134">Toward computational reproducibility: a doctoral student’s story of passing the baton</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p26"></span>26</td>
+<td style="text-align: left;">Krieger, Nikolas I.; Perzynski, Adam T.; Dalton, Jarrod E. (2019). <a href="https://doi.org/10.1371/journal.pone.0212390">Facilitating reproducible project management and manuscript development in team science: the projects R package</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p27"></span>27</td>
+<td style="text-align: left;">Whitehouse, Tyler; Clark, Dav; Tsang, Emmy (2019). Rebooting reproducibility: From re-execution to replication</td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p28"></span>28</td>
+<td style="text-align: left;">Quintana, Daniel S (2020). <a href="https://doi.org/10.7554/eLife.53275">A synthetic dataset primer for the biobehavioural sciences to promote reproducibility and hypothesis generation</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p29"></span>29</td>
+<td style="text-align: left;">Christian, Thu-Mai; Gooch, Amanda; Vision, Todd et al.&nbsp;(2020). <a href="https://doi.org/10.1371/journal.pone.0230281">Journal data policies: exploring how the understanding of editors and authors corresponds to the policies themselves</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p30"></span>30</td>
+<td style="text-align: left;">Trisovic, Ana; Durbin, Philip; Schlatter, Tania et al.&nbsp;(2020). <a href="https://doi.org/10.1145/3391800.3398173">Advancing computational reproducibility in the dataverse data repository platform</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p31"></span>31</td>
+<td style="text-align: left;">Steeves, Vicky; Rampin, Rémi; Chirigati, Fernando (2020). <a href="https://doi.org/10.29173/iq969">Reproducibility, preservation, and access to research with ReproZip and ReproServer</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p32"></span>32</td>
+<td style="text-align: left;">Stodden, Victoria (2020). <a href="https://doi.org/10.1145/3391800.3398172">Beyond open data: a model for linking digital artifacts to enable reproducibility of scientific claims</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p33"></span>33</td>
+<td style="text-align: left;">Chuah, Jason; Deeds, Madeline; Malik, Tanu et al.&nbsp;(2020). <a href="https://doi.org/10.3233/apc200106">Documenting computing environments for reproducible experiments</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p34"></span>34</td>
+<td style="text-align: left;">Vilhuber, Lars (2020). <a href="https://doi.org/10.1162/99608f92.4f6b9e67">Reproducibility and replicability in economics</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p35"></span>35</td>
+<td style="text-align: left;">Willis, Craig (2020). Trust, but verify: an investigation of methods of verification and dissemination of computational research artifacts for transparency and reproducibility</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p36"></span>36</td>
+<td style="text-align: left;">Pimentel, João Felipe; Freire, Juliana; Murta, Leonardo et al.&nbsp;(2020). <a href="https://doi.org/10.1145/3311955">A survey on collecting, managing, and analyzing provenance from scripts</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p37"></span>37</td>
+<td style="text-align: left;">Hinsen, Konrad (2020). <a href="https://doi.org/10.59350/81ba8-dse91">The four possibilities of reproducible scientific computations</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/dynamic-code-inspection.html">dynamic code inspection</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p38"></span>38</td>
+<td style="text-align: left;">Nüst, Daniel; Sochat, Vanessa; Marwick, Ben et al.&nbsp;(2020). <a href="https://doi.org/10.1371/journal.pcbi.1008316">Ten simple rules for writing dockerfiles for reproducible data science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p39"></span>39</td>
+<td style="text-align: left;">Orozco, Valérie; Bontemps, Christophe; Maigné, Elise et al.&nbsp;(2020). <a href="https://doi.org/10.1111/joes.12389">How to make a pie: reproducible research for empirical economics and econometrics</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p40"></span>40</td>
+<td style="text-align: left;">Canon, R. Shane (2020). <a href="https://doi.org/10.1109/CANOPIEHPC51917.2020.00008">The role of containers in reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p41"></span>41</td>
+<td style="text-align: left;">Hail, Luzi; Lang, Mark; Leuz, Christian (2020). <a href="https://doi.org/10.1111/1475-679X.12305">Reproducibility in accounting research: views of the research community</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p42"></span>42</td>
+<td style="text-align: left;">Vilhuber, Lars (2021). <a href="https://doi.org/10.1257/pandp.111.818">AEA data and code availability policy</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p43"></span>43</td>
+<td style="text-align: left;">Vlaeminck, Sven (2021). <a href="https://doi.org/10.53377/lq.10940">Dawning of a new age? Economics journals’ data policies on the test bench</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p44"></span>44</td>
+<td style="text-align: left;">Peer, Limor; Orr, Lilla V.; Coppock, Alexander (2021). <a href="https://doi.org/10.1017/S1049096521000366">Active maintenance: a proposal for the long-term computational reproducibility of scientific results</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p45"></span>45</td>
+<td style="text-align: left;">Bahaidarah, Layan; Hung, Ethan; Oliveira, Andreas F. De Melo et al.&nbsp;(2021). <a href="https://doi.org/10.48550/arxiv.2109.10387">Toward reusable science with readable code and reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p46"></span>46</td>
+<td style="text-align: left;">Peikert, Aaron; Van Lissa, Caspar J.; Brandmaier, Andreas M. (2021). <a href="https://doi.org/10.3390/psych3040053">Reproducible research in R: a tutorial on how to do the same thing more than once</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-runs-without-manual-intervention.html">code runs without manual intervention</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p47"></span>47</td>
+<td style="text-align: left;">Freiling, Isabelle; Krause, Nicole M; Scheufele, Dietram A et al.&nbsp;(2021). <a href="https://doi.org/10.1093/joc/jqab032">The science of open (communication) science: toward an evidence-driven understanding of quality criteria in communication research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p48"></span>48</td>
+<td style="text-align: left;">Peer, Limor; Arguillas, Florio; Honeyman, Tom et al.&nbsp;(2021). <a href="https://doi.org/10.15497/RDA00063">Challenges of curating for reproducible and FAIR research output</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p49"></span>49</td>
+<td style="text-align: left;">Gundersen, Odd Erik (2021). <a href="https://doi.org/10.1098/rsta.2020.0210">The fundamental principles of reproducibility</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p50"></span>50</td>
+<td style="text-align: left;">Mukherjee, Suchita; Almanza, Abigail; Rubio-González, Cindy (2021). <a href="https://doi.org/10.1145/3460319.3464797">Fixing dependency errors for python build reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p51"></span>51</td>
+<td style="text-align: left;">Peikert, Aaron; Brandmaier, Andreas M. (2021). <a href="https://doi.org/10.5964/qcmb.3763">A reproducible data analysis workflow with R Markdown, Git, Make, and Docker</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p52"></span>52</td>
+<td style="text-align: left;">Nüst, Daniel; Eglen, Stephen J. (2021). <a href="https://doi.org/10.12688/f1000research.51738.2">CODECHECK: an open science initiative for the independent&nbsp;execution of computations underlying research articles during peer review to improve reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p53"></span>53</td>
+<td style="text-align: left;">Ghoshal, Devarshi; Bianchi, Ludovico; Essiari, Abdelilah et al.&nbsp;(2021). <a href="https://doi.org/10.1109/WORKS54523.2021.00014">Science capsule: towards sharing and reproducibility of scientific workflows</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p54"></span>54</td>
+<td style="text-align: left;">Van Lissa, Caspar J.; Brandmaier, Andreas M.; Brinkman, Loek et al.&nbsp;(2021). <a href="https://doi.org/10.3233/DS-210031">WORCS: a workflow for open reproducible code in science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p55"></span>55</td>
+<td style="text-align: left;">Sawchuk, Sandra L.; Khair, Shahira (2021). <a href="https://doi.org/10.7191/jeslib.2021.1206">Computational reproducibility: a practical framework for data curators</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p56"></span>56</td>
+<td style="text-align: left;">Niso Taxonomy, Definitions, And Recognition Badging Scheme Working Group (2021). <a href="https://doi.org/10.3789/niso-rp-31-2021">Reproducibility badging and definitions</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p57"></span>57</td>
+<td style="text-align: left;">Stoudt, Sara; Vásquez, Váleri N.; Martinez, Ciera C. (2021). <a href="https://doi.org/10.1371/journal.pcbi.1008770">Principles for data analysis workflows</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p58"></span>58</td>
+<td style="text-align: left;">Stewart, Andrew J.; Farran, Emily K.; Grange, James A. et al.&nbsp;(2021). <a href="https://doi.org/10.1186/s13104-021-05883-3">Improving research quality: the view from the UK reproducibility network institutional leads for research improvement</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p59"></span>59</td>
+<td style="text-align: left;">Samuel, Sheeba; König-Ries, Birgitta (2021). <a href="https://doi.org/10.7717/peerj.11140">Understanding experiments and research practices for reproducibility: an exploratory study</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p60"></span>60</td>
+<td style="text-align: left;">Moody, James W.; Keister, Lisa A.; Ramos, Maria C. (2022). <a href="https://doi.org/10.1146/annurev-soc-090221-035954">Reproducibility in the social sciences</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p61"></span>61</td>
+<td style="text-align: left;">Samuel, Sheeba; König-Ries, Birgitta (2022). <a href="https://doi.org/10.7717/peerj-cs.921">A collaborative semantic-based provenance management platform for reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p62"></span>62</td>
+<td style="text-align: left;">Vanegas Ferro, Manuela; Lee, Allen; Pritchard, Calvin et al.&nbsp;(2022). <a href="https://doi.org/10.18174/sesmo.18074">Containerization for creating reusable model code</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p63"></span>63</td>
+<td style="text-align: left;">Vallet, Nicolas; Michonneau, David; Tournier, Simon (2022). <a href="https://doi.org/10.1038/s41597-022-01720-9">Toward practical transparent verifiable and long-term reproducible research using guix</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p64"></span>64</td>
+<td style="text-align: left;">Akella, Akhil Pandey; Alhoori, Hamed; Koop, David (2022). <a href="https://doi.org/10.18653/v1/2022.wiesp-1.16">Reproducibility signals in science: a preliminary analysis</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p65"></span>65</td>
+<td style="text-align: left;">Federer, Lisa M. (2022). <a href="https://doi.org/10.1371/journal.pone.0272845">Long-term availability of data associated with articles in PLOS ONE</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p66"></span>66</td>
+<td style="text-align: left;">Peer, Limor; Biniossek, Claudia; Betz, Dirk et al.&nbsp;(2022). <a href="https://doi.org/10.1162/dint_a_00133">Reproducible research publication workflow: a canonical workflow framework and FAIR digital object approach to quality research output</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p67"></span>67</td>
+<td style="text-align: left;">Dogucu, Mine; Çetinkaya-Rundel, Mine (2022). <a href="https://doi.org/10.1080/26939169.2022.2138645">Tools and recommendations for reproducible teaching</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p68"></span>68</td>
+<td style="text-align: left;">Baldwin, Jessie R.; Pingault, Jean-Baptiste; Schoeler, Tabea et al.&nbsp;(2022). <a href="https://doi.org/10.1007/s10654-021-00839-0">Protecting against researcher bias in secondary data analysis: challenges and potential solutions</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p69"></span>69</td>
+<td style="text-align: left;">Mikytuck, Alyssa; Nusser, Sarah; Korkmaz, Gizem (2022). <a href="https://doi.org/10.31222/osf.io/yp3ct">The interdependence of data producers and data users: how researchers’ behaviors can support or hinder each other</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p70"></span>70</td>
+<td style="text-align: left;">Gayle, Vernon; Connelly, Roxanne (2022). <a href="https://doi.org/10.1177/20597991221111681">The Stark realities of reproducible statistically orientated sociological research: Some newer rules of the sociological method</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-2/test-code-coverage.html">test code coverage</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p71"></span>71</td>
+<td style="text-align: left;">Vilhuber, Lars; Son, Hyuk Harry; Welch, Meredith et al.&nbsp;(2022). <a href="https://doi.org/10.1080/26939169.2022.2074582">Teaching for Large-Scale Reproducibility Verification</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p72"></span>72</td>
+<td style="text-align: left;">Krähmer, Daniel; Schächtele, Laura; Schneck, Andreas (2023). <a href="https://doi.org/10.1371/journal.pone.0289380">Care to share? Experimental evidence on code sharing behavior in the social sciences</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p73"></span>73</td>
+<td style="text-align: left;">Costa, Lázaro; Barbosa, Susana; Cunha, Jácome (2023). <a href="https://doi.org/10.48550/arxiv.2308.00703">A backend platform for supporting the reproducibility of computational experiments</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p74"></span>74</td>
+<td style="text-align: left;">Wonsil, Joseph; Boufford, Nichole; Agrawal, Prakhar et al.&nbsp;(2023). <a href="https://doi.org/10.1002/spe.3202">Reproducibility as a service</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p75"></span>75</td>
+<td style="text-align: left;">Vilhuber, Lars; Schmutte, Ian; Michuda, Aleksandr et al.&nbsp;(2023). <a href="https://doi.org/10.1162/99608f92.9ba2bd43">Reinforcing reproducibility and replicability: an introduction</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p76"></span>76</td>
+<td style="text-align: left;">Lerner, Barbara; Boose, Emery; Brand, Orenna et al.&nbsp;(2023). <a href="https://doi.org/10.32614/RJ-2023-003">Making provenance work for you</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p77"></span>77</td>
+<td style="text-align: left;">Vilhuber, Lars (2023). <a href="https://doi.org/10.1257/pandp.113.850">Report of the AEA data editor</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p78"></span>78</td>
+<td style="text-align: left;">Vilhuber, Lars (2023). <a href="https://doi.org/10.31222/osf.io/vsj8u">CRRESS - session 4 - reproducibility and confidential data</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p79"></span>79</td>
+<td style="text-align: left;">Hunt, Gregory; Gagnon-Bartsch, Johann (2023). <a href="https://doi.org/10.52933/jdssv.v3i1.53">A review of containerization for interactive and reproducible analysis</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p80"></span>80</td>
+<td style="text-align: left;">Oswald, Christian; Walterskirchen, Julian; Häffner, Sonja et al.&nbsp;(2023). <a href="https://doi.org/10.31235/osf.io/a2d5p">Replication of the morning after: report from the nottingham replication games</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p81"></span>81</td>
+<td style="text-align: left;">Guiteras, Raymond P.; Kim, Ahnjeong; Quistorff, Brian et al.&nbsp;(2023). <a href="https://doi.org/10.1177/1536867X231162032">statacons: An SCons-based build tool for Stata</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p82"></span>82</td>
+<td style="text-align: left;">Hayden, Gabriele; Mentnech, Tisha; Rampin, Vicky (2023). Supporting reproducible research</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p83"></span>83</td>
+<td style="text-align: left;">Vilhuber, Lars (2023). <a href="https://doi.org/10.1016/j.jeconom.2023.05.001">Reproducibility and transparency versus privacy and confidentiality: Reflections from a data editor</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p84"></span>84</td>
+<td style="text-align: left;">Finger, Robert; Grebitus, Carola; Henningsen, Arne (2023). <a href="https://doi.org/10.1002/aepp.13386">Replications in agricultural economics</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p85"></span>85</td>
+<td style="text-align: left;">Pérignon, Christophe (2024). <a href="https://doi.org/10.1162/99608f92.6d4bf9eb">The Role of Third-Party Verification in Research Reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p86"></span>86</td>
+<td style="text-align: left;">Chung-hong Chan; Tim Schatto-Eckrodt; Johannes Gruber (2024). <a href="https://doi.org/10.5117/CCR2024.1.5.CHAN">What makes computational communication science (ir)reproducible?</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p87"></span>87</td>
+<td style="text-align: left;">Scoggins, Bermond; Robertson, Matthew P. (2024). <a href="https://doi.org/10.1098/rsos.240313">Measuring transparency in the social sciences: political science and international relations</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p88"></span>88</td>
+<td style="text-align: left;">Fišar, Miloš; Greiner, Ben; Huber, Christoph et al.&nbsp;(2024). <a href="https://doi.org/10.1287/mnsc.2023.03556">Reproducibility in Management Science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p89"></span>89</td>
+<td style="text-align: left;">Schoch, David; Chan, Chung-hong; Wagner, Claudia et al.&nbsp;(2024). <a href="https://doi.org/10.1140/epjds/s13688-024-00514-w">Computational reproducibility in computational social science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p90"></span>90</td>
+<td style="text-align: left;">Silverstein, Priya; Elman, Colin; Montoya, Amanda et al.&nbsp;(2024). <a href="https://doi.org/10.1186/s41073-023-00141-5">A guide for social science journal editors on easing into open science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p91"></span>91</td>
+<td style="text-align: left;">Siegel, Zachary S.; Kapoor, Sayash; Nagdir, Nitya et al.&nbsp;(2024). <a href="https://doi.org/10.48550/arxiv.2409.11363">CORE-bench: fostering the credibility of published research through a computational reproducibility agent benchmark</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p92"></span>92</td>
+<td style="text-align: left;">Lukito, Josephine; Greenfield, Jason; Yang, Yunkang et al.&nbsp;(2024). <a href="https://doi.org/10.17645/mac.7851">Audio-as-data tools: replicating computational data processing</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p93"></span>93</td>
+<td style="text-align: left;">Ottone, Nicholas; Peer, Limor (2024). <a href="https://doi.org/10.31222/osf.io/rv6xd">Unintended code errors and computational reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p94"></span>94</td>
+<td style="text-align: left;">Akella, Akhil Pandey; Choudhur, Sagnik Ray; Koop, David (2024). <a href="https://doi.org/10.1145/3627673.3679831">Navigating the landscape of reproducible research: a predictive modeling approach</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p95"></span>95</td>
+<td style="text-align: left;">Pérignon, Christophe; Akmansoy, Olivier; Hurlin, Christophe et al.&nbsp;(2024). <a href="https://doi.org/10.1093/rfs/hhae029">Computational reproducibility in finance: evidence from 1,000 tests</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p96"></span>96</td>
+<td style="text-align: left;">Costa, Lázaro; Barbosa, Susana; Cunha, Jácome (2024). <a href="https://doi.org/10.1145/3641525.3663623">Evaluating tools for enhancing reproducibility in computational scientific experiments</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p97"></span>97</td>
+<td style="text-align: left;">Peer, Limor (2024). <a href="https://doi.org/10.1162/99608f92.dca148ba">Why and how we share reproducible research at yale university’s institution for social and policy studies</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p98"></span>98</td>
+<td style="text-align: left;">Brodeur, Abel; Mikola, Derek; Cook, Nikolai (2024). <a href="https://doi.org/10.2139/ssrn.4790780">Mass reproducibility and replicability: a new hope</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p99"></span>99</td>
+<td style="text-align: left;">Jones, Maria (2024). <a href="https://doi.org/10.1162/99608f92.21328ce3">Introducing reproducible research standards at the world bank</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p100"></span>100</td>
+<td style="text-align: left;">Oswald, Christian; Walterskirchen, Julian (2024). <a href="https://doi.org/10.31235/osf.io/7k2vz">Computational and robustness reproducibility of “UN peacekeeping and democratization in conflict-affected countries”</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p101"></span>101</td>
+<td style="text-align: left;">Luijken, K.; Lohmann, A.; Alter, U. et al.&nbsp;(2024). <a href="https://doi.org/10.1098/rsos.231003">Replicability of simulation studies for the investigation of statistical methods: the RepliSims project</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p102"></span>102</td>
+<td style="text-align: left;">Gligorić, Kristina; Piccardi, Tiziano; Hofman, Jake M. et al.&nbsp;(2024). <a href="https://doi.org/10.1162/99608f92.f9720d1f">In-Class Data Analysis Replications: Teaching Students While Testing Science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p103"></span>103</td>
+<td style="text-align: left;">Knöpfle, Philipp; Schatto-Eckrodt, Tim (2024). <a href="https://doi.org/10.17645/mac.7789">The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al.&nbsp;(2020)</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p104"></span>104</td>
+<td style="text-align: left;">Herbert, Sylvérie; Kingi, Hautahi; Stanchi, Flavio et al.&nbsp;(2024). <a href="https://doi.org/10.1111/caje.12728">Reproduce to validate: a comprehensive study on the reproducibility of economics research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p105"></span>105</td>
+<td style="text-align: left;">Brodeur, Abel; Esterling, Kevin; Ankel-Peters, Jörg et al.&nbsp;(2024). <a href="https://doi.org/10.1177/20531680241233439">Promoting reproducibility and replicability in political science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p106"></span>106</td>
+<td style="text-align: left;">Rainey, Carlisle; Roe, Harley (2024). <a href="https://doi.org/10.31235/osf.io/df2ya">The data availability policies of political science journals</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p107"></span>107</td>
+<td style="text-align: left;">Bauer, Gerrit; Breznau, Nate; Gereke, Johanna et al.&nbsp;(2025). <a href="https://doi.org/10.1177/00986283231219503">Teaching constructive replications in the behavioral and social sciences using quantitative data</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p108"></span>108</td>
+<td style="text-align: left;">Momeni, Fakhri; Khan, Muhammad Taimoor; Kiesel, Johannes et al.&nbsp;(2025). <a href="https://doi.org/10.1145/3736731.3746161">Checklists for computational reproducibility in social sciences: insights from literature and survey evaluation</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-2/version-control.html">version control</a>, <a href="./criteria/tier-2/commands-logs-traceability.html">commands logs traceability</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p109"></span>109</td>
+<td style="text-align: left;">Ankel-Peters, Jörg; Brodeur, Abel; Dreber, Anna et al.&nbsp;(2025). <a href="https://doi.org/10.2139/ssrn.5135862">A protocol for structured robustness reproductions and replicability assessments</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p110"></span>110</td>
+<td style="text-align: left;">Rainey, Carlisle; Roe, Harley; Wang, Qing et al.&nbsp;(2025). <a href="https://doi.org/10.1017/S1049096524001276">Data and code availability in political science publications from 1995 to 2022</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p111"></span>111</td>
+<td style="text-align: left;">Fink, Lukas; Marcus, Jan (2025). <a href="https://doi.org/10.1111/ecin.13267">Replication code availability over time and across fields: evidence from the german socio-economic panel</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p112"></span>112</td>
+<td style="text-align: left;">Hu, Chuxuan; Zhang, Liyun; Lim, Yeji et al.&nbsp;(2025). <a href="https://doi.org/10.18653/v1/2025.findings-acl.1210">REPRO-bench: can agentic AI systems assess the reproducibility of social science research?</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p113"></span>113</td>
+<td style="text-align: left;">Costa, Lázaro; Barbosa, Susana; Cunha, Jácome (2025). <a href="https://doi.org/10.1109/VL-HCC65237.2025.00015">Let’s talk about it: making scientific computational reproducibility easier</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p114"></span>114</td>
+<td style="text-align: left;">Costa, Lázaro; Barbosa, Susana; Cunhá, Jacome (2025). <a href="https://doi.org/10.1109/VL-HCC65237.2025.00071">SciConv: a conversational tool for reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p115"></span>115</td>
+<td style="text-align: left;">A S M Shahadat Hossain; Colin Brown; David Koop et al.&nbsp;(2025). <a href="https://doi.org/10.1145/3736731.3746159">Similarity-based assessment of computational reproducibility in jupyter notebooks</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p116"></span>116</td>
+<td style="text-align: left;">Zhao, Xuanie; Sang, Zillin; Li, Yuxuan et al.&nbsp;(2025). <a href="https://doi.org/10.48550/arxiv.2505.20662">AutoReproduce: automatic AI experiment reproduction with paper lineage</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/code-runs-without-manual-intervention.html">code runs without manual intervention</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p117"></span>117</td>
+<td style="text-align: left;">Saju, Lorraine; Holtdirk, Tobias; Mangroliya, Meetkumar P et al.&nbsp;(2025). <a href="https://doi.org/10.36190/2025.49">Computational reproducibility of R code supplements on OSF</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-runs-without-manual-intervention.html">code runs without manual intervention</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p118"></span>118</td>
+<td style="text-align: left;">Peng, Roger (2025). <a href="https://doi.org/10.17713/ajs.v54i3.2052">Tooling for reproducible research: considerations for the past and future of data analysis</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p119"></span>119</td>
+<td style="text-align: left;">Illmer, Viktor J. (2025). <a href="https://doi.org/10.63744/iAqEoznkfKuz">“Works on my machine”: a case study of replicability challenges inComputational humanities research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p120"></span>120</td>
+<td style="text-align: left;">Rogers, Pablo (2025). <a href="https://doi.org/10.5281/ZENODO.17830903">Reproducibility spectrum for applied social sciences: conceptual taxonomy and recommended tools</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/version-control.html">version control</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p121"></span>121</td>
+<td style="text-align: left;">Simkus, Andrea; Coolen-Maturi, Tahani; Coolen, Frank P. A. et al.&nbsp;(2025). <a href="https://doi.org/10.1007/s42519-025-00459-x">Statistical perspectives on reproducibility: definitions and challenges</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p122"></span>122</td>
+<td style="text-align: left;">Zeng, Qiuhai; Jin, Claire; Wang, Xinyue et al.&nbsp;(2025). <a href="https://doi.org/10.18653/v1/2025.findings-emnlp.539">AIRepr: an analyst-inspector framework for evaluating reproducibility of LLMs in data science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/code-runs-without-manual-intervention.html">code runs without manual intervention</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p123"></span>123</td>
+<td style="text-align: left;">Hinsen, Konrad (2025). <a href="https://doi.org/10.59350/vpfzy-wrr35">Why computational reproducibility matters</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p124"></span>124</td>
+<td style="text-align: left;">Hasso, Tim; Brosnan, Mark; Ali, Searat et al.&nbsp;(2025). <a href="https://doi.org/10.1016/j.pacfin.2024.102564">Perceived problems, causes, and solutions of finance research reproducibility and replicability: a pre-registered report</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p125"></span>125</td>
+<td style="text-align: left;">Denly, Michael; Helms, Benjamin (2025). A report on “corruption and Co-optation in autocracy: evidence from Russia”</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p126"></span>126</td>
+<td style="text-align: left;">Brandmaier, Andreas M.; Peikert, Aaron (2025). <a href="https://doi.org/10.1525/collabra.138638">Automated Reproducibility Testing in R Markdown</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p127"></span>127</td>
+<td style="text-align: left;">Dreber, Anna; Johannesson, Magnus (2025). <a href="https://doi.org/10.1111/ecin.13244">A framework for evaluating reproducibility and replicability in economics</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p128"></span>128</td>
+<td style="text-align: left;">Breznau, Nate; Rinke, Eike Mark; Wuttke, Alexander et al.&nbsp;(2025). <a href="https://doi.org/10.1098/rsos.241038">The reliability of replications: a study in computational reproductions</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p129"></span>129</td>
+<td style="text-align: left;">Turek, Konrad (2025). <a href="https://doi.org/10.1007/s11135-024-02020-7">Accelerating social science knowledge production with the coordinated open-source model</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p130"></span>130</td>
+<td style="text-align: left;">Dogucu, Mine (2025). <a href="https://doi.org/10.1146/annurev-statistics-112723-034436">Reproducibility in the classroom</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p131"></span>131</td>
+<td style="text-align: left;">Advancing Computational Reproducibility in Economics (ACRE) (2022). Guide for Accelerating Computational Reproducibility in the Social Sciences</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-2/workflow-reproduction-tree.html">workflow/reproduction tree</a>, <a href="./criteria/tier-2/version-control.html">version control</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a>, <a href="./criteria/tier-3/third-party-certification.html">third-party certification</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p132"></span>132</td>
+<td style="text-align: left;">Rose, Julian; Neubauer, Florian; Ankel-Peters, Jörg (2025). <a href="https://doi.org/10.1093/qopen/qoae031">Long-term effects of the targeting the ultra poor program—a reproducibility and replicability assessment of banerjee et al.&nbsp;(2021)</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p133"></span>133</td>
+<td style="text-align: left;">Momeni, Fakhri; Sajid, Sarah; Kiesel, Johannes (2026). <a href="https://doi.org/10.1145/3795766.3799759">From guidelines to practice: evaluating the reproducibility of methods in computational social science</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p134"></span>134</td>
+<td style="text-align: left;">Zhang, Linhao; Xia, Tong; Piao, Jinghua et al.&nbsp;(2026). <a href="https://doi.org/10.48550/arxiv.2603.00058">PaperRepro: automated computational reproducibility assessment for social science papers</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p135"></span>135</td>
+<td style="text-align: left;">Shah, Syed Mehtab Hussain; Hopfgartner, Frank; Bleier, Arnim (2026). <a href="https://doi.org/10.48550/arxiv.2602.08561">Automating computational reproducibility in social science: comparing prompt-based and agent-based approaches</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p136"></span>136</td>
+<td style="text-align: left;">Baek, Doehyun; Pradel, Michael (2026). Artisan: agentic artifact evaluation</td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p137"></span>137</td>
+<td style="text-align: left;">Hornung, Roman; Németh, László; Zadorozhny, Oleksandr et al.&nbsp;(2026). <a href="https://doi.org/10.48550/arxiv.2602.03863">Overcoming barriers to computational reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p138"></span>138</td>
+<td style="text-align: left;">Brodeur, Abel; Cook, Nikolai; Mikola, Derek et al.&nbsp;(2026). <a href="https://doi.org/10.1038/s41586-026-10251-x">Reproducibility and robustness of economics and political science research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p139"></span>139</td>
+<td style="text-align: left;">Aloqalaa, Meznah; Soiland-Reyes, Stian; Goble, Carole (2026). <a href="https://doi.org/10.48550/arxiv.2601.02349">PRIMAD-LID: a developed framework for computational reproducibility</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p140"></span>140</td>
+<td style="text-align: left;">Horbach, Serge P.&nbsp;J.&nbsp;M.; Lisa&nbsp;Cole, Nicki; Kopeinik, Simone et al.&nbsp;(2026). <a href="https://doi.org/10.36850/f4c4-4a38">How to Get There From Here? Barriers and Enablers on the Road Towards Reproducibility in Research</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p141"></span>141</td>
+<td style="text-align: left;">Bertoli, Simone; Clerc, Melchior; Loper, Jordan et al.&nbsp;(2026). <a href="https://doi.org/10.1111/ecin.13242">Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p142"></span>142</td>
+<td style="text-align: left;">Ho, Anson T. Y.; Huynh, Kim P.; Jacho-Chávez, David T. et al.&nbsp;(2026). <a href="https://doi.org/10.1007/978-3-031-97942-2_7">Teaching Reproducibility and&nbsp;Replicability While Teaching Econometrics in the Classroom</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p143"></span>143</td>
+<td style="text-align: left;">Bleier, Arnim (2025). <a href="https://doi.org/10.60762/GGDBD25002.1.0">What is Computational Reproducibility?</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="even">
+<td style="text-align: right;"><span id="p144"></span>144</td>
+<td style="text-align: left;">Miske, Olivia; Abatayo, Anna Lou; Mason, Daley et al.&nbsp;(2026). <a href="https://doi.org/10.1038/s41586-026-10203-5">Investigating the reproducibility of the social and behavioural sciences</a></td>
+<td style="text-align: left;"><a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a></td>
+</tr>
+<tr class="odd">
+<td style="text-align: right;"><span id="p145"></span>145</td>
+<td style="text-align: left;">Nosek, Brian; Errington, Timothy M., Haber, Noah et al.&nbsp;(2026). <a href="https://doi.org/10.31222/osf.io/mqfp4_v1">A Brief Glossary of Terms about Repeatability: Replicability, Robustness, and Reproducibility</a></td>
+<td style="text-align: left;">—</td>
+</tr>
+</tbody>
+</table>
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Generated from rubric_draft_02.11.2026.xlsx</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>
+// Click-to-open explanations, e.g. on the core-reason badge of criterion pages
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+</script>
+
+
+
+
+</body></html>

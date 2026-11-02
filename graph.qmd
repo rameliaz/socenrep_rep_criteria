@@ -1,0 +1,32 @@
+---
+title: "Prerequisite graph"
+toc: false
+---
+
+Arrows run from a prerequisite to the criterion that builds on it. The number on an arrow is how many sources assert that link. Filled boxes are core criteria, dashed boxes recommended ones; dashed arrows start at a recommended prerequisite. Click a box to open the criterion.
+
+Colors show the tier: [{{< var tier_1 >}}]{.badge .tier-1} [{{< var tier_2 >}}]{.badge .tier-2} [{{< var tier_3 >}}]{.badge .tier-3}
+
+::: {.panel-tabset}
+
+## {{< var n_strong >}} links with {{< var min_strong >}}+ sources
+
+::: {.graph-scroll}
+```{dot}
+//| file: _generated/graph_strong.dot
+```
+:::
+
+{{< include _generated/graph_strong_unlinked.md >}}
+
+## All {{< var n_edges >}} links
+
+::: {.graph-scroll}
+```{dot}
+//| file: _generated/graph_all.dot
+```
+:::
+
+{{< include _generated/graph_all_unlinked.md >}}
+
+:::

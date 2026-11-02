@@ -1,0 +1,8 @@
+---
+title: "Sources"
+toc: false
+---
+
+The {{< var n_papers >}} papers of the scoping review corpus. Source IDs such as #42 on the criterion pages link here; the last column lists the criteria each paper is quoted for.
+
+{{< include _generated/sources.md >}}

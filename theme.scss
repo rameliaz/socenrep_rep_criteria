@@ -1,0 +1,27 @@
+/*-- scss:defaults --*/
+$tier-1: #2a7f6f;
+$tier-2: #2f5d9c;
+$tier-3: #6b3f8f;
+
+/*-- scss:rules --*/
+.badge.tier-1 { background-color: $tier-1; }
+.badge.tier-2 { background-color: $tier-2; }
+.badge.tier-3 { background-color: $tier-3; }
+.badge.status-core { background-color: #b03a2e; }
+.badge.status-recommended { background-color: #6c757d; }
+.badge.reason { background-color: transparent; color: var(--bs-secondary-color); border: 1px solid var(--bs-border-color); font-weight: 500; cursor: pointer; }
+.badge.reason::after { content: "\F431"; font-family: "bootstrap-icons"; margin-left: .3em; }  // info-circle icon
+.quarto-title .subtitle .badge { font-size: .75rem; }
+
+.source-note { display: block; margin-top: .5rem; font-size: .85em; color: var(--bs-secondary-color); }
+
+// Source rows linked as #42: clear the fixed navbar and highlight the row
+span[id^="p"]:empty { display: inline-block; scroll-margin-top: 5rem; }
+tr:has(span:target) { background-color: var(--bs-warning-bg-subtle); }
+
+// Criterion names in the overview tables wrap between words only
+.criteria-table td:first-child { min-width: 11rem; overflow-wrap: normal; word-break: normal; }
+
+// Graphs fill the page width and scroll sideways on narrow screens
+.graph-scroll { overflow-x: auto; }
+.graph-scroll svg { width: 100% !important; height: auto !important; min-width: 720px; }

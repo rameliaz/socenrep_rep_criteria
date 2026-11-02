@@ -1,0 +1,12 @@
+rubric_file: rubric_draft_02.11.2026.xlsx
+rubric_date: 02.11.2026
+n_criteria: 21
+n_core: 12
+n_quotes: 676
+n_papers: 145
+n_edges: 48
+n_strong: 19
+min_strong: 3
+tier_1: Tier 1 · Available - Bronze
+tier_2: Tier 2 · Executable - Silver
+tier_3: Tier 3 · Reproducible - Gold

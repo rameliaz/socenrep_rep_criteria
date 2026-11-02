@@ -1,0 +1,6 @@
+---
+title: "Badge pipeline"
+toc: false
+---
+
+Will be available soon.

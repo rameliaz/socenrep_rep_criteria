@@ -1,0 +1,1407 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.10.18">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="description" content="Every add-on package or library the code needs is declared with its exact version, ideally in a machine-readable file (e.g.&nbsp;renv.lock in R) or an installation script (e.g.&nbsp;a setup.do in Stata), so that a user can install them on a new machine and the code finds them.">
+
+<title>Dependency resolution – SocEnRep rubric</title>
+<style>
+/* Default styles provided by pandoc.
+** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
+*/
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: 1.5em;}
+div.column{flex: auto;}
+@media screen {
+div.columns{gap: min(4vw, 1.5em);}
+div.column{overflow-x: auto;}
+}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../criteria/tier-2/path-resolution.html" rel="next">
+<link href="../../criteria/tier-1/artifacts-longevity-sustainability.html" rel="prev">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-dark-b85bc7c33db8c58e0ec93c3465666fed.css" rel="stylesheet" class="quarto-color-scheme quarto-color-alternate" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-e0f14578190b460d380b0f4cc9495f43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit",
+    "search-label": "Search"
+  }
+}</script>
+<script async="" src="https://hypothes.is/embed.js"></script>
+<script>
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    document.body.classList.add('hypothesis-enabled');
+  });
+</script>
+
+
+</head>
+
+<body class="nav-sidebar docked nav-fixed quarto-light"><script id="quarto-html-before-body" type="application/javascript">
+    const toggleBodyColorMode = (bsSheetEl) => {
+      const mode = bsSheetEl.getAttribute("data-mode");
+      const bodyEl = window.document.querySelector("body");
+      if (mode === "dark") {
+        bodyEl.classList.add("quarto-dark");
+        bodyEl.classList.remove("quarto-light");
+      } else {
+        bodyEl.classList.add("quarto-light");
+        bodyEl.classList.remove("quarto-dark");
+      }
+    }
+    const toggleBodyColorPrimary = () => {
+      const bsSheetEl = window.document.querySelector("link#quarto-bootstrap:not([rel=disabled-stylesheet])");
+      if (bsSheetEl) {
+        toggleBodyColorMode(bsSheetEl);
+      }
+    }
+    const setColorSchemeToggle = (alternate) => {
+      const toggles = window.document.querySelectorAll('.quarto-color-scheme-toggle');
+      for (let i=0; i < toggles.length; i++) {
+        const toggle = toggles[i];
+        if (toggle) {
+          if (alternate) {
+            toggle.classList.add("alternate");
+          } else {
+            toggle.classList.remove("alternate");
+          }
+        }
+      }
+    };
+    const toggleColorMode = (alternate) => {
+      // Switch the stylesheets
+      const primaryStylesheets = window.document.querySelectorAll('link.quarto-color-scheme:not(.quarto-color-alternate)');
+      const alternateStylesheets = window.document.querySelectorAll('link.quarto-color-scheme.quarto-color-alternate');
+      manageTransitions('#quarto-margin-sidebar .nav-link', false);
+      if (alternate) {
+        // note: dark is layered on light, we don't disable primary!
+        enableStylesheet(alternateStylesheets);
+        for (const sheetNode of alternateStylesheets) {
+          if (sheetNode.id === "quarto-bootstrap") {
+            toggleBodyColorMode(sheetNode);
+          }
+        }
+      } else {
+        disableStylesheet(alternateStylesheets);
+        enableStylesheet(primaryStylesheets)
+        toggleBodyColorPrimary();
+      }
+      manageTransitions('#quarto-margin-sidebar .nav-link', true);
+      // Switch the toggles
+      setColorSchemeToggle(alternate)
+      // Hack to workaround the fact that safari doesn't
+      // properly recolor the scrollbar when toggling (#1455)
+      if (navigator.userAgent.indexOf('Safari') > 0 && navigator.userAgent.indexOf('Chrome') == -1) {
+        manageTransitions("body", false);
+        window.scrollTo(0, 1);
+        setTimeout(() => {
+          window.scrollTo(0, 0);
+          manageTransitions("body", true);
+        }, 40);
+      }
+    }
+    const disableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        stylesheet.rel = 'disabled-stylesheet';
+      }
+    }
+    const enableStylesheet = (stylesheets) => {
+      for (let i=0; i < stylesheets.length; i++) {
+        const stylesheet = stylesheets[i];
+        if(stylesheet.rel !== 'stylesheet') { // for Chrome, which will still FOUC without this check
+          stylesheet.rel = 'stylesheet';
+        }
+      }
+    }
+    const manageTransitions = (selector, allowTransitions) => {
+      const els = window.document.querySelectorAll(selector);
+      for (let i=0; i < els.length; i++) {
+        const el = els[i];
+        if (allowTransitions) {
+          el.classList.remove('notransition');
+        } else {
+          el.classList.add('notransition');
+        }
+      }
+    }
+    const isFileUrl = () => {
+      return window.location.protocol === 'file:';
+    }
+    const hasAlternateSentinel = () => {
+      let styleSentinel = getColorSchemeSentinel();
+      if (styleSentinel !== null) {
+        return styleSentinel === "alternate";
+      } else {
+        return false;
+      }
+    }
+    const setStyleSentinel = (alternate) => {
+      const value = alternate ? "alternate" : "default";
+      if (!isFileUrl()) {
+        window.localStorage.setItem("quarto-color-scheme", value);
+      } else {
+        localAlternateSentinel = value;
+      }
+    }
+    const getColorSchemeSentinel = () => {
+      if (!isFileUrl()) {
+        const storageValue = window.localStorage.getItem("quarto-color-scheme");
+        return storageValue != null ? storageValue : localAlternateSentinel;
+      } else {
+        return localAlternateSentinel;
+      }
+    }
+    const toggleGiscusIfUsed = (isAlternate, darkModeDefault) => {
+      const baseTheme = document.querySelector('#giscus-base-theme')?.value ?? 'light';
+      const alternateTheme = document.querySelector('#giscus-alt-theme')?.value ?? 'dark';
+      let newTheme = '';
+      if(authorPrefersDark) {
+        newTheme = isAlternate ? baseTheme : alternateTheme;
+      } else {
+        newTheme = isAlternate ? alternateTheme : baseTheme;
+      }
+      const changeGiscusTheme = () => {
+        // From: https://github.com/giscus/giscus/issues/336
+        const sendMessage = (message) => {
+          const iframe = document.querySelector('iframe.giscus-frame');
+          if (!iframe) return;
+          iframe.contentWindow.postMessage({ giscus: message }, 'https://giscus.app');
+        }
+        sendMessage({
+          setConfig: {
+            theme: newTheme
+          }
+        });
+      }
+      const isGiscussLoaded = window.document.querySelector('iframe.giscus-frame') !== null;
+      if (isGiscussLoaded) {
+        changeGiscusTheme();
+      }
+    };
+    const authorPrefersDark = false;
+    const darkModeDefault = authorPrefersDark;
+      document.querySelector('link#quarto-text-highlighting-styles.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+      document.querySelector('link#quarto-bootstrap.quarto-color-scheme-extra').rel = 'disabled-stylesheet';
+    let localAlternateSentinel = darkModeDefault ? 'alternate' : 'default';
+    // Dark / light mode switch
+    window.quartoToggleColorScheme = () => {
+      // Read the current dark / light value
+      let toAlternate = !hasAlternateSentinel();
+      toggleColorMode(toAlternate);
+      setStyleSentinel(toAlternate);
+      toggleGiscusIfUsed(toAlternate, darkModeDefault);
+      window.dispatchEvent(new Event('resize'));
+    };
+    // Switch to dark mode if need be
+    if (hasAlternateSentinel()) {
+      toggleColorMode(true);
+    } else {
+      toggleColorMode(false);
+    }
+  </script>
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container mx-auto">
+    <a class="navbar-brand" href="../../index.html">
+    <span class="navbar-title">SocEnRep rubric</span>
+    </a>
+  </div>
+            <div id="quarto-search" class="" title="Search"></div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" role="menu" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link active" href="../../index.html" aria-current="page"> 
+<span class="menu-text">Criteria</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../graph.html"> 
+<span class="menu-text">Prerequisite graph</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../sources.html"> 
+<span class="menu-text">Sources</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../about.html"> 
+<span class="menu-text">How to read</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../pipeline.html"> 
+<span class="menu-text">Badge pipeline</span></a>
+  </li>  
+</ul>
+          </div> <!-- /navcollapse -->
+            <div class="quarto-navbar-tools">
+  <a href="" class="quarto-color-scheme-toggle quarto-navigation-tool  px-1" onclick="window.quartoToggleColorScheme(); return false;" title="Toggle dark mode"><i class="bi"></i></a>
+</div>
+      </div> <!-- /container-fluid -->
+    </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../criteria/tier-2/dependency-resolution.html">Tier 2 · Executable - Silver</a></li><li class="breadcrumb-item"><a href="../../criteria/tier-2/dependency-resolution.html">Dependency resolution</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation docked overflow-auto">
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Overview</span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 1 · Available - Bronze</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/documentation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Documentation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/data-provenance.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data provenance</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/license.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">License</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/code-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/data-deposit.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Data deposit</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-1/artifacts-longevity-sustainability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Artifacts longevity/sustainability</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 2 · Executable - Silver</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/dependency-resolution.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Dependency resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/path-resolution.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Path resolution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/coding-error-handling.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Coding error handling</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/computing-environment.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Computing environment</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/code-runs-without-manual-intervention.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code runs without manual intervention</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/code-annotation.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Code annotation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/dynamic-code-inspection.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Dynamic code inspection</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/workflow-reproduction-tree.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Workflow/reproduction tree</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/version-control.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Version control</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/commands-logs-traceability.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Commands logs traceability</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-2/test-code-coverage.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test code coverage</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true">
+ <span class="menu-text">Tier 3 · Reproducible - Gold</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/codes-consistent-with-claims.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Codes consistent with claims</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/numerical-output-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Numerical output match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/table-and-figure-match.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Table and figure match</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../criteria/tier-3/third-party-certification.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Third-party certification</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">On this page</h2>
+   
+  <ul>
+  <li><a href="#rating" id="toc-rating" class="nav-link active" data-scroll-target="#rating">Rating</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#in-the-corpus" id="toc-in-the-corpus" class="nav-link" data-scroll-target="#in-the-corpus">In the corpus</a></li>
+  <li><a href="#text-evidence-59-quotes" id="toc-text-evidence-59-quotes" class="nav-link" data-scroll-target="#text-evidence-59-quotes">Text evidence (59 quotes)</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../criteria/tier-2/dependency-resolution.html">Tier 2 · Executable - Silver</a></li><li class="breadcrumb-item"><a href="../../criteria/tier-2/dependency-resolution.html">Dependency resolution</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">Dependency resolution</h1>
+<p class="subtitle lead"><span class="badge tier-2">Tier 2 · Executable - Silver</span> <span class="badge status-core">core</span> <span class="badge reason" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least 20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources.</p><a href='../../about.html'>All column definitions</a>">endorsement</span></p>
+</div>
+
+<div>
+  <div class="description">
+    Every add-on package or library the code needs is declared with its exact version, ideally in a machine-readable file (e.g.&nbsp;renv.lock in R) or an installation script (e.g.&nbsp;a setup.do in Stata), so that a user can install them on a new machine and the code finds them.
+  </div>
+</div>
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<!-- Generated by build_criteria.R from rubric_draft_02.11.2026.xlsx. Do not edit. -->
+<section id="rating" class="level2">
+<h2 class="anchored" data-anchor-id="rating">Rating</h2>
+<div class="callout callout-style-simple callout-tip callout-titled" title="Met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Tip</span>Met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>The package contains a dependency management file or installation script (e.g.&nbsp;renv.lock or groundhog in R, a setup.do in Stata) that installs all required packages/libraries with their exact versions and runs successfully, or the README lists all packages/software used with their exact versions, and these can be successfully installed at the point of reproduction.</p>
+<p><span class="source-note">Supported by: Installer/lock file: <a href="../../sources.html#p19" title="The ReproRubric: evaluation criteria for the reproducibility of computational analyses">#19</a> ‘installed/updated by a script’, <a href="../../sources.html#p108" title="Checklists for computational reproducibility in social sciences: insights from literature and survey evaluation">#108</a> requirements.txt, <a href="../../sources.html#p120" title="Reproducibility spectrum for applied social sciences: conceptual taxonomy and recommended tools">#120</a> renv/conda/pip, <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a> single installation script, <a href="../../sources.html#p79" title="A review of containerization for interactive and reproducible analysis">#79</a> renv/checkpoint/groundhog. Listing with versions: <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a> R3, <a href="../../sources.html#p117" title="Computational reproducibility of R code supplements on OSF">#117</a>, <a href="../../sources.html#p40" title="The role of containers in reproducibility">#40</a>, <a href="../../sources.html#p38" title="Ten simple rules for writing dockerfiles for reproducible data science">#38</a> pin versions, <a href="../../sources.html#p70" title="The Stark realities of reproducible statistically orientated sociological research: Some newer rules of the sociological method">#70</a>, <a href="../../sources.html#p48" title="Challenges of curating for reproducible and FAIR research output">#48</a>, <a href="../../sources.html#p57" title="Principles for data analysis workflows">#57</a>, <a href="../../sources.html#p7" title="Tools and techniques for computational reproducibility">#7</a>.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-warning callout-titled" title="Partially met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Warning</span>Partially met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>A dependency management file, installation script, or README list of dependencies is available, but it is incomplete (some packages or their versions are missing) or it cannot be successfully executed/installed at the point of reproduction (e.g.&nbsp;a package has been removed from its repository).</p>
+<p><span class="source-note">Supported by: <a href="../../sources.html#p44" title="Active maintenance: a proposal for the long-term computational reproducibility of scientific results">#44</a> packages removed from CRAN, <a href="../../sources.html#p103" title="The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)">#103</a> deprecated packages, <a href="../../sources.html#p61" title="A collaborative semantic-based provenance management platform for reproducibility">#61</a> version change breaks code, <a href="../../sources.html#p143" title="What is Computational Reproducibility?">#143</a>.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-important callout-titled" title="Not met">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Important</span>Not met
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>No dependency management file, installation script, or README information on dependencies is available.</p>
+<p><span class="source-note">Supported by: <a href="../../sources.html#p10" title="Sustainable computational science: the ReScience initiative">#10</a> ‘undocumented dependencies’, <a href="../../sources.html#p73" title="A backend platform for supporting the reproducibility of computational experiments">#73</a> ‘no information about how to install the project’, <a href="../../sources.html#p77" title="Report of the AEA data editor">#77</a> manifest files ‘remain rare’.</span></p>
+</div>
+</div>
+<div class="callout callout-style-simple callout-note callout-titled" title="Not applicable">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Not applicable
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>Never. If no add-on packages are used, met when the README says so.</p>
+</div>
+</div>
+</section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<p>Check order: <strong>2</strong></p>
+<div class="columns">
+<div class="column" style="width:50%;">
+<p><strong>Builds on</strong></p>
+<ul>
+<li><a href="../../criteria/tier-1/code-deposit.html">Code deposit</a> (7 sources)</li>
+<li><a href="../../criteria/tier-1/documentation.html">Documentation</a> (2 sources)</li>
+<li><a href="../../criteria/tier-1/data-deposit.html">Data deposit</a> (1 source)</li>
+</ul>
+</div><div class="column" style="width:50%;">
+<p><strong>Prerequisite for</strong></p>
+<ul>
+<li><a href="../../criteria/tier-2/computing-environment.html">Computing environment</a> (7 sources)</li>
+<li><a href="../../criteria/tier-3/numerical-output-match.html">Numerical output match</a> (4 sources)</li>
+<li><a href="../../criteria/tier-3/table-and-figure-match.html">Table and figure match</a> (3 sources)</li>
+</ul>
+</div>
+</div>
+</section>
+<section id="in-the-corpus" class="level2">
+<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+<col style="width: 14%">
+</colgroup>
+<thead>
+<tr class="header">
+<th style="text-align: right;">Sources</th>
+<th style="text-align: right;">Injunctive</th>
+<th style="text-align: right;">Tacit</th>
+<th style="text-align: right;">Automatable</th>
+<th style="text-align: right;">Manual check</th>
+<th style="text-align: right;">Automation unclear</th>
+<th style="text-align: right;">LLM sources</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td style="text-align: right;">59</td>
+<td style="text-align: right;">55.9%</td>
+<td style="text-align: right;">42.4%</td>
+<td style="text-align: right;">47.5%</td>
+<td style="text-align: right;">5.1%</td>
+<td style="text-align: right;">47.5%</td>
+<td style="text-align: right;">5</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="text-evidence-59-quotes" class="level2">
+<h2 class="anchored" data-anchor-id="text-evidence-59-quotes">Text evidence (59 quotes)</h2>
+<div class="callout callout-style-simple callout-note no-icon callout-titled" title="Show quotes">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-5-contents" aria-controls="callout-5" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-icon-container">
+<i class="callout-icon no-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Show quotes
+</div>
+<div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
+</div>
+<div id="callout-5" class="callout-5-contents callout-collapse collapse">
+<div class="callout-body-container callout-body">
+<p><strong><a href="../../sources.html#p1">#1</a></strong> An introduction to docker for reproducible research · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“A Docker based approach works similarly to a virtual machine image in addressing the dependency problem by providing other researchers with a binary image in which all the software has already been installed, configured and tested.” (p.&nbsp;3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p2">#2</a></strong> Towards reproducibility in scientific workflows: an infrastructure-based approach · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“we query the Software Stacks Dataset to recursively calculate the Requirement Dependency Graph, a directed graph that relates Software Stacks with their dependent ones” (p.7); graph may contain circular dependencies, handled by tracking visited nodes (p.7)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p5">#5</a></strong> ReproZip: computational reproducibility with ease · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“researchers should create a compendium that encompasses all the components that are required to reproduce the experiment’s results, including data, code, software, library dependencies, and information about the source computational environment” (p.&nbsp;2085)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p7">#7</a></strong> Tools and techniques for computational reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“it is essential to explicitly document any software dependencies and input data that are required for each step” (p.3); “it is critical to indicate which dependencies (and versions thereof) must be installed” (p.4)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p9">#9</a></strong> Using ReproZip for reproducibility and library services · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The dependencies required to reproduce research can be exceptionally hard to track…thus impossible to install on a new machine, which means the percentage of reproducible research remains low.” (p.1, Abstract)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p10">#10</a></strong> Sustainable computational science: the ReScience initiative · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“the reviewers [must be] able to run the proposed implementation on their computers” (p.7–8) and “Missing code and/or data, undocumented dependencies, and inaccurate or imprecise description appear to be characteristic of much non-reproducible work” (p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p11">#11</a></strong> Sciunits: reusable research objects · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>dependencies are identified and packaged automatically during package. (Sec. III)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p15">#15</a></strong> Coding be eR: assessing and improving the reproducibility of R-based research with containR · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“This error commonly occurs when attempting to run R code written on a different computer, and indicates that the package the user tried to load (in the example case, QMSS) has not yet been installed.” (p.16)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p16">#16</a></strong> ReproServer: making reproducibility easier and less intensive · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“these may have many nested library dependencies, of which different versions may give entirely disparate results or not even run… researchers ideally have to create a compendium that encapsulates all the dependencies needed for reproducibility” (p.1)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p19">#19</a></strong> The ReproRubric: evaluation criteria for the reproducibility of computational analyses · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>Documentation of exact versions of software and dependencies used; Software is installed/updated by a script; Dependencies are archived, bundled, or captured in an image or container for preservation (Fig. 2, “Software” rows, p.3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p20">#20</a></strong> Successes and struggles with computational reproducibility: lessons from the fragile families challenge · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“the entire process will fail if just one package fails, and the probability that at least one package fails is 1 – pⁿ” (p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p25">#25</a></strong> Toward computational reproducibility: a doctoral student’s story of passing the baton · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“an external software package that was required was not mentioned and needed to be installed, specifically html2text…” (p.689)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p27">#27</a></strong> Rebooting reproducibility: From re-execution to replication · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“the difficulty in reconstructing a work’s original library dependencies and software versions” (para. 1, opening)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p31">#31</a></strong> Reproducibility, preservation, and access to research with ReproZip and ReproServer · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“ReproZip is an open-source tool that automatically captures all the dependencies of a research product or application… ReproZip then automatically sets up the environment and allows users to rerun the application.” (p.&nbsp;3) and “It captures all dependencies at the OS level, including software, data files, databases, libraries, environment variables, parameters, and OS and hardware information.” (p.&nbsp;3–4)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p35">#35</a></strong> Trust, but verify: an investigation of methods of verification and dissemination of computational research artifacts for transparency and reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“In some cases, reproduction requires installing software dependencies on a new target system while others allow for access to the original target system” (p.137)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p38">#38</a></strong> Ten simple rules for writing dockerfiles for reproducible data science · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“In some cases (e.g., Conda) the package manager is also able to make decisions about what versions to install, which is likely to lead to a non-reproducible build. For this reason, it is necessary to pin the dependency versions.” (p.&nbsp;15)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p39">#39</a></strong> How to make a pie: reproducible research for empirical economics and econometrics · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“it is also important to ensure the reproducibility of computation… keeping track of the software (and its version), the packages used (and their version), and the computer used (CPU, operating system) helps to avoid such disagreements” (p.&nbsp;1151)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p40">#40</a></strong> The role of containers in reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Any packages installed via a package manager should specify the exact versions to be installed… any dependencies must also be explicitly specified with versions.” (p.&nbsp;22)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p44">#44</a></strong> Active maintenance: a proposal for the long-term computational reproducibility of scientific results · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“three studies relied on packages that had been removed from CRAN (e.g., Design) or updated in ways that made it impossible to run the original syntax (e.g., Zelig)” (p.&nbsp;464)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p45">#45</a></strong> Toward reusable science with readable code and reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“One of the major challenges in computational reproducibility and reuse is capturing code dependencies necessary for its execution. Code dependencies can be software meant to build or run the code, external libraries, and system requirements needed to run the code correctly. These dependencies are currently not captured for much of the published research code, which is one of the major causes of non-reproducibility reported across fields.” (p.&nbsp;5) and “One of the best reproducibility practices is to test research code in a clean environment before publishing it or sharing it online. Doing that helps the researcher (or code depositor) identify common errors such as fixed file paths, missing dependencies, and missing files.” (p.&nbsp;5)</p>
+</blockquote>
+<p><em>Note:</em> The RE3 platform automates dependency installation via Docker/Conda</p>
+<hr>
+<p><strong><a href="../../sources.html#p46">#46</a></strong> Reproducible research in R: a tutorial on how to do the same thing more than once · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Dependency tracking helps automatically resolve dependencies between project files. In essence, researchers provide a collection of computational recipes…. The concept of computational recipes is central to our understanding of reproducibility because it enables a unified way to reproduce a project automatically.” (p.&nbsp;840)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p48">#48</a></strong> Challenges of curating for reproducible and FAIR research output · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“We required the author to specify in their README that secondary users wishing to verify the results themselves had to use the specific version of that package, otherwise the code would fail” (p.11, ID25)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p50">#50</a></strong> Fixing dependency errors for python build reproducibility · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“PyDFix analyzes a total of 2,702 builds, identifying 1,921 (71.1%) of them to be unreproducible due to dependency errors” (Abstract, p.439); operationalized via error-pattern table (p.444)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p51">#51</a></strong> A reproducible data analysis workflow with R Markdown, Git, Make, and Docker · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Handling such dependencies is easy with Make because it allows you to manage dependencies by creating (computational) recipes to create or recreate files” (p.8)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p54">#54</a></strong> WORCS: a workflow for open reproducible code in science · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“All solutions to computational reproducibility require users to make their dependencies explicit” (p.&nbsp;34)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p55">#55</a></strong> Computational reproducibility: a practical framework for data curators · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“explicit documentation of both the execution environment… and all requirements and dependencies of systems, software, and libraries should be clearly noted” (p.7)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p57">#57</a></strong> Principles for data analysis workflows · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“this includes documenting the specific version of any software that we used, as well as its relevant dependencies and compatibility constraints” (p.13)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p61">#61</a></strong> A collaborative semantic-based provenance management platform for reproducibility · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“The first run of the eigenfaces Jupyter Notebook gave ModuleNotFoundError for User 1… The problem occurred because of the version change of the scikit-learn module” (p.19)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p62">#62</a></strong> Containerization for creating reusable model code · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“To reproduce the correct environment, it is vital to specify all the necessary settings and the required packages, extensions, or any other dependencies that are not included in the base image, as well as the right version of each of these additions” (~p.6)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p70">#70</a></strong> The Stark realities of reproducible statistically orientated sociological research: Some newer rules of the sociological method · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“If you did not record and report the versions of the software you used (including library dependencies), fail.” (Table 1, p.210)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p71">#71</a></strong> Teaching for Large-Scale Reproducibility Verification · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Authors of replication packages often neglect to identify such packages, and if not available, code will fail” (p.277)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p73">#73</a></strong> A backend platform for supporting the reproducibility of computational experiments · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“we were able to successfully install the required dependencies, execute, and create a reproducibility package for 20 of 25 (80%)”; failure case: “there is no information about how to install the project… some files were missing”</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p74">#74</a></strong> Reproducibility as a service · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Datasets need access to the original language packages they used in the initial computational environment” / “Language packages often need access to the original system libraries used in the initial computational environment” (p.&nbsp;1550)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p77">#77</a></strong> Report of the AEA data editor · <em>descriptive</em></p>
+<blockquote class="blockquote">
+<p>“Sufficiently precise descriptions of the required auxiliary packages or libraries, as ‘manifest’-like files in R, Python, and Julia, or as ‘setup.do’-like programs in Stata, remain rare” (p.851)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p79">#79</a></strong> A review of containerization for interactive and reproducible analysis · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“One major source of trouble is ensuring correct code dependencies… installing a single package may actually require a large network of interrelated packages to be configured” (p.3–4); tools like renv/checkpoint/groundhog “enhance reproducibility by maintaining a local archive of packages” (p.4)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p86">#86</a></strong> What makes computational communication science (ir)reproducible? · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“we automatically resolved the dependencies based on the shared code… the software dependencies of the shared code were automatically installed inside the dockerized environment,” using RENV/PIPREQS/REMOTES to scan R and Python packages. (p.&nbsp;9)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p88">#88</a></strong> Reproducibility in Management Science · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Issues with software/hardware requirements” (2.9%); elaborated as “software could not be installed, or the code would run for an untenable amount of time” (p.&nbsp;1349)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p89">#89</a></strong> Computational reproducibility in computational social science · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“provide a reproducible computational environment where at least the four components from the last section are clearly documented and can be automatically regenerated” (p.7) — the four components are OS, system components, language version, library versions (p.6).</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p91">#91</a></strong> CORE-bench: fostering the credibility of published research through a computational reproducibility agent benchmark · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The agent must install libraries, packages, and dependencies and run the code.” (p.&nbsp;1, Fig. 1 caption)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p95">#95</a></strong> Computational reproducibility in finance: evidence from 1,000 tests · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>Guideline R3: “any required packages/libraries (and their versions)” (p.&nbsp;3589)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p103">#103</a></strong> The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al.&nbsp;(2020) · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Only minor code adjustments due to depreciated package dependencies for the exporting of results had to be made in the updated environment.” (p.&nbsp;5)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p105">#105</a></strong> Promoting reproducibility and replicability in political science · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“fixing file paths and libraries” — SSRP improvement step (p.6)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p107">#107</a></strong> Teaching constructive replications in the behavioral and social sciences using quantitative data · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“We observed that students invest considerable effort in changing file paths or directories, installing packages, moving forward or backward in software or package version history, and identifying and debugging errors.” (p.&nbsp;120)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p108">#108</a></strong> Checklists for computational reproducibility in social sciences: insights from literature and survey evaluation · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Preserving the working environment… required libraries, packages, and their version, e.g., by generating requirements.txt” (Checklist 3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p112">#112</a></strong> REPRO-bench: can agentic AI systems assess the reproducibility of social science research? · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Type 3 failures occur when agents cannot correctly install libraries.” (p.23624)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p113">#113</a></strong> Let’s talk about it: making scientific computational reproducibility easier · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The integrity and reproducibility of research depend on the availability and accessibility of key artifacts like code, datasets, and dependencies.” (p.&nbsp;3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p114">#114</a></strong> SciConv: a conversational tool for reproducibility · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“SCICONV automates the detection of dependencies and programming languages, and packages experiments into portable artifacts with minimal manual input.” (Abstract, p.&nbsp;457)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p117">#117</a></strong> Computational reproducibility of R code supplements on OSF · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“First, all required packages should be explicitly declared and sourced from reliable repositories such as CRAN, Bioconductor, or GitHub, with version information when relevant.” (p.&nbsp;4)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p118">#118</a></strong> Tooling for reproducible research: considerations for the past and future of data analysis · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“users could always be assured that the code and the output were up to date… and that the code had executed, because otherwise the package could not have been built in the first place” (p.&nbsp;3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p119">#119</a></strong> “Works on my machine”: a case study of replicability challenges inComputational humanities research · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“A project’s dependencies were marked as reproducible only if the versions of all declared dependencies were explicitly and unambiguously specified… Even a single undeclared version… was sufficient for the project to be marked as non-reproducible.” (p.145)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p120">#120</a></strong> Reproducibility spectrum for applied social sciences: conceptual taxonomy and recommended tools · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Package/dependency management (renv, conda, pip requirements.txt, packrat)”; “Document computational environment (Dockerfile, renv.lock)”</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p125">#125</a></strong> A report on “corruption and Co-optation in autocracy: evidence from Russia” · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“we also had trouble reproducing the Oster (2019) statistics due to package issues” (p.5)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p131">#131</a></strong> Guide for Accelerating Computational Reproducibility in the Social Sciences · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>Environment set up: Modify the code to include correct paths to files, specific versions of software, and instructions to install missing packages or libraries.</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p133">#133</a></strong> From guidelines to practice: evaluating the reproducibility of methods in computational social science · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“These issues included dependency conflicts, missing files, version mismatches, and broken or deprecated APIs” (4.2.2)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p134">#134</a></strong> PaperRepro: automated computational reproducibility assessment for social science papers · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“it identifies required dependencies from scripts and documentation, then consolidates them into a single installation script” (§3.1, Setup Agent, p.3)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p136">#136</a></strong> Artisan: agentic artifact evaluation · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The agent must first download the artifact file before it can proceed with reproducing the results. However, we found that agents often struggle to find the correct way to download the actual artifact file given the artifact URL.” (p.&nbsp;6). Also: excluding papers that rely on non-public APIs (p.&nbsp;9) implicitly treats dependency resolvability as a requirement.</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p138">#138</a></strong> Reproducibility and robustness of economics and political science research · <em>tacit</em></p>
+<blockquote class="blockquote">
+<p>“Fixing paths, missing packages and software requirements were not considered failures of computational reproducibility. In those instances, we fixed paths and added missing packages and software requirements.” (p.152)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p139">#139</a></strong> PRIMAD-LID: a developed framework for computational reproducibility · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“Longevity emerged from recognising that experiments must remain reproducible well beyond their initial creation, tackling challenges such as software decay, deprecated dependencies, or lost data.” (p.&nbsp;9)</p>
+</blockquote>
+<hr>
+<p><strong><a href="../../sources.html#p143">#143</a></strong> What is Computational Reproducibility? · <em>injunctive</em></p>
+<blockquote class="blockquote">
+<p>“The use of external libraries and tools, which may update or deprecate over time, can also hinder reproducibility. If the specific version of a library used in the original study is no longer available, reproducing the exact computational environment becomes challenging.” (p.&nbsp;5).</p>
+</blockquote>
+</div>
+</div>
+</div>
+
+
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+    // Ensure there is a toggle, if there isn't float one in the top right
+    if (window.document.querySelector('.quarto-color-scheme-toggle') === null) {
+      const a = window.document.createElement('a');
+      a.classList.add('top-right');
+      a.classList.add('quarto-color-scheme-toggle');
+      a.href = "";
+      a.onclick = function() { try { window.quartoToggleColorScheme(); } catch {} return false; };
+      const i = window.document.createElement("i");
+      i.classList.add('bi');
+      a.appendChild(i);
+      window.document.body.appendChild(a);
+    }
+    setColorSchemeToggle(hasAlternateSentinel())
+    const icon = "";
+    const anchorJS = new window.AnchorJS();
+    anchorJS.options = {
+      placement: 'right',
+      icon: icon
+    };
+    anchorJS.add('.anchored');
+    const isCodeAnnotation = (el) => {
+      for (const clz of el.classList) {
+        if (clz.startsWith('code-annotation-')) {                     
+          return true;
+        }
+      }
+      return false;
+    }
+    const onCopySuccess = function(e) {
+      // button target
+      const button = e.trigger;
+      // don't keep focus
+      button.blur();
+      // flash "checked"
+      button.classList.add('code-copy-button-checked');
+      var currentTitle = button.getAttribute("title");
+      button.setAttribute("title", "Copied!");
+      let tooltip;
+      if (window.bootstrap) {
+        button.setAttribute("data-bs-toggle", "tooltip");
+        button.setAttribute("data-bs-placement", "left");
+        button.setAttribute("data-bs-title", "Copied!");
+        tooltip = new bootstrap.Tooltip(button, 
+          { trigger: "manual", 
+            customClass: "code-copy-button-tooltip",
+            offset: [0, -8]});
+        tooltip.show();    
+      }
+      setTimeout(function() {
+        if (tooltip) {
+          tooltip.hide();
+          button.removeAttribute("data-bs-title");
+          button.removeAttribute("data-bs-toggle");
+          button.removeAttribute("data-bs-placement");
+        }
+        button.setAttribute("title", currentTitle);
+        button.classList.remove('code-copy-button-checked');
+      }, 1000);
+      // clear code selection
+      e.clearSelection();
+    }
+    const getTextToCopy = function(trigger) {
+      const outerScaffold = trigger.parentElement.cloneNode(true);
+      const codeEl = outerScaffold.querySelector('code');
+      for (const childEl of codeEl.children) {
+        if (isCodeAnnotation(childEl)) {
+          childEl.remove();
+        }
+      }
+      return codeEl.innerText;
+    }
+    const clipboard = new window.ClipboardJS('.code-copy-button:not([data-in-quarto-modal])', {
+      text: getTextToCopy
+    });
+    clipboard.on('success', onCopySuccess);
+    if (window.document.getElementById('quarto-embedded-source-code-modal')) {
+      const clipboardModal = new window.ClipboardJS('.code-copy-button[data-in-quarto-modal]', {
+        text: getTextToCopy,
+        container: window.document.getElementById('quarto-embedded-source-code-modal')
+      });
+      clipboardModal.on('success', onCopySuccess);
+    }
+      var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+      var mailtoRegex = new RegExp(/^mailto:/);
+        var filterRegex = new RegExp('/' + window.location.host + '/');
+      var isInternal = (href) => {
+          return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+      }
+      // Inspect non-navigation links and adorn them if external
+     var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool):not(.about-link)');
+      for (var i=0; i<links.length; i++) {
+        const link = links[i];
+        if (!isInternal(link.href)) {
+          // undo the damage that might have been done by quarto-nav.js in the case of
+          // links that we want to consider external
+          if (link.dataset.originalHref !== undefined) {
+            link.href = link.dataset.originalHref;
+          }
+        }
+      }
+    function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
+      const config = {
+        allowHTML: true,
+        maxWidth: 500,
+        delay: 100,
+        arrow: false,
+        appendTo: function(el) {
+            return el.parentElement;
+        },
+        interactive: true,
+        interactiveBorder: 10,
+        theme: 'quarto',
+        placement: 'bottom-start',
+      };
+      if (contentFn) {
+        config.content = contentFn;
+      }
+      if (onTriggerFn) {
+        config.onTrigger = onTriggerFn;
+      }
+      if (onUntriggerFn) {
+        config.onUntrigger = onUntriggerFn;
+      }
+      window.tippy(el, config); 
+    }
+    const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+    for (var i=0; i<noterefs.length; i++) {
+      const ref = noterefs[i];
+      tippyHover(ref, function() {
+        // use id or data attribute instead here
+        let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+        try { href = new URL(href).hash; } catch {}
+        const id = href.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note) {
+          return note.innerHTML;
+        } else {
+          return "";
+        }
+      });
+    }
+    const xrefs = window.document.querySelectorAll('a.quarto-xref');
+    const processXRef = (id, note) => {
+      // Strip column container classes
+      const stripColumnClz = (el) => {
+        el.classList.remove("page-full", "page-columns");
+        if (el.children) {
+          for (const child of el.children) {
+            stripColumnClz(child);
+          }
+        }
+      }
+      stripColumnClz(note)
+      if (id === null || id.startsWith('sec-')) {
+        // Special case sections, only their first couple elements
+        const container = document.createElement("div");
+        if (note.children && note.children.length > 2) {
+          container.appendChild(note.children[0].cloneNode(true));
+          for (let i = 1; i < note.children.length; i++) {
+            const child = note.children[i];
+            if (child.tagName === "P" && child.innerText === "") {
+              continue;
+            } else {
+              container.appendChild(child.cloneNode(true));
+              break;
+            }
+          }
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(container);
+          }
+          return container.innerHTML
+        } else {
+          if (window.Quarto?.typesetMath) {
+            window.Quarto.typesetMath(note);
+          }
+          return note.innerHTML;
+        }
+      } else {
+        // Remove any anchor links if they are present
+        const anchorLink = note.querySelector('a.anchorjs-link');
+        if (anchorLink) {
+          anchorLink.remove();
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        if (note.classList.contains("callout")) {
+          return note.outerHTML;
+        } else {
+          return note.innerHTML;
+        }
+      }
+    }
+    for (var i=0; i<xrefs.length; i++) {
+      const xref = xrefs[i];
+      tippyHover(xref, undefined, function(instance) {
+        instance.disable();
+        let url = xref.getAttribute('href');
+        let hash = undefined; 
+        if (url.startsWith('#')) {
+          hash = url;
+        } else {
+          try { hash = new URL(url).hash; } catch {}
+        }
+        if (hash) {
+          const id = hash.replace(/^#\/?/, "");
+          const note = window.document.getElementById(id);
+          if (note !== null) {
+            try {
+              const html = processXRef(id, note.cloneNode(true));
+              instance.setContent(html);
+            } finally {
+              instance.enable();
+              instance.show();
+            }
+          } else {
+            // See if we can fetch this
+            fetch(url.split('#')[0])
+            .then(res => res.text())
+            .then(html => {
+              const parser = new DOMParser();
+              const htmlDoc = parser.parseFromString(html, "text/html");
+              const note = htmlDoc.getElementById(id);
+              if (note !== null) {
+                const html = processXRef(id, note);
+                instance.setContent(html);
+              } 
+            }).finally(() => {
+              instance.enable();
+              instance.show();
+            });
+          }
+        } else {
+          // See if we can fetch a full url (with no hash to target)
+          // This is a special case and we should probably do some content thinning / targeting
+          fetch(url)
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.querySelector('main.content');
+            if (note !== null) {
+              // This should only happen for chapter cross references
+              // (since there is no id in the URL)
+              // remove the first header
+              if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+                note.children[0].remove();
+              }
+              const html = processXRef(null, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      }, function(instance) {
+      });
+    }
+        let selectedAnnoteEl;
+        const selectorForAnnotation = ( cell, annotation) => {
+          let cellAttr = 'data-code-cell="' + cell + '"';
+          let lineAttr = 'data-code-annotation="' +  annotation + '"';
+          const selector = 'span[' + cellAttr + '][' + lineAttr + ']';
+          return selector;
+        }
+        const selectCodeLines = (annoteEl) => {
+          const doc = window.document;
+          const targetCell = annoteEl.getAttribute("data-target-cell");
+          const targetAnnotation = annoteEl.getAttribute("data-target-annotation");
+          const annoteSpan = window.document.querySelector(selectorForAnnotation(targetCell, targetAnnotation));
+          const lines = annoteSpan.getAttribute("data-code-lines").split(",");
+          const lineIds = lines.map((line) => {
+            return targetCell + "-" + line;
+          })
+          let top = null;
+          let height = null;
+          let parent = null;
+          if (lineIds.length > 0) {
+              //compute the position of the single el (top and bottom and make a div)
+              const el = window.document.getElementById(lineIds[0]);
+              top = el.offsetTop;
+              height = el.offsetHeight;
+              parent = el.parentElement.parentElement;
+            if (lineIds.length > 1) {
+              const lastEl = window.document.getElementById(lineIds[lineIds.length - 1]);
+              const bottom = lastEl.offsetTop + lastEl.offsetHeight;
+              height = bottom - top;
+            }
+            if (top !== null && height !== null && parent !== null) {
+              // cook up a div (if necessary) and position it 
+              let div = window.document.getElementById("code-annotation-line-highlight");
+              if (div === null) {
+                div = window.document.createElement("div");
+                div.setAttribute("id", "code-annotation-line-highlight");
+                div.style.position = 'absolute';
+                parent.appendChild(div);
+              }
+              div.style.top = top - 2 + "px";
+              div.style.height = height + 4 + "px";
+              div.style.left = 0;
+              let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
+              if (gutterDiv === null) {
+                gutterDiv = window.document.createElement("div");
+                gutterDiv.setAttribute("id", "code-annotation-line-highlight-gutter");
+                gutterDiv.style.position = 'absolute';
+                const codeCell = window.document.getElementById(targetCell);
+                const gutter = codeCell.querySelector('.code-annotation-gutter');
+                gutter.appendChild(gutterDiv);
+              }
+              gutterDiv.style.top = top - 2 + "px";
+              gutterDiv.style.height = height + 4 + "px";
+            }
+            selectedAnnoteEl = annoteEl;
+          }
+        };
+        const unselectCodeLines = () => {
+          const elementsIds = ["code-annotation-line-highlight", "code-annotation-line-highlight-gutter"];
+          elementsIds.forEach((elId) => {
+            const div = window.document.getElementById(elId);
+            if (div) {
+              div.remove();
+            }
+          });
+          selectedAnnoteEl = undefined;
+        };
+          // Handle positioning of the toggle
+      window.addEventListener(
+        "resize",
+        throttle(() => {
+          elRect = undefined;
+          if (selectedAnnoteEl) {
+            selectCodeLines(selectedAnnoteEl);
+          }
+        }, 10)
+      );
+      function throttle(fn, ms) {
+      let throttle = false;
+      let timer;
+        return (...args) => {
+          if(!throttle) { // first call gets through
+              fn.apply(this, args);
+              throttle = true;
+          } else { // all the others get throttled
+              if(timer) clearTimeout(timer); // cancel #2
+              timer = setTimeout(() => {
+                fn.apply(this, args);
+                timer = throttle = false;
+              }, ms);
+          }
+        };
+      }
+        // Attach click handler to the DT
+        const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
+        for (const annoteDlNode of annoteDls) {
+          annoteDlNode.addEventListener('click', (event) => {
+            const clickedEl = event.target;
+            if (clickedEl !== selectedAnnoteEl) {
+              unselectCodeLines();
+              const activeEl = window.document.querySelector('dt[data-target-cell].code-annotation-active');
+              if (activeEl) {
+                activeEl.classList.remove('code-annotation-active');
+              }
+              selectCodeLines(clickedEl);
+              clickedEl.classList.add('code-annotation-active');
+            } else {
+              // Unselect the line
+              unselectCodeLines();
+              clickedEl.classList.remove('code-annotation-active');
+            }
+          });
+        }
+    const findCites = (el) => {
+      const parentEl = el.parentElement;
+      if (parentEl) {
+        const cites = parentEl.dataset.cites;
+        if (cites) {
+          return {
+            el,
+            cites: cites.split(' ')
+          };
+        } else {
+          return findCites(el.parentElement)
+        }
+      } else {
+        return undefined;
+      }
+    };
+    var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+    for (var i=0; i<bibliorefs.length; i++) {
+      const ref = bibliorefs[i];
+      const citeInfo = findCites(ref);
+      if (citeInfo) {
+        tippyHover(citeInfo.el, function() {
+          var popup = window.document.createElement('div');
+          citeInfo.cites.forEach(function(cite) {
+            var citeDiv = window.document.createElement('div');
+            citeDiv.classList.add('hanging-indent');
+            citeDiv.classList.add('csl-entry');
+            var biblioDiv = window.document.getElementById('ref-' + cite);
+            if (biblioDiv) {
+              citeDiv.innerHTML = biblioDiv.innerHTML;
+            }
+            popup.appendChild(citeDiv);
+          });
+          return popup.innerHTML;
+        });
+      }
+    }
+  });
+  </script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="../../criteria/tier-1/artifacts-longevity-sustainability.html" class="pagination-link" aria-label="Artifacts longevity/sustainability">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Artifacts longevity/sustainability</span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="../../criteria/tier-2/path-resolution.html" class="pagination-link" aria-label="Path resolution">
+        <span class="nav-page-text">Path resolution</span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">
+<p>Generated from rubric_draft_02.11.2026.xlsx</p>
+</div>   
+    <div class="nav-footer-center">
+      &nbsp;
+    </div>
+    <div class="nav-footer-right">
+      &nbsp;
+    </div>
+  </div>
+</footer>
+<script>
+// Click-to-open explanations, e.g. on the core-reason badge of criterion pages
+document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+</script>
+
+
+
+
+</body></html>

@@ -1,0 +1,1 @@
+Not linked at this threshold: [Artifacts longevity/sustainability](criteria/tier-1/artifacts-longevity-sustainability.qmd), [Version control](criteria/tier-2/version-control.qmd), [Commands logs traceability](criteria/tier-2/commands-logs-traceability.qmd), [Test code coverage](criteria/tier-2/test-code-coverage.qmd)

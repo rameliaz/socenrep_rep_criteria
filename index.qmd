@@ -1,0 +1,11 @@
+---
+title: "SocEnRep reproducibility rubric"
+subtitle: "Draft of {{< var rubric_date >}}"
+toc: false
+---
+
+The rubric has {{< var n_criteria >}} criteria in three tiers, {{< var n_core >}} of them core. Each criterion page gives the definition; what scenario counts as **met**, **partially met** and **not met**; when the criterion is **not applicable**; its prerequisites; and the text evidence from the scoping review corpus.
+
+The site is generated from `{{< var rubric_file >}}`. 
+
+{{< include _generated/overview.md >}}

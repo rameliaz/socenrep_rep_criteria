@@ -1,0 +1,53 @@
+project:
+  type: website
+  output-dir: docs
+  pre-render: build_criteria.R
+  resources:
+    - .nojekyll  # copied into docs/ so GitHub Pages skips Jekyll
+  render:
+    - "*.qmd"
+    - "criteria/**/*.qmd"
+
+website:
+  title: "SocEnRep rubric"
+  page-navigation: true
+  navbar:
+    left:
+      - text: Criteria
+        href: index.qmd
+      - text: Prerequisite graph
+        href: graph.qmd
+      - text: Sources
+        href: sources.qmd
+      - text: How to read
+        href: about.qmd
+      - text: Badge pipeline
+        href: pipeline.qmd
+  sidebar:
+    style: docked
+    contents:
+      - text: Overview
+        href: index.qmd
+      - section: "Tier 1 · Available - Bronze"
+        contents: "criteria/tier-1/*.qmd"
+      - section: "Tier 2 · Executable - Silver"
+        contents: "criteria/tier-2/*.qmd"
+      - section: "Tier 3 · Reproducible - Gold"
+        contents: "criteria/tier-3/*.qmd"
+  page-footer:
+    left: "Generated from {{< var rubric_file >}}"
+
+format:
+  html:
+    theme: 
+      light: [sandstone, theme.scss]
+      dark: [slate, theme.scss]
+    toc: true
+    comments:
+      hypothesis: true
+    include-after-body:
+      text: |
+        <script>
+        // Click-to-open explanations, e.g. on the core-reason badge of criterion pages
+        document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+        </script>
