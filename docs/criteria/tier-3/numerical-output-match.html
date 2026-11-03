@@ -50,9 +50,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-e0f14578190b460d380b0f4cc9495f43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-cec90fdeb6904c903ed8a09193984353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -275,7 +275,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../graph.html"> 
-<span class="menu-text">Prerequisite graph</span></a>
+<span class="menu-text">Dependency graph</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../sources.html"> 
@@ -283,7 +283,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../about.html"> 
-<span class="menu-text">How to read</span></a>
+<span class="menu-text">How to use</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="../../pipeline.html"> 
@@ -490,7 +490,7 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#rating" id="toc-rating" class="nav-link active" data-scroll-target="#rating">Rating</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#in-the-corpus" id="toc-in-the-corpus" class="nav-link" data-scroll-target="#in-the-corpus">In the corpus</a></li>
+  <li><a href="#in-the-corpus" id="toc-in-the-corpus" class="nav-link" data-scroll-target="#in-the-corpus">In the corpus <span class="bi bi-info-circle"></span></a></li>
   <li><a href="#text-evidence-50-quotes" id="toc-text-evidence-50-quotes" class="nav-link" data-scroll-target="#text-evidence-50-quotes">Text evidence (50 quotes)</a></li>
   </ul>
 </nav>
@@ -502,7 +502,7 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../criteria/tier-3/codes-consistent-with-claims.html">Tier 3 · Reproducible - Gold</a></li><li class="breadcrumb-item"><a href="../../criteria/tier-3/numerical-output-match.html">Numerical output match</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Numerical output match</h1>
-<p class="subtitle lead"><span class="badge tier-3">Tier 3 · Reproducible - Gold</span> <span class="badge status-core">core</span> <span class="badge reason" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least 20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources.</p><a href='../../about.html'>All column definitions</a>">endorsement</span></p>
+<p class="subtitle lead"><span class="badge tier-3">Tier 3 · Reproducible - Gold</span> <span class="badge status-core">core</span> <span class="badge reason" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least 20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</b></p><p>structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources.</p><a href='../../about.html#definitions-from-the-workbook'>All column definitions</a>">endorsement</span></p>
 </div>
 
 <div>
@@ -552,7 +552,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>All results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g.&nbsp;&lt;=10% of the original value, or &lt;=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g.&nbsp;main tables but not the appendix).</p>
-<p><span class="source-note">Based on: Tolerance varies across sources - TEAM DECISION NEEDED: exact <a href="../../sources.html#p99" title="Introducing reproducible research standards at the world bank">#99</a>/<a href="../../sources.html#p103" title="The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)">#103</a>/<a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a>, &lt;1e-10 <a href="../../sources.html#p20" title="Successes and struggles with computational reproducibility: lessons from the fragile families challenge">#20</a>, within 1% <a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, &lt;=10% <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a>, +/-15% &amp; p&lt;=0.05 <a href="../../sources.html#p144" title="Investigating the reproducibility of the social and behavioural sciences">#144</a>, direction + significance <a href="../../sources.html#p107" title="Teaching constructive replications in the behavioral and social sciences using quantitative data">#107</a>/<a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, rounding/formatting = minor <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a>. CRA vs.&nbsp;CRR split: <a href="../../sources.html#p138" title="Reproducibility and robustness of economics and political science research">#138</a>.</span></p>
+<p><span class="source-note">Based on:exact <a href="../../sources.html#p99" title="Introducing reproducible research standards at the world bank">#99</a>/<a href="../../sources.html#p103" title="The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)">#103</a>/<a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a>, &lt;1e-10 <a href="../../sources.html#p20" title="Successes and struggles with computational reproducibility: lessons from the fragile families challenge">#20</a>, within 1% <a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, &lt;=10% <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a>, +/-15% &amp; p&lt;=0.05 <a href="../../sources.html#p144" title="Investigating the reproducibility of the social and behavioural sciences">#144</a>, direction + significance <a href="../../sources.html#p107" title="Teaching constructive replications in the behavioral and social sciences using quantitative data">#107</a>/<a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, rounding/formatting = minor <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a>. CRA vs.&nbsp;CRR split: <a href="../../sources.html#p138" title="Reproducibility and robustness of economics and political science research">#138</a>.</span></p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-important callout-titled" title="Not met">
@@ -566,7 +566,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>The numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.</p>
-<p><span class="source-note">Based on: Tolerance varies across sources - TEAM DECISION NEEDED: exact <a href="../../sources.html#p99" title="Introducing reproducible research standards at the world bank">#99</a>/<a href="../../sources.html#p103" title="The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)">#103</a>/<a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a>, &lt;1e-10 <a href="../../sources.html#p20" title="Successes and struggles with computational reproducibility: lessons from the fragile families challenge">#20</a>, within 1% <a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, &lt;=10% <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a>, +/-15% &amp; p&lt;=0.05 <a href="../../sources.html#p144" title="Investigating the reproducibility of the social and behavioural sciences">#144</a>, direction + significance <a href="../../sources.html#p107" title="Teaching constructive replications in the behavioral and social sciences using quantitative data">#107</a>/<a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, rounding/formatting = minor <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a>. CRA vs.&nbsp;CRR split: <a href="../../sources.html#p138" title="Reproducibility and robustness of economics and political science research">#138</a>.</span></p>
+<p><span class="source-note">Based on exact <a href="../../sources.html#p99" title="Introducing reproducible research standards at the world bank">#99</a>/<a href="../../sources.html#p103" title="The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)">#103</a>/<a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a>, &lt;1e-10 <a href="../../sources.html#p20" title="Successes and struggles with computational reproducibility: lessons from the fragile families challenge">#20</a>, within 1% <a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, &lt;=10% <a href="../../sources.html#p95" title="Computational reproducibility in finance: evidence from 1,000 tests">#95</a>, +/-15% &amp; p&lt;=0.05 <a href="../../sources.html#p144" title="Investigating the reproducibility of the social and behavioural sciences">#144</a>, direction + significance <a href="../../sources.html#p107" title="Teaching constructive replications in the behavioral and social sciences using quantitative data">#107</a>/<a href="../../sources.html#p128" title="The reliability of replications: a study in computational reproductions">#128</a>, rounding/formatting = minor <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a>. CRA vs.&nbsp;CRR split: <a href="../../sources.html#p138" title="Reproducibility and robustness of economics and political science research">#138</a>.</span></p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Not applicable">
@@ -579,7 +579,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>C4 (no numerical results)</p>
+<p>Manuscript has no numerical results (C4)</p>
 </div>
 </div>
 </section>
@@ -613,21 +613,23 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="in-the-corpus" class="level2">
-<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus</h2>
+<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus <a href="../../about.html#evidence-on-each-criterion-page" class="heading-info" aria-label="What these numbers mean" title="What these numbers mean"><span class="bi bi-info-circle"></span></a></h2>
 <table class="caption-top table">
 <colgroup>
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
-<col style="width: 14%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
+<col style="width: 12%">
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: right;">Sources</th>
 <th style="text-align: right;">Injunctive</th>
+<th style="text-align: right;">Descriptive</th>
 <th style="text-align: right;">Tacit</th>
 <th style="text-align: right;">Automatable</th>
 <th style="text-align: right;">Manual check</th>
@@ -639,6 +641,7 @@ ul.task-list li input[type="checkbox"] {
 <tr class="odd">
 <td style="text-align: right;">49</td>
 <td style="text-align: right;">69.4%</td>
+<td style="text-align: right;">8.2%</td>
 <td style="text-align: right;">22.4%</td>
 <td style="text-align: right;">16.3%</td>
 <td style="text-align: right;">10.2%</td>

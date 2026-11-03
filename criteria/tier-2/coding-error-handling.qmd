@@ -4,9 +4,10 @@ subtitle: '[Tier 2 · Executable - Silver]{.badge .tier-2} [core]{.badge .status
   [endorsement]{.badge .reason tabindex="0" role="button" data-bs-toggle="popover"
   data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why
   is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least
-  20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails
-  that rule but is named as a parent of another criterion on a link asserted by at
-  least 3 sources.</p><a href=''../../about.html''>All column definitions</a>"}'
+  20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</b></p><p>structural:
+  fails that rule but is named as a parent of another criterion on a link asserted
+  by at least 3 sources.</p><a href=''../../about.html#definitions-from-the-workbook''>All
+  column definitions</a>"}'
 description: 'The code runs to completion without execution errors (bugs). The criterion
   also covers how errors found during a check are handled: they are recorded, the
   reproducer makes only minor and unambiguous fixes within a stated limit, each fix
@@ -62,11 +63,11 @@ Check order: **2**
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 28 | 53.6% | 46.4% | 17.9% | 32.1% | 50% | 3 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 28 | 53.6% | 0% | 46.4% | 17.9% | 32.1% | 50% | 3 |
 
 ## Text evidence (29 quotes)
 

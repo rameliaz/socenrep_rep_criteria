@@ -11,7 +11,7 @@
     "href": "index.html",
     "title": "SocEnRep reproducibility rubric",
     "section": "",
-    "text": "The rubric has 21 criteria in three tiers, 12 of them core. Each criterion page gives the definition; what scenario counts as met, partially met and not met; when the criterion is not applicable; its prerequisites; and the text evidence from the scoping review corpus.\nThe site is generated from rubric_draft_02.11.2026.xlsx.",
+    "text": "The rubric has 21 criteria in three tiers, 12 of them core. Each criterion page gives the definition; when the criterion counts as met, partially met and not met; when the criterion is not applicable; its prerequisites; and the text evidence from the scoping review corpus.\nThe site is generated from rubric_draft_02.11.2026.xlsx.",
     "crumbs": [
       "Criteria",
       "Overview"
@@ -44,7 +44,7 @@
     "href": "index.html#tier-3-reproducible---gold",
     "title": "SocEnRep reproducibility rubric",
     "section": "Tier 3 · Reproducible - Gold",
-    "text": "Tier 3 · Reproducible - Gold\n\n\n\n\nCriterion\nStatus\nSources\nCheck order\nDefinition\n\n\n\n\nCodes consistent with claims\ncore\n17\n3\nThe code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).\n\n\nNumerical output match\ncore\n49\n4\nRe-running the code on the deposited data reproduces the numerical results reported in the paper and appendix: estimates, standard errors, test statistics, sample sizes and numbers in the text. Sources differ on the tolerance, from exact agreement to small stated deviations.\n\n\nTable and figure match\ncore\n24\n5\nThe code regenerates every table and figure in the paper and appendix, and the regenerated items match the published ones in structure and appearance; for figures, this means the levels, shapes and positions of curves and data points.\n\n\nThird-party certification\nrecommended\n1\n1\nAn independent party certifies that it reproduced the results, or specific tables and figures, from the package, for example in a signed letter or a certificate from a certification agency. This matters most when the data are confidential and reproducers cannot access them.",
+    "text": "Tier 3 · Reproducible - Gold\n\n\n\n\nCriterion\nStatus\nSources\nCheck order\nDefinition\n\n\n\n\nCodes consistent with claims\ncore\n17\n3\nThe code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).\n\n\nNumerical output match\ncore\n49\n4\nRe-running the code on the deposited data reproduces the numerical results reported in the paper and appendix: estimates, standard errors, test statistics, sample sizes and numbers in the text. Sources differ on the tolerance, from exact agreement to small stated deviations.\n\n\nTable and figure match\ncore\n24\n5\nThe code regenerates every table and figure in the paper and appendix, and the regenerated items match the published ones in structure and appearance; for figures, this means the levels, shapes and positions of curves and data points.\n\n\nThird-party certification\nrecommended\n1\n1\nAn independent party certifies that it reproduced the results, or specific tables and figures, from the package, for example in a signed letter or a certificate from a certification agency. This matters most only when the data cannot be shared and reproducers cannot access them.",
     "crumbs": [
       "Criteria",
       "Overview"
@@ -55,7 +55,7 @@
     "href": "criteria/tier-3/third-party-certification.html",
     "title": "Third-party certification",
     "section": "",
-    "text": "TipMet\n\n\n\nThe package includes a certification that an independent, disinterested party reproduced all results (or specified tables and figures) from the package, e.g. a signed letter by the reproducer or a certificate from a certification agency, stating what was reproduced and how.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA certification is provided, but it covers only some of the results, does not state what was reproduced, or comes from a party that is not independent of the authors.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo third-party certification is provided when the data are confidential and the reproducer cannot access them.\n\n\nBased on: #131 only (ACRE, adjusting levels for confidential/proprietary data); see also #52 CODECHECK certificate, #56 ROR-R badge.\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC2 (all data in package)",
+    "text": "NotePackages containing datasets that cannot be shared\n\n\n\nThis criterion is recommended in general. For packages that do not contain all datasets needed because some cannot be shared, it becomes a core criterion: without a third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. With a certification, the core criteria that need the data are rated from the certificate, so Silver and Gold become possible. See rules 3 and 4 in How to read the rubric.",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -66,8 +66,8 @@
     "objectID": "criteria/tier-3/third-party-certification.html#rating",
     "href": "criteria/tier-3/third-party-certification.html#rating",
     "title": "Third-party certification",
-    "section": "",
-    "text": "TipMet\n\n\n\nThe package includes a certification that an independent, disinterested party reproduced all results (or specified tables and figures) from the package, e.g. a signed letter by the reproducer or a certificate from a certification agency, stating what was reproduced and how.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA certification is provided, but it covers only some of the results, does not state what was reproduced, or comes from a party that is not independent of the authors.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo third-party certification is provided when the data are confidential and the reproducer cannot access them.\n\n\nBased on: #131 only (ACRE, adjusting levels for confidential/proprietary data); see also #52 CODECHECK certificate, #56 ROR-R badge.\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC2 (all data in package)",
+    "section": "Rating",
+    "text": "Rating\n\n\n\n\n\n\nTipMet\n\n\n\nThe package includes a certification that an independent, disinterested party reproduced all results (or specified tables and figures) from the package, e.g. a signed letter by the reproducer or a certificate from a certification agency, stating what was reproduced and how.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA certification is provided, but it covers only some of the results, does not state what was reproduced, or comes from a party that is not independent of the authors.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo third-party certification is provided when the data are confidential and the reproducer cannot access them.\n\n\nBased on: #131 only (ACRE, adjusting levels for confidential/proprietary data); see also #52 CODECHECK certificate, #56 ROR-R badge.\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nAll datasets needed for reproduction are included the package (C2)",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -90,8 +90,8 @@
     "objectID": "criteria/tier-3/third-party-certification.html#in-the-corpus",
     "href": "criteria/tier-3/third-party-certification.html#in-the-corpus",
     "title": "Third-party certification",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n100%\n0%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0%\n0",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -115,7 +115,7 @@
     "href": "criteria/tier-3/numerical-output-match.html",
     "title": "Numerical output match",
     "section": "",
-    "text": "TipMet\n\n\n\nRe-running the code on the deposited data reproduces all numerical results in the paper and appendix (estimates, standard errors, test statistics, p-values, sample sizes, numbers in the text) exactly, or with differences only due to rounding or display format.\nBased on #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nAll results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g. &lt;=10% of the original value, or &lt;=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g. main tables but not the appendix).\nBased on: Tolerance varies across sources - TEAM DECISION NEEDED: exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.\nBased on: Tolerance varies across sources - TEAM DECISION NEEDED: exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC4 (no numerical results)",
+    "text": "TipMet\n\n\n\nRe-running the code on the deposited data reproduces all numerical results in the paper and appendix (estimates, standard errors, test statistics, p-values, sample sizes, numbers in the text) exactly, or with differences only due to rounding or display format.\nBased on #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nAll results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g. &lt;=10% of the original value, or &lt;=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g. main tables but not the appendix).\nBased on:exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.\nBased on exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no numerical results (C4)",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -127,7 +127,7 @@
     "href": "criteria/tier-3/numerical-output-match.html#rating",
     "title": "Numerical output match",
     "section": "",
-    "text": "TipMet\n\n\n\nRe-running the code on the deposited data reproduces all numerical results in the paper and appendix (estimates, standard errors, test statistics, p-values, sample sizes, numbers in the text) exactly, or with differences only due to rounding or display format.\nBased on #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nAll results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g. &lt;=10% of the original value, or &lt;=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g. main tables but not the appendix).\nBased on: Tolerance varies across sources - TEAM DECISION NEEDED: exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.\nBased on: Tolerance varies across sources - TEAM DECISION NEEDED: exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC4 (no numerical results)",
+    "text": "TipMet\n\n\n\nRe-running the code on the deposited data reproduces all numerical results in the paper and appendix (estimates, standard errors, test statistics, p-values, sample sizes, numbers in the text) exactly, or with differences only due to rounding or display format.\nBased on #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nAll results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g. &lt;=10% of the original value, or &lt;=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g. main tables but not the appendix).\nBased on:exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.\nBased on exact #99/#103/#109, &lt;1e-10 #20, within 1% #128, &lt;=10% #95, +/-15% & p&lt;=0.05 #144, direction + significance #107/#128, rounding/formatting = minor #134. CRA vs. CRR split: #138.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no numerical results (C4)",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -150,8 +150,8 @@
     "objectID": "criteria/tier-3/numerical-output-match.html#in-the-corpus",
     "href": "criteria/tier-3/numerical-output-match.html#in-the-corpus",
     "title": "Numerical output match",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n49\n69.4%\n22.4%\n16.3%\n10.2%\n73.5%\n4",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n49\n69.4%\n8.2%\n22.4%\n16.3%\n10.2%\n73.5%\n4",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -175,7 +175,7 @@
     "href": "criteria/tier-2/workflow-reproduction-tree.html",
     "title": "Workflow/reproduction tree",
     "section": "",
-    "text": "TipMet\n\n\n\nThe package documents, for every table and figure in the paper and appendix, the script(s) and data file(s) that produce it, e.g. as a table in the README or a diagram (reproduction tree), and the mapping is correct.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA mapping exists but is incomplete or partly wrong: e.g. it covers the main text but not the appendix, names scripts but not their input data, or points to the wrong script for some items.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo mapping is given; the reproducer must work out which code and data produce which display item.\n\n\nBased on: #131 only (SSRP reproduction tree).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC3 (no tables/figures)",
+    "text": "TipMet\n\n\n\nThe package documents, for every table and figure in the paper and appendix, the script(s) and data file(s) that produce it, e.g. as a table in the README or a diagram (reproduction tree), and the mapping is correct.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA mapping exists but is incomplete or partly wrong: e.g. it covers the main text but not the appendix, names scripts but not their input data, or points to the wrong script for some items.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo mapping is given; the reproducer must work out which code and data produce which display item.\n\n\nBased on: #131 only (SSRP reproduction tree).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no table or figure (C3)",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -187,7 +187,7 @@
     "href": "criteria/tier-2/workflow-reproduction-tree.html#rating",
     "title": "Workflow/reproduction tree",
     "section": "",
-    "text": "TipMet\n\n\n\nThe package documents, for every table and figure in the paper and appendix, the script(s) and data file(s) that produce it, e.g. as a table in the README or a diagram (reproduction tree), and the mapping is correct.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA mapping exists but is incomplete or partly wrong: e.g. it covers the main text but not the appendix, names scripts but not their input data, or points to the wrong script for some items.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo mapping is given; the reproducer must work out which code and data produce which display item.\n\n\nBased on: #131 only (SSRP reproduction tree).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC3 (no tables/figures)",
+    "text": "TipMet\n\n\n\nThe package documents, for every table and figure in the paper and appendix, the script(s) and data file(s) that produce it, e.g. as a table in the README or a diagram (reproduction tree), and the mapping is correct.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nA mapping exists but is incomplete or partly wrong: e.g. it covers the main text but not the appendix, names scripts but not their input data, or points to the wrong script for some items.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo mapping is given; the reproducer must work out which code and data produce which display item.\n\n\nBased on: #131 only (SSRP reproduction tree).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no table or figure (C3)",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -210,8 +210,8 @@
     "objectID": "criteria/tier-2/workflow-reproduction-tree.html#in-the-corpus",
     "href": "criteria/tier-2/workflow-reproduction-tree.html#in-the-corpus",
     "title": "Workflow/reproduction tree",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n0%\n100%\n100%\n0%\n0%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n0%\n0%\n100%\n100%\n0%\n0%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -270,8 +270,8 @@
     "objectID": "criteria/tier-2/test-code-coverage.html#in-the-corpus",
     "href": "criteria/tier-2/test-code-coverage.html#in-the-corpus",
     "title": "Test code coverage",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -330,8 +330,8 @@
     "objectID": "criteria/tier-2/dynamic-code-inspection.html#in-the-corpus",
     "href": "criteria/tier-2/dynamic-code-inspection.html#in-the-corpus",
     "title": "Dynamic code inspection",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -390,8 +390,8 @@
     "objectID": "criteria/tier-2/computing-environment.html#in-the-corpus",
     "href": "criteria/tier-2/computing-environment.html#in-the-corpus",
     "title": "Computing environment",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n69\n58%\n39.1%\n40.6%\n4.3%\n55.1%\n2",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n69\n58%\n2.9%\n39.1%\n40.6%\n4.3%\n55.1%\n2",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -450,8 +450,8 @@
     "objectID": "criteria/tier-2/coding-error-handling.html#in-the-corpus",
     "href": "criteria/tier-2/coding-error-handling.html#in-the-corpus",
     "title": "Coding error handling",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n28\n53.6%\n46.4%\n17.9%\n32.1%\n50%\n3",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n28\n53.6%\n0%\n46.4%\n17.9%\n32.1%\n50%\n3",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -510,8 +510,8 @@
     "objectID": "criteria/tier-2/code-annotation.html#in-the-corpus",
     "href": "criteria/tier-2/code-annotation.html#in-the-corpus",
     "title": "Code annotation",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n6\n83.3%\n16.7%\n0%\n0%\n100%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n6\n83.3%\n0%\n16.7%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -535,7 +535,7 @@
     "href": "criteria/tier-1/documentation.html",
     "title": "Documentation",
     "section": "",
-    "text": "TipMet\n\n\n\nA README file and a codebook are present.\nA README file contains at least: 1) a list and descriptions of all files in the replication package; 2) instructions on how to reproduce the results. A codebook should minimally contain: 1) variable labels and descriptions of what those mean; and 2) allowed values of each variable in the dataset.\nSupported by: #42 README lists all files + purpose/format/provenance + how to replicate; codebook gives allowed values per variable. #48 codebook: all variables, definitions, values, value labels. #95 D3 codebook. #70 ‘no adequate data dictionary -&gt; fail’. #55/#67/#137 README explains structure and contents. #19, #57, #69, #120, #97.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nEither README or codebook is present, or both are present but their elements required in the “criterion_met” are incomplete.\nSupported by: #14 (91% ‘data documented’, 57% ‘software documented’), #88 ‘insufficient documentation, missing information’, #133 ‘insufficient detail in README files’, #30 README present but context missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNeither README nor codebook are present.\nSupported by: #17 ‘unlabeled and undocumented mess’, #70 fail without data dictionary, #58 data unusable without metadata.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nNever. When a replication package is a simulation study (C1), evaluate this criteria on the README alone.",
+    "text": "TipMet\n\n\n\nA README file and a codebook are present. A README file contains at least: 1) a list and descriptions of all files in the replication package; 2) instructions on how to reproduce the results. A codebook should minimally contain: 1) variable labels and descriptions of what those mean; and 2) allowed values of each variable in the dataset.\nSupported by: #42 README lists all files + purpose/format/provenance + how to replicate; codebook gives allowed values per variable. #48 codebook: all variables, definitions, values, value labels. #95 D3 codebook. #70 ‘no adequate data dictionary -&gt; fail’. #55/#67/#137 README explains structure and contents. #19, #57, #69, #120, #97.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nEither README or codebook is present, or both are present but their elements required in the “criterion_met” are incomplete.\nSupported by: #14 (91% ‘data documented’, 57% ‘software documented’), #88 ‘insufficient documentation, missing information’, #133 ‘insufficient detail in README files’, #30 README present but context missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNeither README nor codebook are present.\nSupported by: #17 ‘unlabeled and undocumented mess’, #70 fail without data dictionary, #58 data unusable without metadata.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nNever. When a replication package is a simulation study (C1), evaluate this criteria on the README alone.",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -547,7 +547,7 @@
     "href": "criteria/tier-1/documentation.html#rating",
     "title": "Documentation",
     "section": "",
-    "text": "TipMet\n\n\n\nA README file and a codebook are present.\nA README file contains at least: 1) a list and descriptions of all files in the replication package; 2) instructions on how to reproduce the results. A codebook should minimally contain: 1) variable labels and descriptions of what those mean; and 2) allowed values of each variable in the dataset.\nSupported by: #42 README lists all files + purpose/format/provenance + how to replicate; codebook gives allowed values per variable. #48 codebook: all variables, definitions, values, value labels. #95 D3 codebook. #70 ‘no adequate data dictionary -&gt; fail’. #55/#67/#137 README explains structure and contents. #19, #57, #69, #120, #97.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nEither README or codebook is present, or both are present but their elements required in the “criterion_met” are incomplete.\nSupported by: #14 (91% ‘data documented’, 57% ‘software documented’), #88 ‘insufficient documentation, missing information’, #133 ‘insufficient detail in README files’, #30 README present but context missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNeither README nor codebook are present.\nSupported by: #17 ‘unlabeled and undocumented mess’, #70 fail without data dictionary, #58 data unusable without metadata.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nNever. When a replication package is a simulation study (C1), evaluate this criteria on the README alone.",
+    "text": "TipMet\n\n\n\nA README file and a codebook are present. A README file contains at least: 1) a list and descriptions of all files in the replication package; 2) instructions on how to reproduce the results. A codebook should minimally contain: 1) variable labels and descriptions of what those mean; and 2) allowed values of each variable in the dataset.\nSupported by: #42 README lists all files + purpose/format/provenance + how to replicate; codebook gives allowed values per variable. #48 codebook: all variables, definitions, values, value labels. #95 D3 codebook. #70 ‘no adequate data dictionary -&gt; fail’. #55/#67/#137 README explains structure and contents. #19, #57, #69, #120, #97.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nEither README or codebook is present, or both are present but their elements required in the “criterion_met” are incomplete.\nSupported by: #14 (91% ‘data documented’, 57% ‘software documented’), #88 ‘insufficient documentation, missing information’, #133 ‘insufficient detail in README files’, #30 README present but context missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNeither README nor codebook are present.\nSupported by: #17 ‘unlabeled and undocumented mess’, #70 fail without data dictionary, #58 data unusable without metadata.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nNever. When a replication package is a simulation study (C1), evaluate this criteria on the README alone.",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -570,8 +570,8 @@
     "objectID": "criteria/tier-1/documentation.html#in-the-corpus",
     "href": "criteria/tier-1/documentation.html#in-the-corpus",
     "title": "Documentation",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n83\n77.1%\n19.3%\n13.3%\n7.2%\n79.5%\n1",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n83\n77.1%\n3.6%\n19.3%\n13.3%\n7.2%\n79.5%\n1",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -595,7 +595,7 @@
     "href": "criteria/tier-1/data-deposit.html",
     "title": "Data deposit",
     "section": "",
-    "text": "TipMet\n\n\n\nThe data required to reproduce the analysis are provided, preferably in a trusted repository with a persistent identifier (e.g. a DOI). These can be either the raw data or the cleaned (analysis) data; whether the matching cleaning code is present is scored under code deposit. If the data cannot be shared (e.g. proprietary or confidential data), the criterion is also met when the README (1) states why the data cannot be shared (e.g. license, data use agreement, privacy law), (2) documents completely how an independent researcher can obtain the same data, to the standard of data provenance (provider, version/vintage, application procedure, costs, waiting times), and (3) the authors commit to preserving the data for a stated period (e.g. at least five years) or have deposited them in a secure archive.\nSupported by: #109 raw vs. analysis data both accepted, raw needs cleaning code (note), #131 L5 (analysis data) vs. L10 (raw + analysis), #12 ‘analytical data set is available’, #100 analysis data only, #132 raw + analysis + cleaning code, #93.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome of the data required are missing: e.g. one of several data sources, the data behind some results (e.g. appendix tables), or only a subsample of the data used is provided. For data that cannot be shared: the reason is stated, but the access documentation is incomplete or there is no preservation commitment.\nSupported by: Partial data: #131 L7 (raw data partially available), #15 ‘missing the data used for analysis’, #141 raw data missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo dataset is available, and for data that cannot be shared, neither the reason nor how to obtain the data is documented.\nSupported by: #86 ‘no shared data’, #144 unavailability of data the main barrier, #98 rating 1, #131 L1/L2, #70 fail unless law prevents it.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC1 (simulation)",
+    "text": "TipMet\n\n\n\nThe data required to reproduce the analysis are provided, preferably in a trusted repository with a persistent identifier (e.g. a DOI). These can be either the raw data or the cleaned (analysis) data; whether the matching cleaning code is present is scored under code deposit. If the data cannot be shared (e.g. proprietary or confidential data), the criterion is also met when the README (1) states why the data cannot be shared (e.g. license, data use agreement, privacy law), (2) documents completely how an independent researcher can obtain the same data, to the standard of data provenance (provider, version/vintage, application procedure, costs, waiting times), and (3) the authors commit to preserving the data for a stated period (e.g. at least five years) or have deposited them in a secure archive.\nSupported by: #109 raw vs. analysis data both accepted, raw needs cleaning code (note), #131 L5 (analysis data) vs. L10 (raw + analysis), #12 ‘analytical data set is available’, #100 analysis data only, #132 raw + analysis + cleaning code, #93.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome of the data required are missing: e.g. one of several data sources, the data behind some results (e.g. appendix tables), or only a subsample of the data used is provided. For data that cannot be shared: the reason is stated, but the access documentation is incomplete or there is no preservation commitment.\nSupported by: Partial data: #131 L7 (raw data partially available), #15 ‘missing the data used for analysis’, #141 raw data missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo dataset is available, and for data that cannot be shared, neither the reason nor how to obtain the data is documented.\nSupported by: #86 ‘no shared data’, #144 unavailability of data the main barrier, #98 rating 1, #131 L1/L2, #70 fail unless law prevents it.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nA replication package is a simulation study (C1)",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -607,7 +607,7 @@
     "href": "criteria/tier-1/data-deposit.html#rating",
     "title": "Data deposit",
     "section": "",
-    "text": "TipMet\n\n\n\nThe data required to reproduce the analysis are provided, preferably in a trusted repository with a persistent identifier (e.g. a DOI). These can be either the raw data or the cleaned (analysis) data; whether the matching cleaning code is present is scored under code deposit. If the data cannot be shared (e.g. proprietary or confidential data), the criterion is also met when the README (1) states why the data cannot be shared (e.g. license, data use agreement, privacy law), (2) documents completely how an independent researcher can obtain the same data, to the standard of data provenance (provider, version/vintage, application procedure, costs, waiting times), and (3) the authors commit to preserving the data for a stated period (e.g. at least five years) or have deposited them in a secure archive.\nSupported by: #109 raw vs. analysis data both accepted, raw needs cleaning code (note), #131 L5 (analysis data) vs. L10 (raw + analysis), #12 ‘analytical data set is available’, #100 analysis data only, #132 raw + analysis + cleaning code, #93.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome of the data required are missing: e.g. one of several data sources, the data behind some results (e.g. appendix tables), or only a subsample of the data used is provided. For data that cannot be shared: the reason is stated, but the access documentation is incomplete or there is no preservation commitment.\nSupported by: Partial data: #131 L7 (raw data partially available), #15 ‘missing the data used for analysis’, #141 raw data missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo dataset is available, and for data that cannot be shared, neither the reason nor how to obtain the data is documented.\nSupported by: #86 ‘no shared data’, #144 unavailability of data the main barrier, #98 rating 1, #131 L1/L2, #70 fail unless law prevents it.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC1 (simulation)",
+    "text": "TipMet\n\n\n\nThe data required to reproduce the analysis are provided, preferably in a trusted repository with a persistent identifier (e.g. a DOI). These can be either the raw data or the cleaned (analysis) data; whether the matching cleaning code is present is scored under code deposit. If the data cannot be shared (e.g. proprietary or confidential data), the criterion is also met when the README (1) states why the data cannot be shared (e.g. license, data use agreement, privacy law), (2) documents completely how an independent researcher can obtain the same data, to the standard of data provenance (provider, version/vintage, application procedure, costs, waiting times), and (3) the authors commit to preserving the data for a stated period (e.g. at least five years) or have deposited them in a secure archive.\nSupported by: #109 raw vs. analysis data both accepted, raw needs cleaning code (note), #131 L5 (analysis data) vs. L10 (raw + analysis), #12 ‘analytical data set is available’, #100 analysis data only, #132 raw + analysis + cleaning code, #93.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome of the data required are missing: e.g. one of several data sources, the data behind some results (e.g. appendix tables), or only a subsample of the data used is provided. For data that cannot be shared: the reason is stated, but the access documentation is incomplete or there is no preservation commitment.\nSupported by: Partial data: #131 L7 (raw data partially available), #15 ‘missing the data used for analysis’, #141 raw data missing.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo dataset is available, and for data that cannot be shared, neither the reason nor how to obtain the data is documented.\nSupported by: #86 ‘no shared data’, #144 unavailability of data the main barrier, #98 rating 1, #131 L1/L2, #70 fail unless law prevents it.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nA replication package is a simulation study (C1)",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -630,8 +630,8 @@
     "objectID": "criteria/tier-1/data-deposit.html#in-the-corpus",
     "href": "criteria/tier-1/data-deposit.html#in-the-corpus",
     "title": "Data deposit",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n94\n76.6%\n13.8%\n1.1%\n7.4%\n91.5%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n94\n76.6%\n9.6%\n13.8%\n1.1%\n7.4%\n91.5%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -690,8 +690,8 @@
     "objectID": "criteria/tier-1/artifacts-longevity-sustainability.html#in-the-corpus",
     "href": "criteria/tier-1/artifacts-longevity-sustainability.html#in-the-corpus",
     "title": "Artifacts longevity/sustainability",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n9\n100%\n0%\n0%\n0%\n100%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n9\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -713,9 +713,51 @@
   {
     "objectID": "about.html",
     "href": "about.html",
-    "title": "How to read the rubric",
+    "title": "How to use the rubric",
     "section": "",
-    "text": "Column explanations, N/A conditions and the scope rule, taken from the workbook’s Addinfo sheet.\n\n\n\n\n\n\n\nColumn\nExplanation\n\n\n\n\ntier\nRubric tier of the criterion: 1, 2 or 3. Set by the criterion’s coded dimension (Availability = 1, Executability = 2, Consistency = 3). Computed by rubric_tiers.R.\n\n\ntier_name\nName of the tier: Available/Bronze (1), Executable/Silver (2), Reproducible/Gold (3). Computed.\n\n\ncriterion\nCriterion label from the criteria extraction coding.\n\n\ndefinition\nWhat the criterion covers in this rubric, synthesized from the quotes in the ‘Text evidence’ sheet.\n\n\nstatus\ncore = required to award the tier; recommended = good practice, not required for the tier. Computed. Important: third-party certification is recommended in general, but when not all datasets needed are in the package it decides whether Tiers 2-3 can be assessed (see the scope rule).\n\n\ncore_reason\nWhy a criterion is core. endorsement: invoked by at least 20 sources and stated as a rule by at least 50% of them. structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed.\n\n\ncheck_order\nDepth in the prerequisite graph: the number of prerequisite steps above the criterion along the longest chain (0 = no prerequisite coded). Within a tier, check criteria with lower numbers first. Blank = no prerequisite links coded at all. Computed.\n\n\nsources\nNumber of papers in the corpus that contain the criterion. Computed.\n\n\npct_injunctive\nPercentage of those sources that state the criterion as a rule or requirement. Computed.\n\n\npct_tacit\nPercentage of sources that rely on the criterion without stating it (inferred by the coder). Computed.\n\n\ncore_prerequisites\nDirect prerequisites of the criterion that are themselves core, strongest first, each with the number of sources asserting the link, e.g. ‘code deposit (7)’. Computed.\n\n\nrecommended_prerequisites\nDirect prerequisites that are only recommended, with the number of sources. Computed.\n\n\npct_automatable_yes\nPercentage of sources saying that checking the criterion can be automated. Computed.\n\n\npct_automatable_no\nPercentage of sources saying that the check should be done manually. Computed.\n\n\npct_automatable_unclear\nPercentage of sources that do not say whether the check can be automated. Computed.\n\n\nllm_sources\nNumber of sources in which the automated check involves a large language model. Computed.\n\n\ncriterion_met\nWhat a replication package must show to fully meet the criterion. To be decided later.\n\n\ncriterion_partially_met\nWhat a package shows when it meets the criterion only in part.\n\n\ncriterion_not_met\nWhat a package shows when it fails the criterion.\n\n\nnot_applicable\nWhen the criterion is not applicable (N/A). A criterion is N/A only under the conditions listed below; anything else that is missing counts as not met. N/A criteria are left out of the award rule (a tier requires all applicable core criteria of that tier and of every lower tier to be fully met) and are counted separately in the summary, with the reason, e.g. ‘N/A (simulation)’. C3 and C4 cannot both apply.\n\n\n\n\n\n\n\n\n\n\nN/A package condition\nDefinition\n\n\n\n\nC1 (simulation)\nAll data are generated by the code itself (e.g. a simulation). Data the code downloads or scrapes do not count.\n\n\nC2 (all data in package)\nAll data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.\n\n\nC3 (no tables/figures)\nThe paper has no tables or figures.\n\n\nC4 (no numerical results)\nThe paper reports no numerical results, only figures.\n\n\n\nScope rule. If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments."
+    "text": "The rubric has 21 criteria in three tiers. Each tier matches a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, not required). Core criteria also show why they are core, endorsement or structural. Click that badge on a criterion page to see the rule."
+  },
+  {
+    "objectID": "about.html#tiers-and-badges",
+    "href": "about.html#tiers-and-badges",
+    "title": "How to use the rubric",
+    "section": "",
+    "text": "The rubric has 21 criteria in three tiers. Each tier matches a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, not required). Core criteria also show why they are core, endorsement or structural. Click that badge on a criterion page to see the rule."
+  },
+  {
+    "objectID": "about.html#rating-a-criterion",
+    "href": "about.html#rating-a-criterion",
+    "title": "How to use the rubric",
+    "section": "Rating a criterion",
+    "text": "Rating a criterion\nEvery criterion page states what a package must show for the criterion to be met, partially met or not met. The note under each rating lists the sources it is based on; the #IDs link to the Sources page.\nA criterion is not applicable only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met."
+  },
+  {
+    "objectID": "about.html#a-snippet-of-the-badge-system",
+    "href": "about.html#a-snippet-of-the-badge-system",
+    "title": "How to use the rubric",
+    "section": "A snippet of the badge system",
+    "text": "A snippet of the badge system\n\nIn order to get a badge, a reproduction package must fully meet all applicable core criteria of that tier and of every lower tier.\nEach reproduction package gets a badge and a summary of how many criteria (core and recommended) are met, partially met, not met, and not applicable.\nIf not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments.\nIf not all datasets needed are in the package but the package has third-party certification, the core criteria that need the data (path resolution, coding error handling, numerical output match, and table and figure match) are rated from the certificate. A criterion is fully met only if the certificate, issued by an independent party, explicitly confirms it, e.g. that the code ran to completion (Silver) or that all results were reproduced (Gold)."
+  },
+  {
+    "objectID": "about.html#order-of-checking",
+    "href": "about.html#order-of-checking",
+    "title": "How to use the rubric",
+    "section": "Order of checking",
+    "text": "Order of checking\nA reproduction package contains the manuscript, a README and the code (R or Stata), plus, optionally, the datasets (included, or deposited separately under a PID/DOI) and a log file (Stata). It is checked in three steps:\n\nGeneral criteria. These can be checked without the data being in the package:\n\ncore: documentation, data provenance, license, code deposit, data deposit, dependency resolution, computing environment, codes consistent with claims\nrecommended: artifacts longevity/sustainability, code annotation, workflow/reproduction tree, version control, commands logs traceability, test code coverage\n\nData. The data situation decides which tiers are possible:\n\nAll datasets are fully generated by the code (not downloaded): all tiers are possible.\nAll datasets needed are included in the package: all tiers are possible if the analysis dataset is available, or if the cleaning code is there to produce it. Otherwise no tier is possible.\nNot all datasets needed are in the package: check that the reason for not sharing the data and how to obtain full access are documented, and that the authors commit to preserving the data. If not, no tier is possible. If so, all tiers are possible with third-party certification, and at most Bronze without it.\n\nCriteria that need the data to verify, if Tier 2 or 3 is still possible:\n\ncore: path resolution, coding error handling, numerical output match, table and figure match\nrecommended: code runs without manual intervention, dynamic code inspection\n\n\nWithin a step, check criteria with a lower check order first. The number counts the prerequisite steps above a criterion (0 = no prerequisite coded, — = no prerequisite links coded at all). Each criterion page lists what it builds on and what it is a prerequisite for; the Dependency graph shows all links at once.\nThe full process will be described on the Badge pipeline page."
+  },
+  {
+    "objectID": "about.html#evidence-on-each-criterion-page",
+    "href": "about.html#evidence-on-each-criterion-page",
+    "title": "How to use the rubric",
+    "section": "Evidence on each criterion page",
+    "text": "Evidence on each criterion page\n\nIn the corpus: how many of the 145 papers in the scoping review contain the criterion (Sources); the share of them that state it as a rule (Injunctive), as a common practice (Descriptive) or report it implicitly (Tacit); the share that say the check can be automated (Automatable), should be done manually (Manual check), or don’t say (Automation unclear); and how many involve a large language model in the automated check (LLM sources).\nText evidence: the quotes from those papers that the definition is synthesized from. Click “Show quotes” to expand them."
+  },
+  {
+    "objectID": "about.html#definitions-from-the-workbook",
+    "href": "about.html#definitions-from-the-workbook",
+    "title": "How to use the rubric",
+    "section": "Definitions from the workbook",
+    "text": "Definitions from the workbook\nColumn explanations, N/A conditions and the scope rule, as written in the workbook’s Addinfo sheet.\n\n\n\n\n\n\n\nColumn\nExplanation\n\n\n\n\ntier\nRubric tier of the criterion: 1, 2 or 3. Set by the criterion’s coded dimension (Availability = 1, Executability = 2, Consistency = 3). Computed by rubric_tiers.R.\n\n\ntier_name\nName of the tier: Available/Bronze (1), Executable/Silver (2), Reproducible/Gold (3). Computed.\n\n\ncriterion\nCriterion label from the criteria extraction coding.\n\n\ndefinition\nWhat the criterion covers in this rubric, synthesized from the quotes in the ‘Text evidence’ sheet.\n\n\nstatus\ncore = required to award the tier; recommended = good practice, not required for the tier. Computed. Important: third-party certification is recommended in general, but when not all datasets needed are in the package it decides whether Tiers 2-3 can be assessed (see the scope rule).\n\n\ncore_reason\nWhy a criterion is core. endorsement: invoked by at least 20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources). structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed.\n\n\ncheck_order\nDepth in the prerequisite graph: the number of prerequisite steps above the criterion along the longest chain (0 = no prerequisite coded). Within a tier, check criteria with lower numbers first. Blank = no prerequisite links coded at all. Computed.\n\n\nsources\nNumber of papers in the corpus that contain the criterion. Computed.\n\n\npct_injunctive\nPercentage of those sources that state the criterion as a rule or requirement. Computed.\n\n\npct_tacit\nPercentage of sources that rely on the criterion without stating it (inferred by the coder). Computed.\n\n\ncore_prerequisites\nDirect prerequisites of the criterion that are themselves core, strongest first, each with the number of sources asserting the link, e.g. ‘code deposit (7)’. Computed.\n\n\nrecommended_prerequisites\nDirect prerequisites that are only recommended, with the number of sources. Computed.\n\n\npct_automatable_yes\nPercentage of sources saying that checking the criterion can be automated. Computed.\n\n\npct_automatable_no\nPercentage of sources saying that the check should be done manually. Computed.\n\n\npct_automatable_unclear\nPercentage of sources that do not say whether the check can be automated. Computed.\n\n\nllm_sources\nNumber of sources in which the automated check involves a large language model. Computed.\n\n\ncriterion_met\nWhat a replication package must show to fully meet the criterion.\n\n\ncriterion_partially_met\nWhat a package shows when it meets the criterion only in part.\n\n\ncriterion_not_met\nWhat a package shows when it fails the criterion.\n\n\nnot_applicable\nWhen the criterion is not applicable (N/A). A criterion is N/A only under the conditions listed below; anything else that is missing counts as not met. N/A criteria are left out of the award rule (a tier requires all applicable core criteria of that tier and of every lower tier to be fully met) and are counted separately in the summary, with the reason, e.g. ‘N/A (simulation)’. C3 and C4 cannot both apply.\n\n\n\n\n\n\n\n\n\n\nN/A package condition\nDefinition\n\n\n\n\nC1 (simulation)\nAll data are generated by the code itself (e.g. a simulation). Data the code downloads or scrapes do not count.\n\n\nC2 (all data in package)\nAll data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.\n\n\nC3 (no tables/figures)\nThe paper has no tables or figures.\n\n\nC4 (no numerical results)\nThe paper reports no numerical results, only figures.\n\n\n\nScope rule. If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments."
   },
   {
     "objectID": "criteria/tier-1/code-deposit.html",
@@ -757,8 +799,8 @@
     "objectID": "criteria/tier-1/code-deposit.html#in-the-corpus",
     "href": "criteria/tier-1/code-deposit.html#in-the-corpus",
     "title": "Code deposit",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n103\n80.6%\n12.6%\n1%\n8.7%\n90.3%\n1",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n103\n80.6%\n6.8%\n12.6%\n1%\n8.7%\n90.3%\n1",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -782,7 +824,7 @@
     "href": "criteria/tier-1/data-provenance.html",
     "title": "Data provenance",
     "section": "",
-    "text": "TipMet\n\n\n\nEvery data source used in the analysis is cited with its version or vintage (or a persistent identifier such as a DOI) and mapped to the corresponding files in the replication package. For data that cannot be shared (e.g. proprietary or confidential data), the README states how, where, and under what conditions an independent researcher can obtain the original source data, including any restrictions, requirements, payments, and processing delays. For data collected via an API or web scraping, the README also states the API or query used, the date of collection, and the configuration settings.\nSupported by: Access info for non-shareable data: #42 (how, where, conditions, restrictions, payments, delays), #95 R1 (provider, DOI, vintage, application procedure), #43, #105, #138, #71, #54. API/scraped data: #108 (API, date, configuration), #89 (API version), #34, #26 ‘frozen’ dataset. PID: #55, #65, #110, #70.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nData sources are cited, but the information is incomplete: e.g. some sources are not cited, the version/vintage or identifier is missing, or the access conditions for non-shareable data or the collection details for API-extracted data are only partly given.\nSupported by: #14 (79% cite all data; 70% give data location), #30 personal-website deposits lack persistent citation, #63 no integrity check on repository, #102 outdated API.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo provenance information available.\nSupported by: #34 query/revision of database cannot be determined, #6 data not referenceable.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC1 (simulation)",
+    "text": "TipMet\n\n\n\nEvery data source used in the analysis is cited with its version or vintage (or a persistent identifier such as a DOI) and mapped to the corresponding files in the replication package. For data that cannot be shared (e.g. proprietary or confidential data), the README states how, where, and under what conditions an independent researcher can obtain the original source data, including any restrictions, requirements, payments, and processing delays. For data collected via an API or web scraping, the README also states the API or query used, the date of collection, and the configuration settings.\nSupported by: Access info for non-shareable data: #42 (how, where, conditions, restrictions, payments, delays), #95 R1 (provider, DOI, vintage, application procedure), #43, #105, #138, #71, #54. API/scraped data: #108 (API, date, configuration), #89 (API version), #34, #26 ‘frozen’ dataset. PID: #55, #65, #110, #70.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nData sources are cited, but the information is incomplete: e.g. some sources are not cited, the version/vintage or identifier is missing, or the access conditions for non-shareable data or the collection details for API-extracted data are only partly given.\nSupported by: #14 (79% cite all data; 70% give data location), #30 personal-website deposits lack persistent citation, #63 no integrity check on repository, #102 outdated API.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo provenance information available.\nSupported by: #34 query/revision of database cannot be determined, #6 data not referenceable.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nA replication package is a simulation study (C1)",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -794,7 +836,7 @@
     "href": "criteria/tier-1/data-provenance.html#rating",
     "title": "Data provenance",
     "section": "",
-    "text": "TipMet\n\n\n\nEvery data source used in the analysis is cited with its version or vintage (or a persistent identifier such as a DOI) and mapped to the corresponding files in the replication package. For data that cannot be shared (e.g. proprietary or confidential data), the README states how, where, and under what conditions an independent researcher can obtain the original source data, including any restrictions, requirements, payments, and processing delays. For data collected via an API or web scraping, the README also states the API or query used, the date of collection, and the configuration settings.\nSupported by: Access info for non-shareable data: #42 (how, where, conditions, restrictions, payments, delays), #95 R1 (provider, DOI, vintage, application procedure), #43, #105, #138, #71, #54. API/scraped data: #108 (API, date, configuration), #89 (API version), #34, #26 ‘frozen’ dataset. PID: #55, #65, #110, #70.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nData sources are cited, but the information is incomplete: e.g. some sources are not cited, the version/vintage or identifier is missing, or the access conditions for non-shareable data or the collection details for API-extracted data are only partly given.\nSupported by: #14 (79% cite all data; 70% give data location), #30 personal-website deposits lack persistent citation, #63 no integrity check on repository, #102 outdated API.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo provenance information available.\nSupported by: #34 query/revision of database cannot be determined, #6 data not referenceable.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC1 (simulation)",
+    "text": "TipMet\n\n\n\nEvery data source used in the analysis is cited with its version or vintage (or a persistent identifier such as a DOI) and mapped to the corresponding files in the replication package. For data that cannot be shared (e.g. proprietary or confidential data), the README states how, where, and under what conditions an independent researcher can obtain the original source data, including any restrictions, requirements, payments, and processing delays. For data collected via an API or web scraping, the README also states the API or query used, the date of collection, and the configuration settings.\nSupported by: Access info for non-shareable data: #42 (how, where, conditions, restrictions, payments, delays), #95 R1 (provider, DOI, vintage, application procedure), #43, #105, #138, #71, #54. API/scraped data: #108 (API, date, configuration), #89 (API version), #34, #26 ‘frozen’ dataset. PID: #55, #65, #110, #70.\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nData sources are cited, but the information is incomplete: e.g. some sources are not cited, the version/vintage or identifier is missing, or the access conditions for non-shareable data or the collection details for API-extracted data are only partly given.\nSupported by: #14 (79% cite all data; 70% give data location), #30 personal-website deposits lack persistent citation, #63 no integrity check on repository, #102 outdated API.\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nNo provenance information available.\nSupported by: #34 query/revision of database cannot be determined, #6 data not referenceable.\n\n\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nA replication package is a simulation study (C1)",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -817,8 +859,8 @@
     "objectID": "criteria/tier-1/data-provenance.html#in-the-corpus",
     "href": "criteria/tier-1/data-provenance.html#in-the-corpus",
     "title": "Data provenance",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n48\n70.8%\n27.1%\n10.4%\n10.4%\n79.2%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n48\n70.8%\n2.1%\n27.1%\n10.4%\n10.4%\n79.2%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -877,8 +919,8 @@
     "objectID": "criteria/tier-1/license.html#in-the-corpus",
     "href": "criteria/tier-1/license.html#in-the-corpus",
     "title": "License",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n90%\n6.7%\n3.3%\n16.7%\n80%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n90%\n3.3%\n6.7%\n3.3%\n16.7%\n80%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -937,8 +979,8 @@
     "objectID": "criteria/tier-2/code-runs-without-manual-intervention.html#in-the-corpus",
     "href": "criteria/tier-2/code-runs-without-manual-intervention.html#in-the-corpus",
     "title": "Code runs without manual intervention",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n4\n50%\n50%\n100%\n0%\n0%\n2",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n4\n50%\n0%\n50%\n100%\n0%\n0%\n2",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -997,8 +1039,8 @@
     "objectID": "criteria/tier-2/commands-logs-traceability.html#in-the-corpus",
     "href": "criteria/tier-2/commands-logs-traceability.html#in-the-corpus",
     "title": "Commands logs traceability",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1057,8 +1099,8 @@
     "objectID": "criteria/tier-2/dependency-resolution.html#in-the-corpus",
     "href": "criteria/tier-2/dependency-resolution.html#in-the-corpus",
     "title": "Dependency resolution",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n59\n55.9%\n42.4%\n47.5%\n5.1%\n47.5%\n5",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n59\n55.9%\n1.7%\n42.4%\n47.5%\n5.1%\n47.5%\n5",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1117,8 +1159,8 @@
     "objectID": "criteria/tier-2/path-resolution.html#in-the-corpus",
     "href": "criteria/tier-2/path-resolution.html#in-the-corpus",
     "title": "Path resolution",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n36.7%\n63.3%\n50%\n16.7%\n33.3%\n4",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n36.7%\n0%\n63.3%\n50%\n16.7%\n33.3%\n4",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1177,8 +1219,8 @@
     "objectID": "criteria/tier-2/version-control.html#in-the-corpus",
     "href": "criteria/tier-2/version-control.html#in-the-corpus",
     "title": "Version control",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n12\n66.7%\n33.3%\n50%\n0%\n50%\n0",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n12\n66.7%\n0%\n33.3%\n50%\n0%\n50%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1237,8 +1279,8 @@
     "objectID": "criteria/tier-3/codes-consistent-with-claims.html#in-the-corpus",
     "href": "criteria/tier-3/codes-consistent-with-claims.html#in-the-corpus",
     "title": "Codes consistent with claims",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n17\n47.1%\n52.9%\n23.5%\n5.9%\n70.6%\n3",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n17\n47.1%\n0%\n52.9%\n23.5%\n5.9%\n70.6%\n3",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1262,7 +1304,7 @@
     "href": "criteria/tier-3/table-and-figure-match.html",
     "title": "Table and figure match",
     "section": "",
-    "text": "TipMet\n\n\n\nThe code regenerates every table and figure in the paper and appendix, and each matches the published one in structure (rows, columns, panels) and content; for figures, the levels, shapes and positions of curves and data points are the same. Only cosmetic differences remain (fonts, colors, layout).\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome display items are regenerated and match, while others are missing (no code produces them, e.g. made by hand) or deviate; or items are regenerated with minor deviations that do not change what they show (e.g. slightly shifted points because no random seed was set, a difference of a few observations).\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe code regenerates none of the tables and figures, or the regenerated items differ substantially from the published ones (different structure, trends or shapes).\n\n\nBased on: #85 level, shapes and positions of curves/data points, #20/#93 all figures and tables incl. appendix, #99 match exactly, #104 match up to some decimals, #109 ‘Fully’ identical vs. ‘Partially’ slight deviation, #103 random seed for figures, #132 negligible discrepancies (two observations).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC3 (no tables/figures)",
+    "text": "TipMet\n\n\n\nThe code regenerates every table and figure in the paper and appendix, and each matches the published one in structure (rows, columns, panels) and content; for figures, the levels, shapes and positions of curves and data points are the same. Only cosmetic differences remain (fonts, colors, layout).\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome display items are regenerated and match, while others are missing (no code produces them, e.g. made by hand) or deviate; or items are regenerated with minor deviations that do not change what they show (e.g. slightly shifted points because no random seed was set, a difference of a few observations).\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe code regenerates none of the tables and figures, or the regenerated items differ substantially from the published ones (different structure, trends or shapes).\n\n\nBased on: #85 level, shapes and positions of curves/data points, #20/#93 all figures and tables incl. appendix, #99 match exactly, #104 match up to some decimals, #109 ‘Fully’ identical vs. ‘Partially’ slight deviation, #103 random seed for figures, #132 negligible discrepancies (two observations).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no table or figure (C3)",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1274,7 +1316,7 @@
     "href": "criteria/tier-3/table-and-figure-match.html#rating",
     "title": "Table and figure match",
     "section": "",
-    "text": "TipMet\n\n\n\nThe code regenerates every table and figure in the paper and appendix, and each matches the published one in structure (rows, columns, panels) and content; for figures, the levels, shapes and positions of curves and data points are the same. Only cosmetic differences remain (fonts, colors, layout).\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome display items are regenerated and match, while others are missing (no code produces them, e.g. made by hand) or deviate; or items are regenerated with minor deviations that do not change what they show (e.g. slightly shifted points because no random seed was set, a difference of a few observations).\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe code regenerates none of the tables and figures, or the regenerated items differ substantially from the published ones (different structure, trends or shapes).\n\n\nBased on: #85 level, shapes and positions of curves/data points, #20/#93 all figures and tables incl. appendix, #99 match exactly, #104 match up to some decimals, #109 ‘Fully’ identical vs. ‘Partially’ slight deviation, #103 random seed for figures, #132 negligible discrepancies (two observations).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nC3 (no tables/figures)",
+    "text": "TipMet\n\n\n\nThe code regenerates every table and figure in the paper and appendix, and each matches the published one in structure (rows, columns, panels) and content; for figures, the levels, shapes and positions of curves and data points are the same. Only cosmetic differences remain (fonts, colors, layout).\n\n\n\n\n\n\n\n\nWarningPartially met\n\n\n\nSome display items are regenerated and match, while others are missing (no code produces them, e.g. made by hand) or deviate; or items are regenerated with minor deviations that do not change what they show (e.g. slightly shifted points because no random seed was set, a difference of a few observations).\n\n\n\n\n\n\n\n\nImportantNot met\n\n\n\nThe code regenerates none of the tables and figures, or the regenerated items differ substantially from the published ones (different structure, trends or shapes).\n\n\nBased on: #85 level, shapes and positions of curves/data points, #20/#93 all figures and tables incl. appendix, #99 match exactly, #104 match up to some decimals, #109 ‘Fully’ identical vs. ‘Partially’ slight deviation, #103 random seed for figures, #132 negligible discrepancies (two observations).\n\n\n\n\n\n\nNoteNot applicable\n\n\n\nManuscript has no table or figure (C3)",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1297,8 +1339,8 @@
     "objectID": "criteria/tier-3/table-and-figure-match.html#in-the-corpus",
     "href": "criteria/tier-3/table-and-figure-match.html#in-the-corpus",
     "title": "Table and figure match",
-    "section": "In the corpus",
-    "text": "In the corpus\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n24\n54.2%\n41.7%\n16.7%\n20.8%\n62.5%\n1",
+    "section": "In the corpus ",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n24\n54.2%\n4.2%\n41.7%\n16.7%\n20.8%\n62.5%\n1",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1320,15 +1362,15 @@
   {
     "objectID": "graph.html",
     "href": "graph.html",
-    "title": "Prerequisite graph",
+    "title": "Dependency graph",
     "section": "",
-    "text": "Arrows run from a prerequisite to the criterion that builds on it. The number on an arrow is how many sources assert that link. Filled boxes are core criteria, dashed boxes recommended ones; dashed arrows start at a recommended prerequisite. Click a box to open the criterion.\nColors show the tier: Tier 1 · Available - Bronze Tier 2 · Executable - Silver Tier 3 · Reproducible - Gold\n\n19 links with 3+ sourcesAll 48 links\n\n\n\n\n\n\n\n\n\n\nprerequisites\n\n\nlicense\n\n\nLicense\n\n\n\n\n\ndata deposit\n\n\nData deposit\n\n\n\n\n\nlicense-&gt;data deposit\n\n\n3\n\n\n\ncode deposit\n\n\nCode deposit\n\n\n\n\n\ndependency resolution\n\n\nDependency resolution\n\n\n\n\n\ncode deposit-&gt;dependency resolution\n\n\n7\n\n\n\npath resolution\n\n\nPath resolution\n\n\n\n\n\ncode deposit-&gt;path resolution\n\n\n6\n\n\n\ncoding error handling\n\n\nCoding error handling\n\n\n\n\n\ncode deposit-&gt;coding error handling\n\n\n6\n\n\n\ncomputing environment\n\n\nComputing environment\n\n\n\n\n\ncode deposit-&gt;computing environment\n\n\n7\n\n\n\ncodes consistent with claims\n\n\nCodes consistent with claims\n\n\n\n\n\ncode deposit-&gt;codes consistent with claims\n\n\n5\n\n\n\nnumerical output match\n\n\nNumerical output match\n\n\n\n\n\ncode deposit-&gt;numerical output match\n\n\n17\n\n\n\ntable and figure match\n\n\nTable and figure match\n\n\n\n\n\ncode deposit-&gt;table and figure match\n\n\n9\n\n\n\ndata deposit-&gt;numerical output match\n\n\n16\n\n\n\ndata deposit-&gt;table and figure match\n\n\n7\n\n\n\ndependency resolution-&gt;computing environment\n\n\n7\n\n\n\ndependency resolution-&gt;numerical output match\n\n\n4\n\n\n\ndependency resolution-&gt;table and figure match\n\n\n3\n\n\n\npath resolution-&gt;numerical output match\n\n\n3\n\n\n\ncoding error handling-&gt;numerical output match\n\n\n6\n\n\n\ncoding error handling-&gt;table and figure match\n\n\n4\n\n\n\ncomputing environment-&gt;numerical output match\n\n\n5\n\n\n\ncomputing environment-&gt;table and figure match\n\n\n3\n\n\n\ncodes consistent with claims-&gt;numerical output match\n\n\n3\n\n\n\n\n\n\n\n\n\nNot linked at this threshold: Documentation, Data provenance, Artifacts longevity/sustainability, Code runs without manual intervention, Code annotation, Dynamic code inspection, Workflow/reproduction tree, Version control, Commands logs traceability, Test code coverage, Third-party certification\n\n\n\n\n\n\n\n\n\n\nprerequisites\n\n\ndocumentation\n\n\nDocumentation\n\n\n\n\n\ndependency resolution\n\n\nDependency resolution\n\n\n\n\n\ndocumentation-&gt;dependency resolution\n\n\n2\n\n\n\npath resolution\n\n\nPath resolution\n\n\n\n\n\ndocumentation-&gt;path resolution\n\n\n1\n\n\n\ncoding error handling\n\n\nCoding error handling\n\n\n\n\n\ndocumentation-&gt;coding error handling\n\n\n2\n\n\n\ncomputing environment\n\n\nComputing environment\n\n\n\n\n\ndocumentation-&gt;computing environment\n\n\n2\n\n\n\nworkflow/reproduction tree\n\n\nWorkflow/reproduction tree\n\n\n\n\n\ndocumentation-&gt;workflow/reproduction tree\n\n\n1\n\n\n\nnumerical output match\n\n\nNumerical output match\n\n\n\n\n\ndocumentation-&gt;numerical output match\n\n\n2\n\n\n\ntable and figure match\n\n\nTable and figure match\n\n\n\n\n\ndocumentation-&gt;table and figure match\n\n\n2\n\n\n\ndata provenance\n\n\nData provenance\n\n\n\n\n\nthird-party certification\n\n\nThird-party certification\n\n\n\n\n\ndata provenance-&gt;third-party certification\n\n\n1\n\n\n\nlicense\n\n\nLicense\n\n\n\n\n\ncode deposit\n\n\nCode deposit\n\n\n\n\n\nlicense-&gt;code deposit\n\n\n2\n\n\n\ndata deposit\n\n\nData deposit\n\n\n\n\n\nlicense-&gt;data deposit\n\n\n3\n\n\n\nlicense-&gt;computing environment\n\n\n1\n\n\n\ncode deposit-&gt;dependency resolution\n\n\n7\n\n\n\ncode deposit-&gt;path resolution\n\n\n6\n\n\n\ncode deposit-&gt;coding error handling\n\n\n6\n\n\n\ncode deposit-&gt;computing environment\n\n\n7\n\n\n\ncode annotation\n\n\nCode annotation\n\n\n\n\n\ncode deposit-&gt;code annotation\n\n\n1\n\n\n\ndynamic code inspection\n\n\nDynamic code inspection\n\n\n\n\n\ncode deposit-&gt;dynamic code inspection\n\n\n1\n\n\n\ncode deposit-&gt;workflow/reproduction tree\n\n\n1\n\n\n\ncodes consistent with claims\n\n\nCodes consistent with claims\n\n\n\n\n\ncode deposit-&gt;codes consistent with claims\n\n\n5\n\n\n\ncode deposit-&gt;numerical output match\n\n\n17\n\n\n\ncode deposit-&gt;table and figure match\n\n\n9\n\n\n\ndata deposit-&gt;dependency resolution\n\n\n1\n\n\n\ndata deposit-&gt;path resolution\n\n\n1\n\n\n\ndata deposit-&gt;coding error handling\n\n\n1\n\n\n\ndata deposit-&gt;computing environment\n\n\n1\n\n\n\ndata deposit-&gt;dynamic code inspection\n\n\n1\n\n\n\ndata deposit-&gt;workflow/reproduction tree\n\n\n1\n\n\n\ndata deposit-&gt;numerical output match\n\n\n16\n\n\n\ndata deposit-&gt;table and figure match\n\n\n7\n\n\n\ndependency resolution-&gt;computing environment\n\n\n7\n\n\n\ndependency resolution-&gt;numerical output match\n\n\n4\n\n\n\ndependency resolution-&gt;table and figure match\n\n\n3\n\n\n\npath resolution-&gt;computing environment\n\n\n1\n\n\n\npath resolution-&gt;numerical output match\n\n\n3\n\n\n\npath resolution-&gt;table and figure match\n\n\n2\n\n\n\ncoding error handling-&gt;codes consistent with claims\n\n\n1\n\n\n\ncoding error handling-&gt;numerical output match\n\n\n6\n\n\n\ncoding error handling-&gt;table and figure match\n\n\n4\n\n\n\ncomputing environment-&gt;numerical output match\n\n\n5\n\n\n\ncomputing environment-&gt;table and figure match\n\n\n3\n\n\n\ncode runs without manual intervention\n\n\nCode runs without manual intervention\n\n\n\n\n\ncode runs without manual intervention-&gt;numerical output match\n\n\n1\n\n\n\ncode runs without manual intervention-&gt;table and figure match\n\n\n1\n\n\n\ncode annotation-&gt;codes consistent with claims\n\n\n1\n\n\n\nworkflow/reproduction tree-&gt;numerical output match\n\n\n1\n\n\n\nworkflow/reproduction tree-&gt;table and figure match\n\n\n1\n\n\n\ncodes consistent with claims-&gt;numerical output match\n\n\n3\n\n\n\ncodes consistent with claims-&gt;table and figure match\n\n\n2\n\n\n\nnumerical output match-&gt;table and figure match\n\n\n2\n\n\n\n\n\n\n\n\n\nNot linked at this threshold: Artifacts longevity/sustainability, Version control, Commands logs traceability, Test code coverage"
+    "text": "Arrows run from a prerequisite to the criterion that builds on it. The number on an arrow is how many sources assert that link. Filled boxes are core criteria, dashed boxes are recommended ones; dashed arrows start at a recommended prerequisite. Click a box to open the criterion details.\nColors show the tier: Tier 1 · Available - Bronze Tier 2 · Executable - Silver Tier 3 · Reproducible - Gold\n\nSimplified: 19 links with 3+ sourcesFull graph: All 48 links\n\n\n\n\n\n\n\n\n\n\nprerequisites\n\n\nlicense\n\n\nLicense\n\n\n\n\n\ndata deposit\n\n\nData deposit\n\n\n\n\n\nlicense-&gt;data deposit\n\n\n3\n\n\n\ncode deposit\n\n\nCode deposit\n\n\n\n\n\ndependency resolution\n\n\nDependency resolution\n\n\n\n\n\ncode deposit-&gt;dependency resolution\n\n\n7\n\n\n\npath resolution\n\n\nPath resolution\n\n\n\n\n\ncode deposit-&gt;path resolution\n\n\n6\n\n\n\ncoding error handling\n\n\nCoding error handling\n\n\n\n\n\ncode deposit-&gt;coding error handling\n\n\n6\n\n\n\ncomputing environment\n\n\nComputing environment\n\n\n\n\n\ncode deposit-&gt;computing environment\n\n\n7\n\n\n\ncodes consistent with claims\n\n\nCodes consistent with claims\n\n\n\n\n\ncode deposit-&gt;codes consistent with claims\n\n\n5\n\n\n\nnumerical output match\n\n\nNumerical output match\n\n\n\n\n\ncode deposit-&gt;numerical output match\n\n\n17\n\n\n\ntable and figure match\n\n\nTable and figure match\n\n\n\n\n\ncode deposit-&gt;table and figure match\n\n\n9\n\n\n\ndata deposit-&gt;numerical output match\n\n\n16\n\n\n\ndata deposit-&gt;table and figure match\n\n\n7\n\n\n\ndependency resolution-&gt;computing environment\n\n\n7\n\n\n\ndependency resolution-&gt;numerical output match\n\n\n4\n\n\n\ndependency resolution-&gt;table and figure match\n\n\n3\n\n\n\npath resolution-&gt;numerical output match\n\n\n3\n\n\n\ncoding error handling-&gt;numerical output match\n\n\n6\n\n\n\ncoding error handling-&gt;table and figure match\n\n\n4\n\n\n\ncomputing environment-&gt;numerical output match\n\n\n5\n\n\n\ncomputing environment-&gt;table and figure match\n\n\n3\n\n\n\ncodes consistent with claims-&gt;numerical output match\n\n\n3\n\n\n\n\n\n\n\n\n\nNot linked at this threshold: Documentation, Data provenance, Artifacts longevity/sustainability, Code runs without manual intervention, Code annotation, Dynamic code inspection, Workflow/reproduction tree, Version control, Commands logs traceability, Test code coverage, Third-party certification\n\n\n\n\n\n\n\n\n\n\nprerequisites\n\n\ndocumentation\n\n\nDocumentation\n\n\n\n\n\ndependency resolution\n\n\nDependency resolution\n\n\n\n\n\ndocumentation-&gt;dependency resolution\n\n\n2\n\n\n\npath resolution\n\n\nPath resolution\n\n\n\n\n\ndocumentation-&gt;path resolution\n\n\n1\n\n\n\ncoding error handling\n\n\nCoding error handling\n\n\n\n\n\ndocumentation-&gt;coding error handling\n\n\n2\n\n\n\ncomputing environment\n\n\nComputing environment\n\n\n\n\n\ndocumentation-&gt;computing environment\n\n\n2\n\n\n\nworkflow/reproduction tree\n\n\nWorkflow/reproduction tree\n\n\n\n\n\ndocumentation-&gt;workflow/reproduction tree\n\n\n1\n\n\n\nnumerical output match\n\n\nNumerical output match\n\n\n\n\n\ndocumentation-&gt;numerical output match\n\n\n2\n\n\n\ntable and figure match\n\n\nTable and figure match\n\n\n\n\n\ndocumentation-&gt;table and figure match\n\n\n2\n\n\n\ndata provenance\n\n\nData provenance\n\n\n\n\n\nthird-party certification\n\n\nThird-party certification\n\n\n\n\n\ndata provenance-&gt;third-party certification\n\n\n1\n\n\n\nlicense\n\n\nLicense\n\n\n\n\n\ncode deposit\n\n\nCode deposit\n\n\n\n\n\nlicense-&gt;code deposit\n\n\n2\n\n\n\ndata deposit\n\n\nData deposit\n\n\n\n\n\nlicense-&gt;data deposit\n\n\n3\n\n\n\nlicense-&gt;computing environment\n\n\n1\n\n\n\ncode deposit-&gt;dependency resolution\n\n\n7\n\n\n\ncode deposit-&gt;path resolution\n\n\n6\n\n\n\ncode deposit-&gt;coding error handling\n\n\n6\n\n\n\ncode deposit-&gt;computing environment\n\n\n7\n\n\n\ncode annotation\n\n\nCode annotation\n\n\n\n\n\ncode deposit-&gt;code annotation\n\n\n1\n\n\n\ndynamic code inspection\n\n\nDynamic code inspection\n\n\n\n\n\ncode deposit-&gt;dynamic code inspection\n\n\n1\n\n\n\ncode deposit-&gt;workflow/reproduction tree\n\n\n1\n\n\n\ncodes consistent with claims\n\n\nCodes consistent with claims\n\n\n\n\n\ncode deposit-&gt;codes consistent with claims\n\n\n5\n\n\n\ncode deposit-&gt;numerical output match\n\n\n17\n\n\n\ncode deposit-&gt;table and figure match\n\n\n9\n\n\n\ndata deposit-&gt;dependency resolution\n\n\n1\n\n\n\ndata deposit-&gt;path resolution\n\n\n1\n\n\n\ndata deposit-&gt;coding error handling\n\n\n1\n\n\n\ndata deposit-&gt;computing environment\n\n\n1\n\n\n\ndata deposit-&gt;dynamic code inspection\n\n\n1\n\n\n\ndata deposit-&gt;workflow/reproduction tree\n\n\n1\n\n\n\ndata deposit-&gt;numerical output match\n\n\n16\n\n\n\ndata deposit-&gt;table and figure match\n\n\n7\n\n\n\ndependency resolution-&gt;computing environment\n\n\n7\n\n\n\ndependency resolution-&gt;numerical output match\n\n\n4\n\n\n\ndependency resolution-&gt;table and figure match\n\n\n3\n\n\n\npath resolution-&gt;computing environment\n\n\n1\n\n\n\npath resolution-&gt;numerical output match\n\n\n3\n\n\n\npath resolution-&gt;table and figure match\n\n\n2\n\n\n\ncoding error handling-&gt;codes consistent with claims\n\n\n1\n\n\n\ncoding error handling-&gt;numerical output match\n\n\n6\n\n\n\ncoding error handling-&gt;table and figure match\n\n\n4\n\n\n\ncomputing environment-&gt;numerical output match\n\n\n5\n\n\n\ncomputing environment-&gt;table and figure match\n\n\n3\n\n\n\ncode runs without manual intervention\n\n\nCode runs without manual intervention\n\n\n\n\n\ncode runs without manual intervention-&gt;numerical output match\n\n\n1\n\n\n\ncode runs without manual intervention-&gt;table and figure match\n\n\n1\n\n\n\ncode annotation-&gt;codes consistent with claims\n\n\n1\n\n\n\nworkflow/reproduction tree-&gt;numerical output match\n\n\n1\n\n\n\nworkflow/reproduction tree-&gt;table and figure match\n\n\n1\n\n\n\ncodes consistent with claims-&gt;numerical output match\n\n\n3\n\n\n\ncodes consistent with claims-&gt;table and figure match\n\n\n2\n\n\n\nnumerical output match-&gt;table and figure match\n\n\n2\n\n\n\n\n\n\n\n\n\nNot linked at this threshold: Artifacts longevity/sustainability, Version control, Commands logs traceability, Test code coverage"
   },
   {
     "objectID": "pipeline.html",
     "href": "pipeline.html",
     "title": "Badge pipeline",
     "section": "",
-    "text": "Will be available soon."
+    "text": "Will be available soon"
   }
 ]

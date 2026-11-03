@@ -4,9 +4,10 @@ subtitle: '[Tier 3 · Reproducible - Gold]{.badge .tier-3} [core]{.badge .status
   [endorsement]{.badge .reason tabindex="0" role="button" data-bs-toggle="popover"
   data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why
   is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least
-  20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails
-  that rule but is named as a parent of another criterion on a link asserted by at
-  least 3 sources.</p><a href=''../../about.html''>All column definitions</a>"}'
+  20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</b></p><p>structural:
+  fails that rule but is named as a parent of another criterion on a link asserted
+  by at least 3 sources.</p><a href=''../../about.html#definitions-from-the-workbook''>All
+  column definitions</a>"}'
 description: The code regenerates every table and figure in the paper and appendix,
   and the regenerated items match the published ones in structure and appearance;
   for figures, this means the levels, shapes and positions of curves and data points.
@@ -30,7 +31,7 @@ The code regenerates none of the tables and figures, or the regenerated items di
 [Based on: [#85](../../sources.qmd#p85 "The Role of Third-Party Verification in Research Reproducibility") level, shapes and positions of curves/data points, [#20](../../sources.qmd#p20 "Successes and struggles with computational reproducibility: lessons from the fragile families challenge")/[#93](../../sources.qmd#p93 "Unintended code errors and computational reproducibility") all figures and tables incl. appendix, [#99](../../sources.qmd#p99 "Introducing reproducible research standards at the world bank") match exactly, [#104](../../sources.qmd#p104 "Reproduce to validate: a comprehensive study on the reproducibility of economics research") match up to some decimals, [#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments") 'Fully' identical vs. 'Partially' slight deviation, [#103](../../sources.qmd#p103 "The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)") random seed for figures, [#132](../../sources.qmd#p132 "Long-term effects of the targeting the ultra poor program—a reproducibility and replicability assessment of banerjee et al. (2021)") negligible discrepancies (two observations).]{.source-note}
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-C3 (no tables/figures)
+Manuscript has no table or figure (C3)
 :::
 
 ## Prerequisites
@@ -64,11 +65,11 @@ Check order: **5**
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 24 | 54.2% | 41.7% | 16.7% | 20.8% | 62.5% | 1 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 24 | 54.2% | 4.2% | 41.7% | 16.7% | 20.8% | 62.5% | 1 |
 
 ## Text evidence (24 quotes)
 

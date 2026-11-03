@@ -4,9 +4,10 @@ subtitle: '[Tier 2 · Executable - Silver]{.badge .tier-2} [core]{.badge .status
   [endorsement]{.badge .reason tabindex="0" role="button" data-bs-toggle="popover"
   data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why
   is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least
-  20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails
-  that rule but is named as a parent of another criterion on a link asserted by at
-  least 3 sources.</p><a href=''../../about.html''>All column definitions</a>"}'
+  20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</b></p><p>structural:
+  fails that rule but is named as a parent of another criterion on a link asserted
+  by at least 3 sources.</p><a href=''../../about.html#definitions-from-the-workbook''>All
+  column definitions</a>"}'
 description: Every add-on package or library the code needs is declared with its exact
   version, ideally in a machine-readable file (e.g. renv.lock in R) or an installation
   script (e.g. a setup.do in Stata), so that a user can install them on a new machine
@@ -62,11 +63,11 @@ Check order: **2**
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 59 | 55.9% | 42.4% | 47.5% | 5.1% | 47.5% | 5 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 59 | 55.9% | 1.7% | 42.4% | 47.5% | 5.1% | 47.5% | 5 |
 
 ## Text evidence (59 quotes)
 

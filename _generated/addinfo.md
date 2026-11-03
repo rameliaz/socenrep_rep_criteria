@@ -5,7 +5,7 @@
 | criterion | Criterion label from the criteria extraction coding. |
 | definition | What the criterion covers in this rubric, synthesized from the quotes in the 'Text evidence' sheet. |
 | status | core = required to award the tier; recommended = good practice, not required for the tier. Computed. Important: third-party certification is recommended in general, but when not all datasets needed are in the package it decides whether Tiers 2-3 can be assessed (see the scope rule). |
-| core\_reason | Why a criterion is core. endorsement: invoked by at least 20 sources and stated as a rule by at least 50% of them. structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed. |
+| core\_reason | Why a criterion is core. endorsement: invoked by at least 20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources). structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed. |
 | check\_order | Depth in the prerequisite graph: the number of prerequisite steps above the criterion along the longest chain (0 = no prerequisite coded). Within a tier, check criteria with lower numbers first. Blank = no prerequisite links coded at all. Computed. |
 | sources | Number of papers in the corpus that contain the criterion. Computed. |
 | pct\_injunctive | Percentage of those sources that state the criterion as a rule or requirement. Computed. |
@@ -16,7 +16,7 @@
 | pct\_automatable\_no | Percentage of sources saying that the check should be done manually. Computed. |
 | pct\_automatable\_unclear | Percentage of sources that do not say whether the check can be automated. Computed. |
 | llm\_sources | Number of sources in which the automated check involves a large language model. Computed. |
-| criterion\_met | What a replication package must show to fully meet the criterion. To be decided later. |
+| criterion\_met | What a replication package must show to fully meet the criterion. |
 | criterion\_partially\_met | What a package shows when it meets the criterion only in part. |
 | criterion\_not\_met | What a package shows when it fails the criterion. |
 | not\_applicable | When the criterion is not applicable (N/A). A criterion is N/A only under the conditions listed below; anything else that is missing counts as not met. N/A criteria are left out of the award rule (a tier requires all applicable core criteria of that tier and of every lower tier to be fully met) and are counted separately in the summary, with the reason, e.g. 'N/A (simulation)'. C3 and C4 cannot both apply. |

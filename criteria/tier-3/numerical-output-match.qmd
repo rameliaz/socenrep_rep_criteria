@@ -4,9 +4,10 @@ subtitle: '[Tier 3 · Reproducible - Gold]{.badge .tier-3} [core]{.badge .status
   [endorsement]{.badge .reason tabindex="0" role="button" data-bs-toggle="popover"
   data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why
   is this criterion core?" data-bs-content="<p><b>endorsement: invoked by at least
-  20 sources and stated as a rule by at least 50% of them.</b></p><p>structural: fails
-  that rule but is named as a parent of another criterion on a link asserted by at
-  least 3 sources.</p><a href=''../../about.html''>All column definitions</a>"}'
+  20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</b></p><p>structural:
+  fails that rule but is named as a parent of another criterion on a link asserted
+  by at least 3 sources.</p><a href=''../../about.html#definitions-from-the-workbook''>All
+  column definitions</a>"}'
 description: 'Re-running the code on the deposited data reproduces the numerical results
   reported in the paper and appendix: estimates, standard errors, test statistics,
   sample sizes and numbers in the text. Sources differ on the tolerance, from exact
@@ -26,17 +27,17 @@ Re-running the code on the deposited data reproduces all numerical results in th
 ::: {.callout-warning appearance="simple" title="Partially met"}
 All results are obtained, but some differ beyond rounding while the conclusions are unchanged: same direction and statistical significance, and deviations within the tolerance (e.g. \<=10% of the original value, or \<=15% and p-values differing by no more than 0.05); or only part of the results can be reproduced (e.g. main tables but not the appendix).
 
-[Based on: Tolerance varies across sources - TEAM DECISION NEEDED: exact [#99](../../sources.qmd#p99 "Introducing reproducible research standards at the world bank")/[#103](../../sources.qmd#p103 "The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)")/[#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments"), \<1e-10 [#20](../../sources.qmd#p20 "Successes and struggles with computational reproducibility: lessons from the fragile families challenge"), within 1% [#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), \<=10% [#95](../../sources.qmd#p95 "Computational reproducibility in finance: evidence from 1,000 tests"), +/-15% & p\<=0.05 [#144](../../sources.qmd#p144 "Investigating the reproducibility of the social and behavioural sciences"), direction + significance [#107](../../sources.qmd#p107 "Teaching constructive replications in the behavioral and social sciences using quantitative data")/[#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), rounding/formatting = minor [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers"). CRA vs. CRR split: [#138](../../sources.qmd#p138 "Reproducibility and robustness of economics and political science research").]{.source-note}
+[Based on:exact [#99](../../sources.qmd#p99 "Introducing reproducible research standards at the world bank")/[#103](../../sources.qmd#p103 "The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)")/[#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments"), \<1e-10 [#20](../../sources.qmd#p20 "Successes and struggles with computational reproducibility: lessons from the fragile families challenge"), within 1% [#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), \<=10% [#95](../../sources.qmd#p95 "Computational reproducibility in finance: evidence from 1,000 tests"), +/-15% & p\<=0.05 [#144](../../sources.qmd#p144 "Investigating the reproducibility of the social and behavioural sciences"), direction + significance [#107](../../sources.qmd#p107 "Teaching constructive replications in the behavioral and social sciences using quantitative data")/[#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), rounding/formatting = minor [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers"). CRA vs. CRR split: [#138](../../sources.qmd#p138 "Reproducibility and robustness of economics and political science research").]{.source-note}
 :::
 ::: {.callout-important appearance="simple" title="Not met"}
 The numerical results cannot be reproduced, or they deviate beyond the tolerance, or the direction or statistical significance of a focal result changes.
 
-[Based on: Tolerance varies across sources - TEAM DECISION NEEDED: exact [#99](../../sources.qmd#p99 "Introducing reproducible research standards at the world bank")/[#103](../../sources.qmd#p103 "The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)")/[#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments"), \<1e-10 [#20](../../sources.qmd#p20 "Successes and struggles with computational reproducibility: lessons from the fragile families challenge"), within 1% [#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), \<=10% [#95](../../sources.qmd#p95 "Computational reproducibility in finance: evidence from 1,000 tests"), +/-15% & p\<=0.05 [#144](../../sources.qmd#p144 "Investigating the reproducibility of the social and behavioural sciences"), direction + significance [#107](../../sources.qmd#p107 "Teaching constructive replications in the behavioral and social sciences using quantitative data")/[#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), rounding/formatting = minor [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers"). CRA vs. CRR split: [#138](../../sources.qmd#p138 "Reproducibility and robustness of economics and political science research").]{.source-note}
+[Based on exact [#99](../../sources.qmd#p99 "Introducing reproducible research standards at the world bank")/[#103](../../sources.qmd#p103 "The Challenges of Replicating Volatile Platform-Data Studies: Replicating Schatto-Eckrodt et al. (2020)")/[#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments"), \<1e-10 [#20](../../sources.qmd#p20 "Successes and struggles with computational reproducibility: lessons from the fragile families challenge"), within 1% [#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), \<=10% [#95](../../sources.qmd#p95 "Computational reproducibility in finance: evidence from 1,000 tests"), +/-15% & p\<=0.05 [#144](../../sources.qmd#p144 "Investigating the reproducibility of the social and behavioural sciences"), direction + significance [#107](../../sources.qmd#p107 "Teaching constructive replications in the behavioral and social sciences using quantitative data")/[#128](../../sources.qmd#p128 "The reliability of replications: a study in computational reproductions"), rounding/formatting = minor [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers"). CRA vs. CRR split: [#138](../../sources.qmd#p138 "Reproducibility and robustness of economics and political science research").]{.source-note}
 :::
 
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-C4 (no numerical results)
+Manuscript has no numerical results (C4)
 :::
 
 ## Prerequisites
@@ -69,11 +70,11 @@ Check order: **4**
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 49 | 69.4% | 22.4% | 16.3% | 10.2% | 73.5% | 4 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 49 | 69.4% | 8.2% | 22.4% | 16.3% | 10.2% | 73.5% | 4 |
 
 ## Text evidence (50 quotes)
 

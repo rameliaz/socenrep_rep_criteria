@@ -45,11 +45,11 @@ Check order: **—** (no prerequisite links coded)
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 1 | 100% | 0% | 0% | 0% | 100% | 0 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 1 | 100% | 0% | 0% | 0% | 0% | 100% | 0 |
 
 ## Text evidence (1 quote)
 

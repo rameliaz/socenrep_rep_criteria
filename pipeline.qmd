@@ -3,4 +3,4 @@ title: "Badge pipeline"
 toc: false
 ---
 
-Will be available soon.
+Will be available soon

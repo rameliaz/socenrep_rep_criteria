@@ -15,11 +15,11 @@ website:
     left:
       - text: Criteria
         href: index.qmd
-      - text: Prerequisite graph
+      - text: Dependency graph
         href: graph.qmd
       - text: Sources
         href: sources.qmd
-      - text: How to read
+      - text: How to use
         href: about.qmd
       - text: Badge pipeline
         href: pipeline.qmd

@@ -46,11 +46,11 @@ Check order: **—** (no prerequisite links coded)
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 12 | 66.7% | 33.3% | 50% | 0% | 50% | 0 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 12 | 66.7% | 0% | 33.3% | 50% | 0% | 50% | 0 |
 
 ## Text evidence (12 quotes)
 

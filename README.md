@@ -13,6 +13,7 @@ two files in `source/`:
 |---|---|
 | `index.qmd`, `graph.qmd`, `sources.qmd`, `about.qmd`, `pipeline.qmd` | Yes: text of each page |
 | `_quarto.yml`, `theme.scss` | Yes: navigation, sidebar, theme, colors |
+| `_notes/<page name>.md` | Yes: a note placed at the top of that criterion's page (e.g. `_notes/third-party-certification.md`) |
 | `criteria/tier-*/*.qmd` | No: one page per criterion, regenerated on every render |
 | `_generated/*`, `_variables.yml` | No: tables, graphs and counts, regenerated on every render |
 | `docs/` | No: the rendered site |

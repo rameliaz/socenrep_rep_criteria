@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Prerequisite graph – SocEnRep rubric</title>
+<title>Dependency graph – SocEnRep rubric</title>
 <style>
 /* Default styles provided by pandoc.
 ** See https://pandoc.org/MANUAL.html#variables-for-html for config info.
@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-e0f14578190b460d380b0f4cc9495f43.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-892571d24cda61ee56ff22c162bb7a17.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-cec90fdeb6904c903ed8a09193984353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -272,7 +272,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./graph.html"> 
-<span class="menu-text">Prerequisite graph</span></a>
+<span class="menu-text">Dependency graph</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./sources.html"> 
@@ -280,7 +280,7 @@ ul.task-list li input[type="checkbox"] {
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./about.html"> 
-<span class="menu-text">How to read</span></a>
+<span class="menu-text">How to use</span></a>
   </li>  
   <li class="nav-item">
     <a class="nav-link" href="./pipeline.html"> 
@@ -298,7 +298,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Prerequisite graph</li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item">Dependency graph</li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -487,7 +487,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Prerequisite graph</h1>
+<h1 class="title">Dependency graph</h1>
 </div>
 
 
@@ -504,10 +504,10 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>Arrows run from a prerequisite to the criterion that builds on it. The number on an arrow is how many sources assert that link. Filled boxes are core criteria, dashed boxes recommended ones; dashed arrows start at a recommended prerequisite. Click a box to open the criterion.</p>
+<p>Arrows run from a prerequisite to the criterion that builds on it. The number on an arrow is how many sources assert that link. Filled boxes are core criteria, dashed boxes are recommended ones; dashed arrows start at a recommended prerequisite. Click a box to open the criterion details.</p>
 <p>Colors show the tier: <span class="badge tier-1">Tier 1 · Available - Bronze</span> <span class="badge tier-2">Tier 2 · Executable - Silver</span> <span class="badge tier-3">Tier 3 · Reproducible - Gold</span></p>
 <div class="tabset-margin-container"></div><div class="panel-tabset">
-<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">19 links with 3+ sources</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">All 48 links</a></li></ul>
+<ul class="nav nav-tabs" role="tablist"><li class="nav-item" role="presentation"><a class="nav-link active" id="tabset-1-1-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-1" role="tab" aria-controls="tabset-1-1" aria-selected="true" href="">Simplified: 19 links with 3+ sources</a></li><li class="nav-item" role="presentation"><a class="nav-link" id="tabset-1-2-tab" data-bs-toggle="tab" data-bs-target="#tabset-1-2" role="tab" aria-controls="tabset-1-2" aria-selected="false" href="">Full graph: All 48 links</a></li></ul>
 <div class="tab-content">
 <div id="tabset-1-1" class="tab-pane active" role="tabpanel" aria-labelledby="tabset-1-1-tab">
 <div class="graph-scroll">
@@ -523,7 +523,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node1" class="node">
 <title>license</title>
 <g id="a_node1"><a href="criteria/tier-1/license.html" title="Every part of the package, code and data alike, carries an explicit license or terms of use, so others know whether and how they may use, modify and redistribute it. The authors have the right to share what they deposit." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M269.52,-155.83C269.52,-155.83 222.91,-155.83 222.91,-155.83 216.91,-155.83 210.91,-149.83 210.91,-143.83 210.91,-143.83 210.91,-131.83 210.91,-131.83 210.91,-125.83 216.91,-119.83 222.91,-119.83 222.91,-119.83 269.52,-119.83 269.52,-119.83 275.52,-119.83 281.52,-125.83 281.52,-131.83 281.52,-131.83 281.52,-143.83 281.52,-143.83 281.52,-149.83 275.52,-155.83 269.52,-155.83"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M269.52,-155.83C269.52,-155.83 222.91,-155.83 222.91,-155.83 216.91,-155.83 210.91,-149.83 210.91,-143.83 210.91,-143.83 210.91,-131.83 210.91,-131.83 210.91,-125.83 216.91,-119.83 222.91,-119.83 222.91,-119.83 269.52,-119.83 269.52,-119.83 275.52,-119.83 281.52,-125.83 281.52,-131.83 281.52,-131.83 281.52,-143.83 281.52,-143.83 281.52,-149.83 275.52,-155.83 269.52,-155.83"></path>
 <text text-anchor="middle" x="246.22" y="-133.93" font-family="Helvetica,sans-Serif" font-size="13.00">License</text>
 </a>
 </g>
@@ -532,7 +532,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node3" class="node">
 <title>data deposit</title>
 <g id="a_node3"><a href="criteria/tier-1/data-deposit.html" title="The data needed to reproduce the reported results are publicly available with the paper, preferably in a trusted repository with a persistent identifier. This can be the raw data, the analysis data, or both; with analysis data only, results can be reproduced from the analysis data but not from the raw data." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M696.1,-160.83C696.1,-160.83 621.12,-160.83 621.12,-160.83 615.12,-160.83 609.12,-154.83 609.12,-148.83 609.12,-148.83 609.12,-136.83 609.12,-136.83 609.12,-130.83 615.12,-124.83 621.12,-124.83 621.12,-124.83 696.1,-124.83 696.1,-124.83 702.1,-124.83 708.1,-130.83 708.1,-136.83 708.1,-136.83 708.1,-148.83 708.1,-148.83 708.1,-154.83 702.1,-160.83 696.1,-160.83"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M696.1,-160.83C696.1,-160.83 621.12,-160.83 621.12,-160.83 615.12,-160.83 609.12,-154.83 609.12,-148.83 609.12,-148.83 609.12,-136.83 609.12,-136.83 609.12,-130.83 615.12,-124.83 621.12,-124.83 621.12,-124.83 696.1,-124.83 696.1,-124.83 702.1,-124.83 708.1,-130.83 708.1,-136.83 708.1,-136.83 708.1,-148.83 708.1,-148.83 708.1,-154.83 702.1,-160.83 696.1,-160.83"></path>
 <text text-anchor="middle" x="658.61" y="-138.93" font-family="Helvetica,sans-Serif" font-size="13.00">Data deposit</text>
 </a>
 </g>
@@ -548,7 +548,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node2" class="node">
 <title>code deposit</title>
 <g id="a_node2"><a href="criteria/tier-1/code-deposit.html" title="All code needed to go from the data to every reported result, including data cleaning and preparation as well as the analysis, is publicly available with the paper in human-readable form, preferably in a trusted repository with a persistent identifier." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M90.42,-267.83C90.42,-267.83 12.19,-267.83 12.19,-267.83 6.19,-267.83 0.19,-261.83 0.19,-255.83 0.19,-255.83 0.19,-243.83 0.19,-243.83 0.19,-237.83 6.19,-231.83 12.19,-231.83 12.19,-231.83 90.42,-231.83 90.42,-231.83 96.42,-231.83 102.42,-237.83 102.42,-243.83 102.42,-243.83 102.42,-255.83 102.42,-255.83 102.42,-261.83 96.42,-267.83 90.42,-267.83"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M90.42,-267.83C90.42,-267.83 12.19,-267.83 12.19,-267.83 6.19,-267.83 0.19,-261.83 0.19,-255.83 0.19,-255.83 0.19,-243.83 0.19,-243.83 0.19,-237.83 6.19,-231.83 12.19,-231.83 12.19,-231.83 90.42,-231.83 90.42,-231.83 96.42,-231.83 102.42,-237.83 102.42,-243.83 102.42,-243.83 102.42,-255.83 102.42,-255.83 102.42,-261.83 96.42,-267.83 90.42,-267.83"></path>
 <text text-anchor="middle" x="51.3" y="-245.93" font-family="Helvetica,sans-Serif" font-size="13.00">Code deposit</text>
 </a>
 </g>
@@ -557,7 +557,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node4" class="node">
 <title>dependency resolution</title>
 <g id="a_node4"><a href="criteria/tier-2/dependency-resolution.html" title="Every add-on package or library the code needs is declared with its exact version, ideally in a machine-readable file (e.g. renv.lock in R) or an installation script (e.g. a setup.do in Stata), so that a user can install them on a new machine and the code finds them." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M313.69,-267.83C313.69,-267.83 178.74,-267.83 178.74,-267.83 172.74,-267.83 166.74,-261.83 166.74,-255.83 166.74,-255.83 166.74,-243.83 166.74,-243.83 166.74,-237.83 172.74,-231.83 178.74,-231.83 178.74,-231.83 313.69,-231.83 313.69,-231.83 319.69,-231.83 325.69,-237.83 325.69,-243.83 325.69,-243.83 325.69,-255.83 325.69,-255.83 325.69,-261.83 319.69,-267.83 313.69,-267.83"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M313.69,-267.83C313.69,-267.83 178.74,-267.83 178.74,-267.83 172.74,-267.83 166.74,-261.83 166.74,-255.83 166.74,-255.83 166.74,-243.83 166.74,-243.83 166.74,-237.83 172.74,-231.83 178.74,-231.83 178.74,-231.83 313.69,-231.83 313.69,-231.83 319.69,-231.83 325.69,-237.83 325.69,-243.83 325.69,-243.83 325.69,-255.83 325.69,-255.83 325.69,-261.83 319.69,-267.83 313.69,-267.83"></path>
 <text text-anchor="middle" x="246.22" y="-245.93" font-family="Helvetica,sans-Serif" font-size="13.00">Dependency resolution</text>
 </a>
 </g>
@@ -573,7 +573,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node5" class="node">
 <title>path resolution</title>
 <g id="a_node5"><a href="criteria/tier-2/path-resolution.html" title="The code finds its input and output files on any machine without edits: paths are relative to the package's root folder, there are no hard-coded absolute paths or machine-specific working directories, and files sit in the folders the code expects." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M495.38,-358.83C495.38,-358.83 406.93,-358.83 406.93,-358.83 400.93,-358.83 394.93,-352.83 394.93,-346.83 394.93,-346.83 394.93,-334.83 394.93,-334.83 394.93,-328.83 400.93,-322.83 406.93,-322.83 406.93,-322.83 495.38,-322.83 495.38,-322.83 501.38,-322.83 507.38,-328.83 507.38,-334.83 507.38,-334.83 507.38,-346.83 507.38,-346.83 507.38,-352.83 501.38,-358.83 495.38,-358.83"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M495.38,-358.83C495.38,-358.83 406.93,-358.83 406.93,-358.83 400.93,-358.83 394.93,-352.83 394.93,-346.83 394.93,-346.83 394.93,-334.83 394.93,-334.83 394.93,-328.83 400.93,-322.83 406.93,-322.83 406.93,-322.83 495.38,-322.83 495.38,-322.83 501.38,-322.83 507.38,-328.83 507.38,-334.83 507.38,-334.83 507.38,-346.83 507.38,-346.83 507.38,-352.83 501.38,-358.83 495.38,-358.83"></path>
 <text text-anchor="middle" x="451.15" y="-336.93" font-family="Helvetica,sans-Serif" font-size="13.00">Path resolution</text>
 </a>
 </g>
@@ -589,7 +589,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node6" class="node">
 <title>coding error handling</title>
 <g id="a_node6"><a href="criteria/tier-2/coding-error-handling.html" title="The code runs to completion without execution errors (bugs). The criterion also covers how errors found during a check are handled: they are recorded, the reproducer makes only minor and unambiguous fixes within a stated limit, each fix is documented, and anything larger goes back to the authors." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M722.14,-106.83C722.14,-106.83 595.09,-106.83 595.09,-106.83 589.09,-106.83 583.09,-100.83 583.09,-94.83 583.09,-94.83 583.09,-82.83 583.09,-82.83 583.09,-76.83 589.09,-70.83 595.09,-70.83 595.09,-70.83 722.14,-70.83 722.14,-70.83 728.14,-70.83 734.14,-76.83 734.14,-82.83 734.14,-82.83 734.14,-94.83 734.14,-94.83 734.14,-100.83 728.14,-106.83 722.14,-106.83"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M722.14,-106.83C722.14,-106.83 595.09,-106.83 595.09,-106.83 589.09,-106.83 583.09,-100.83 583.09,-94.83 583.09,-94.83 583.09,-82.83 583.09,-82.83 583.09,-76.83 589.09,-70.83 595.09,-70.83 595.09,-70.83 722.14,-70.83 722.14,-70.83 728.14,-70.83 734.14,-76.83 734.14,-82.83 734.14,-82.83 734.14,-94.83 734.14,-94.83 734.14,-100.83 728.14,-106.83 722.14,-106.83"></path>
 <text text-anchor="middle" x="658.61" y="-84.93" font-family="Helvetica,sans-Serif" font-size="13.00">Coding error handling</text>
 </a>
 </g>
@@ -605,7 +605,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node7" class="node">
 <title>computing environment</title>
 <g id="a_node7"><a href="criteria/tier-2/computing-environment.html" title="The system the code was run on is documented: operating system, version of the statistical software or programming language, and, where relevant, hardware and expected runtime. Ideally the environment is captured so it can be rebuilt (e.g. a container, virtual machine or cloud capsule) and the code runs the same way on another machine." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M728.63,-263.83C728.63,-263.83 588.59,-263.83 588.59,-263.83 582.59,-263.83 576.59,-257.83 576.59,-251.83 576.59,-251.83 576.59,-239.83 576.59,-239.83 576.59,-233.83 582.59,-227.83 588.59,-227.83 588.59,-227.83 728.63,-227.83 728.63,-227.83 734.63,-227.83 740.63,-233.83 740.63,-239.83 740.63,-239.83 740.63,-251.83 740.63,-251.83 740.63,-257.83 734.63,-263.83 728.63,-263.83"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M728.63,-263.83C728.63,-263.83 588.59,-263.83 588.59,-263.83 582.59,-263.83 576.59,-257.83 576.59,-251.83 576.59,-251.83 576.59,-239.83 576.59,-239.83 576.59,-233.83 582.59,-227.83 588.59,-227.83 588.59,-227.83 728.63,-227.83 728.63,-227.83 734.63,-227.83 740.63,-233.83 740.63,-239.83 740.63,-239.83 740.63,-251.83 740.63,-251.83 740.63,-257.83 734.63,-263.83 728.63,-263.83"></path>
 <text text-anchor="middle" x="658.61" y="-241.93" font-family="Helvetica,sans-Serif" font-size="13.00">Computing environment</text>
 </a>
 </g>
@@ -621,7 +621,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node8" class="node">
 <title>codes consistent with claims</title>
 <g id="a_node8"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M535.55,-451.83C535.55,-451.83 366.76,-451.83 366.76,-451.83 360.76,-451.83 354.76,-445.83 354.76,-439.83 354.76,-439.83 354.76,-427.83 354.76,-427.83 354.76,-421.83 360.76,-415.83 366.76,-415.83 366.76,-415.83 535.55,-415.83 535.55,-415.83 541.55,-415.83 547.55,-421.83 547.55,-427.83 547.55,-427.83 547.55,-439.83 547.55,-439.83 547.55,-445.83 541.55,-451.83 535.55,-451.83"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M535.55,-451.83C535.55,-451.83 366.76,-451.83 366.76,-451.83 360.76,-451.83 354.76,-445.83 354.76,-439.83 354.76,-439.83 354.76,-427.83 354.76,-427.83 354.76,-421.83 360.76,-415.83 366.76,-415.83 366.76,-415.83 535.55,-415.83 535.55,-415.83 541.55,-415.83 547.55,-421.83 547.55,-427.83 547.55,-427.83 547.55,-439.83 547.55,-439.83 547.55,-445.83 541.55,-451.83 535.55,-451.83"></path>
 <text text-anchor="middle" x="451.15" y="-429.93" font-family="Helvetica,sans-Serif" font-size="13.00">Codes consistent with claims</text>
 </a>
 </g>
@@ -637,7 +637,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node9" class="node">
 <title>numerical output match</title>
 <g id="a_node9"><a href="criteria/tier-3/numerical-output-match.html" title="Re-running the code on the deposited data reproduces the numerical results reported in the paper and appendix: estimates, standard errors, test statistics, sample sizes and numbers in the text. Sources differ on the tolerance, from exact agreement to small stated deviations." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M962.28,-333.83C962.28,-333.83 822.72,-333.83 822.72,-333.83 816.72,-333.83 810.72,-327.83 810.72,-321.83 810.72,-321.83 810.72,-309.83 810.72,-309.83 810.72,-303.83 816.72,-297.83 822.72,-297.83 822.72,-297.83 962.28,-297.83 962.28,-297.83 968.28,-297.83 974.28,-303.83 974.28,-309.83 974.28,-309.83 974.28,-321.83 974.28,-321.83 974.28,-327.83 968.28,-333.83 962.28,-333.83"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M962.28,-333.83C962.28,-333.83 822.72,-333.83 822.72,-333.83 816.72,-333.83 810.72,-327.83 810.72,-321.83 810.72,-321.83 810.72,-309.83 810.72,-309.83 810.72,-303.83 816.72,-297.83 822.72,-297.83 822.72,-297.83 962.28,-297.83 962.28,-297.83 968.28,-297.83 974.28,-303.83 974.28,-309.83 974.28,-309.83 974.28,-321.83 974.28,-321.83 974.28,-327.83 968.28,-333.83 962.28,-333.83"></path>
 <text text-anchor="middle" x="892.5" y="-311.93" font-family="Helvetica,sans-Serif" font-size="13.00">Numerical output match</text>
 </a>
 </g>
@@ -653,7 +653,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node10" class="node">
 <title>table and figure match</title>
 <g id="a_node10"><a href="criteria/tier-3/table-and-figure-match.html" title="The code regenerates every table and figure in the paper and appendix, and the regenerated items match the published ones in structure and appearance; for figures, this means the levels, shapes and positions of curves and data points." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M959.96,-172.83C959.96,-172.83 825.03,-172.83 825.03,-172.83 819.03,-172.83 813.03,-166.83 813.03,-160.83 813.03,-160.83 813.03,-148.83 813.03,-148.83 813.03,-142.83 819.03,-136.83 825.03,-136.83 825.03,-136.83 959.96,-136.83 959.96,-136.83 965.96,-136.83 971.96,-142.83 971.96,-148.83 971.96,-148.83 971.96,-160.83 971.96,-160.83 971.96,-166.83 965.96,-172.83 959.96,-172.83"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M959.96,-172.83C959.96,-172.83 825.03,-172.83 825.03,-172.83 819.03,-172.83 813.03,-166.83 813.03,-160.83 813.03,-160.83 813.03,-148.83 813.03,-148.83 813.03,-142.83 819.03,-136.83 825.03,-136.83 825.03,-136.83 959.96,-136.83 959.96,-136.83 965.96,-136.83 971.96,-142.83 971.96,-148.83 971.96,-148.83 971.96,-160.83 971.96,-160.83 971.96,-166.83 965.96,-172.83 959.96,-172.83"></path>
 <text text-anchor="middle" x="892.5" y="-150.93" font-family="Helvetica,sans-Serif" font-size="13.00">Table and figure match</text>
 </a>
 </g>
@@ -766,7 +766,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node1" class="node">
 <title>documentation</title>
 <g id="a_node1"><a href="criteria/tier-1/documentation.html" title="The replication package explains its own contents: a README lists every file, describes the data and states how to run the code to reproduce the results, and a codebook or data dictionary defines each variable with its values and labels. A third party should be able to understand and use the data without contacting the authors." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M313.17,-118.66C313.17,-118.66 223.29,-118.66 223.29,-118.66 217.29,-118.66 211.29,-112.66 211.29,-106.66 211.29,-106.66 211.29,-94.66 211.29,-94.66 211.29,-88.66 217.29,-82.66 223.29,-82.66 223.29,-82.66 313.17,-82.66 313.17,-82.66 319.17,-82.66 325.17,-88.66 325.17,-94.66 325.17,-94.66 325.17,-106.66 325.17,-106.66 325.17,-112.66 319.17,-118.66 313.17,-118.66"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M313.17,-118.66C313.17,-118.66 223.29,-118.66 223.29,-118.66 217.29,-118.66 211.29,-112.66 211.29,-106.66 211.29,-106.66 211.29,-94.66 211.29,-94.66 211.29,-88.66 217.29,-82.66 223.29,-82.66 223.29,-82.66 313.17,-82.66 313.17,-82.66 319.17,-82.66 325.17,-88.66 325.17,-94.66 325.17,-94.66 325.17,-106.66 325.17,-106.66 325.17,-112.66 319.17,-118.66 313.17,-118.66"></path>
 <text text-anchor="middle" x="268.23" y="-96.76" font-family="Helvetica,sans-Serif" font-size="13.00">Documentation</text>
 </a>
 </g>
@@ -775,7 +775,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node6" class="node">
 <title>dependency resolution</title>
 <g id="a_node6"><a href="criteria/tier-2/dependency-resolution.html" title="Every add-on package or library the code needs is declared with its exact version, ideally in a machine-readable file (e.g. renv.lock in R) or an installation script (e.g. a setup.do in Stata), so that a user can install them on a new machine and the code finds them." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M569.6,-380.66C569.6,-380.66 434.65,-380.66 434.65,-380.66 428.65,-380.66 422.65,-374.66 422.65,-368.66 422.65,-368.66 422.65,-356.66 422.65,-356.66 422.65,-350.66 428.65,-344.66 434.65,-344.66 434.65,-344.66 569.6,-344.66 569.6,-344.66 575.6,-344.66 581.6,-350.66 581.6,-356.66 581.6,-356.66 581.6,-368.66 581.6,-368.66 581.6,-374.66 575.6,-380.66 569.6,-380.66"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M569.6,-380.66C569.6,-380.66 434.65,-380.66 434.65,-380.66 428.65,-380.66 422.65,-374.66 422.65,-368.66 422.65,-368.66 422.65,-356.66 422.65,-356.66 422.65,-350.66 428.65,-344.66 434.65,-344.66 434.65,-344.66 569.6,-344.66 569.6,-344.66 575.6,-344.66 581.6,-350.66 581.6,-356.66 581.6,-356.66 581.6,-368.66 581.6,-368.66 581.6,-374.66 575.6,-380.66 569.6,-380.66"></path>
 <text text-anchor="middle" x="502.12" y="-358.76" font-family="Helvetica,sans-Serif" font-size="13.00">Dependency resolution</text>
 </a>
 </g>
@@ -791,7 +791,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node7" class="node">
 <title>path resolution</title>
 <g id="a_node7"><a href="criteria/tier-2/path-resolution.html" title="The code finds its input and output files on any machine without edits: paths are relative to the package's root folder, there are no hard-coded absolute paths or machine-specific working directories, and files sit in the folders the code expects." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M546.35,-454.66C546.35,-454.66 457.9,-454.66 457.9,-454.66 451.9,-454.66 445.9,-448.66 445.9,-442.66 445.9,-442.66 445.9,-430.66 445.9,-430.66 445.9,-424.66 451.9,-418.66 457.9,-418.66 457.9,-418.66 546.35,-418.66 546.35,-418.66 552.35,-418.66 558.35,-424.66 558.35,-430.66 558.35,-430.66 558.35,-442.66 558.35,-442.66 558.35,-448.66 552.35,-454.66 546.35,-454.66"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M546.35,-454.66C546.35,-454.66 457.9,-454.66 457.9,-454.66 451.9,-454.66 445.9,-448.66 445.9,-442.66 445.9,-442.66 445.9,-430.66 445.9,-430.66 445.9,-424.66 451.9,-418.66 457.9,-418.66 457.9,-418.66 546.35,-418.66 546.35,-418.66 552.35,-418.66 558.35,-424.66 558.35,-430.66 558.35,-430.66 558.35,-442.66 558.35,-442.66 558.35,-448.66 552.35,-454.66 546.35,-454.66"></path>
 <text text-anchor="middle" x="502.12" y="-432.76" font-family="Helvetica,sans-Serif" font-size="13.00">Path resolution</text>
 </a>
 </g>
@@ -807,7 +807,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node8" class="node">
 <title>coding error handling</title>
 <g id="a_node8"><a href="criteria/tier-2/coding-error-handling.html" title="The code runs to completion without execution errors (bugs). The criterion also covers how errors found during a check are handled: they are recorded, the reproducer makes only minor and unambiguous fixes within a stated limit, each fix is documented, and anything larger goes back to the authors." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M565.65,-612.66C565.65,-612.66 438.6,-612.66 438.6,-612.66 432.6,-612.66 426.6,-606.66 426.6,-600.66 426.6,-600.66 426.6,-588.66 426.6,-588.66 426.6,-582.66 432.6,-576.66 438.6,-576.66 438.6,-576.66 565.65,-576.66 565.65,-576.66 571.65,-576.66 577.65,-582.66 577.65,-588.66 577.65,-588.66 577.65,-600.66 577.65,-600.66 577.65,-606.66 571.65,-612.66 565.65,-612.66"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M565.65,-612.66C565.65,-612.66 438.6,-612.66 438.6,-612.66 432.6,-612.66 426.6,-606.66 426.6,-600.66 426.6,-600.66 426.6,-588.66 426.6,-588.66 426.6,-582.66 432.6,-576.66 438.6,-576.66 438.6,-576.66 565.65,-576.66 565.65,-576.66 571.65,-576.66 577.65,-582.66 577.65,-588.66 577.65,-588.66 577.65,-600.66 577.65,-600.66 577.65,-606.66 571.65,-612.66 565.65,-612.66"></path>
 <text text-anchor="middle" x="502.12" y="-590.76" font-family="Helvetica,sans-Serif" font-size="13.00">Coding error handling</text>
 </a>
 </g>
@@ -823,7 +823,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node9" class="node">
 <title>computing environment</title>
 <g id="a_node9"><a href="criteria/tier-2/computing-environment.html" title="The system the code was run on is documented: operating system, version of the statistical software or programming language, and, where relevant, hardware and expected runtime. Ideally the environment is captured so it can be rebuilt (e.g. a container, virtual machine or cloud capsule) and the code runs the same way on another machine." target="_top">
-<path fill="#dce6f5" stroke="#2f5d9c" stroke-width="1.5" d="M856.97,-264.66C856.97,-264.66 716.94,-264.66 716.94,-264.66 710.94,-264.66 704.94,-258.66 704.94,-252.66 704.94,-252.66 704.94,-240.66 704.94,-240.66 704.94,-234.66 710.94,-228.66 716.94,-228.66 716.94,-228.66 856.97,-228.66 856.97,-228.66 862.97,-228.66 868.97,-234.66 868.97,-240.66 868.97,-240.66 868.97,-252.66 868.97,-252.66 868.97,-258.66 862.97,-264.66 856.97,-264.66"></path>
+<path fill="#c0c0c0" stroke="#7d7f83" stroke-width="1.5" d="M856.97,-264.66C856.97,-264.66 716.94,-264.66 716.94,-264.66 710.94,-264.66 704.94,-258.66 704.94,-252.66 704.94,-252.66 704.94,-240.66 704.94,-240.66 704.94,-234.66 710.94,-228.66 716.94,-228.66 716.94,-228.66 856.97,-228.66 856.97,-228.66 862.97,-228.66 868.97,-234.66 868.97,-240.66 868.97,-240.66 868.97,-252.66 868.97,-252.66 868.97,-258.66 862.97,-264.66 856.97,-264.66"></path>
 <text text-anchor="middle" x="786.96" y="-242.76" font-family="Helvetica,sans-Serif" font-size="13.00">Computing environment</text>
 </a>
 </g>
@@ -839,7 +839,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node13" class="node">
 <title>workflow/reproduction tree</title>
 <g id="a_node13"><a href="criteria/tier-2/workflow-reproduction-tree.html" title="The package documents which code and data files produce each table and figure in the paper, for example as a diagram or table that traces every display item back to its scripts and inputs." target="_top">
-<path fill="none" stroke="#2f5d9c" stroke-width="1.5" stroke-dasharray="5,2" d="M580.97,-313.66C580.97,-313.66 423.28,-313.66 423.28,-313.66 417.28,-313.66 411.28,-307.66 411.28,-301.66 411.28,-301.66 411.28,-289.66 411.28,-289.66 411.28,-283.66 417.28,-277.66 423.28,-277.66 423.28,-277.66 580.97,-277.66 580.97,-277.66 586.97,-277.66 592.97,-283.66 592.97,-289.66 592.97,-289.66 592.97,-301.66 592.97,-301.66 592.97,-307.66 586.97,-313.66 580.97,-313.66"></path>
+<path fill="none" stroke="#7d7f83" stroke-width="1.5" stroke-dasharray="5,2" d="M580.97,-313.66C580.97,-313.66 423.28,-313.66 423.28,-313.66 417.28,-313.66 411.28,-307.66 411.28,-301.66 411.28,-301.66 411.28,-289.66 411.28,-289.66 411.28,-283.66 417.28,-277.66 423.28,-277.66 423.28,-277.66 580.97,-277.66 580.97,-277.66 586.97,-277.66 592.97,-283.66 592.97,-289.66 592.97,-289.66 592.97,-301.66 592.97,-301.66 592.97,-307.66 586.97,-313.66 580.97,-313.66"></path>
 <text text-anchor="middle" x="502.12" y="-291.76" font-family="Helvetica,sans-Serif" font-size="13.00">Workflow/reproduction tree</text>
 </a>
 </g>
@@ -855,7 +855,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node15" class="node">
 <title>numerical output match</title>
 <g id="a_node15"><a href="criteria/tier-3/numerical-output-match.html" title="Re-running the code on the deposited data reproduces the numerical results reported in the paper and appendix: estimates, standard errors, test statistics, sample sizes and numbers in the text. Sources differ on the tolerance, from exact agreement to small stated deviations." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M1126.42,-459.66C1126.42,-459.66 986.86,-459.66 986.86,-459.66 980.86,-459.66 974.86,-453.66 974.86,-447.66 974.86,-447.66 974.86,-435.66 974.86,-435.66 974.86,-429.66 980.86,-423.66 986.86,-423.66 986.86,-423.66 1126.42,-423.66 1126.42,-423.66 1132.42,-423.66 1138.42,-429.66 1138.42,-435.66 1138.42,-435.66 1138.42,-447.66 1138.42,-447.66 1138.42,-453.66 1132.42,-459.66 1126.42,-459.66"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M1126.42,-459.66C1126.42,-459.66 986.86,-459.66 986.86,-459.66 980.86,-459.66 974.86,-453.66 974.86,-447.66 974.86,-447.66 974.86,-435.66 974.86,-435.66 974.86,-429.66 980.86,-423.66 986.86,-423.66 986.86,-423.66 1126.42,-423.66 1126.42,-423.66 1132.42,-423.66 1138.42,-429.66 1138.42,-435.66 1138.42,-435.66 1138.42,-447.66 1138.42,-447.66 1138.42,-453.66 1132.42,-459.66 1126.42,-459.66"></path>
 <text text-anchor="middle" x="1056.64" y="-437.76" font-family="Helvetica,sans-Serif" font-size="13.00">Numerical output match</text>
 </a>
 </g>
@@ -871,7 +871,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node16" class="node">
 <title>table and figure match</title>
 <g id="a_node16"><a href="criteria/tier-3/table-and-figure-match.html" title="The code regenerates every table and figure in the paper and appendix, and the regenerated items match the published ones in structure and appearance; for figures, this means the levels, shapes and positions of curves and data points." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M1349.34,-355.66C1349.34,-355.66 1214.41,-355.66 1214.41,-355.66 1208.41,-355.66 1202.41,-349.66 1202.41,-343.66 1202.41,-343.66 1202.41,-331.66 1202.41,-331.66 1202.41,-325.66 1208.41,-319.66 1214.41,-319.66 1214.41,-319.66 1349.34,-319.66 1349.34,-319.66 1355.34,-319.66 1361.34,-325.66 1361.34,-331.66 1361.34,-331.66 1361.34,-343.66 1361.34,-343.66 1361.34,-349.66 1355.34,-355.66 1349.34,-355.66"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M1349.34,-355.66C1349.34,-355.66 1214.41,-355.66 1214.41,-355.66 1208.41,-355.66 1202.41,-349.66 1202.41,-343.66 1202.41,-343.66 1202.41,-331.66 1202.41,-331.66 1202.41,-325.66 1208.41,-319.66 1214.41,-319.66 1214.41,-319.66 1349.34,-319.66 1349.34,-319.66 1355.34,-319.66 1361.34,-325.66 1361.34,-331.66 1361.34,-331.66 1361.34,-343.66 1361.34,-343.66 1361.34,-349.66 1355.34,-355.66 1349.34,-355.66"></path>
 <text text-anchor="middle" x="1281.88" y="-333.76" font-family="Helvetica,sans-Serif" font-size="13.00">Table and figure match</text>
 </a>
 </g>
@@ -887,7 +887,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node2" class="node">
 <title>data provenance</title>
 <g id="a_node2"><a href="criteria/tier-1/data-provenance.html" title="The origin of every dataset used in the analysis is recorded: a citation of the source with its version or vintage, how and when the data were obtained (e.g. the query or API used), and, for data that cannot be shared, how and under what conditions others can obtain the same data. Where possible, identifiers or checksums let a user confirm they hold identical data." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M113.02,-704.66C113.02,-704.66 11.99,-704.66 11.99,-704.66 5.99,-704.66 -0.01,-698.66 -0.01,-692.66 -0.01,-692.66 -0.01,-680.66 -0.01,-680.66 -0.01,-674.66 5.99,-668.66 11.99,-668.66 11.99,-668.66 113.02,-668.66 113.02,-668.66 119.02,-668.66 125.02,-674.66 125.02,-680.66 125.02,-680.66 125.02,-692.66 125.02,-692.66 125.02,-698.66 119.02,-704.66 113.02,-704.66"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M113.02,-704.66C113.02,-704.66 11.99,-704.66 11.99,-704.66 5.99,-704.66 -0.01,-698.66 -0.01,-692.66 -0.01,-692.66 -0.01,-680.66 -0.01,-680.66 -0.01,-674.66 5.99,-668.66 11.99,-668.66 11.99,-668.66 113.02,-668.66 113.02,-668.66 119.02,-668.66 125.02,-674.66 125.02,-680.66 125.02,-680.66 125.02,-692.66 125.02,-692.66 125.02,-698.66 119.02,-704.66 113.02,-704.66"></path>
 <text text-anchor="middle" x="62.51" y="-682.76" font-family="Helvetica,sans-Serif" font-size="13.00">Data provenance</text>
 </a>
 </g>
@@ -895,8 +895,8 @@ ul.task-list li input[type="checkbox"] {
 <!-- third&#45;party certification -->
 <g id="node17" class="node">
 <title>third-party certification</title>
-<g id="a_node17"><a href="criteria/tier-3/third-party-certification.html" title="An independent party certifies that it reproduced the results, or specific tables and figures, from the package, for example in a signed letter or a certificate from a certification agency. This matters most when the data are confidential and reproducers cannot access them." target="_top">
-<path fill="none" stroke="#6b3f8f" stroke-width="1.5" stroke-dasharray="5,2" d="M335.44,-704.66C335.44,-704.66 201.02,-704.66 201.02,-704.66 195.02,-704.66 189.02,-698.66 189.02,-692.66 189.02,-692.66 189.02,-680.66 189.02,-680.66 189.02,-674.66 195.02,-668.66 201.02,-668.66 201.02,-668.66 335.44,-668.66 335.44,-668.66 341.44,-668.66 347.44,-674.66 347.44,-680.66 347.44,-680.66 347.44,-692.66 347.44,-692.66 347.44,-698.66 341.44,-704.66 335.44,-704.66"></path>
+<g id="a_node17"><a href="criteria/tier-3/third-party-certification.html" title="An independent party certifies that it reproduced the results, or specific tables and figures, from the package, for example in a signed letter or a certificate from a certification agency. This matters most only when the data cannot be shared and reproducers cannot access them." target="_top">
+<path fill="none" stroke="#b39500" stroke-width="1.5" stroke-dasharray="5,2" d="M335.44,-704.66C335.44,-704.66 201.02,-704.66 201.02,-704.66 195.02,-704.66 189.02,-698.66 189.02,-692.66 189.02,-692.66 189.02,-680.66 189.02,-680.66 189.02,-674.66 195.02,-668.66 201.02,-668.66 201.02,-668.66 335.44,-668.66 335.44,-668.66 341.44,-668.66 347.44,-674.66 347.44,-680.66 347.44,-680.66 347.44,-692.66 347.44,-692.66 347.44,-698.66 341.44,-704.66 335.44,-704.66"></path>
 <text text-anchor="middle" x="268.23" y="-682.76" font-family="Helvetica,sans-Serif" font-size="13.00">Third-party certification</text>
 </a>
 </g>
@@ -912,7 +912,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node3" class="node">
 <title>license</title>
 <g id="a_node3"><a href="criteria/tier-1/license.html" title="Every part of the package, code and data alike, carries an explicit license or terms of use, so others know whether and how they may use, modify and redistribute it. The authors have the right to share what they deposit." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M85.81,-402.66C85.81,-402.66 39.2,-402.66 39.2,-402.66 33.2,-402.66 27.2,-396.66 27.2,-390.66 27.2,-390.66 27.2,-378.66 27.2,-378.66 27.2,-372.66 33.2,-366.66 39.2,-366.66 39.2,-366.66 85.81,-366.66 85.81,-366.66 91.81,-366.66 97.81,-372.66 97.81,-378.66 97.81,-378.66 97.81,-390.66 97.81,-390.66 97.81,-396.66 91.81,-402.66 85.81,-402.66"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M85.81,-402.66C85.81,-402.66 39.2,-402.66 39.2,-402.66 33.2,-402.66 27.2,-396.66 27.2,-390.66 27.2,-390.66 27.2,-378.66 27.2,-378.66 27.2,-372.66 33.2,-366.66 39.2,-366.66 39.2,-366.66 85.81,-366.66 85.81,-366.66 91.81,-366.66 97.81,-372.66 97.81,-378.66 97.81,-378.66 97.81,-390.66 97.81,-390.66 97.81,-396.66 91.81,-402.66 85.81,-402.66"></path>
 <text text-anchor="middle" x="62.51" y="-380.76" font-family="Helvetica,sans-Serif" font-size="13.00">License</text>
 </a>
 </g>
@@ -921,7 +921,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node4" class="node">
 <title>code deposit</title>
 <g id="a_node4"><a href="criteria/tier-1/code-deposit.html" title="All code needed to go from the data to every reported result, including data cleaning and preparation as well as the analysis, is publicly available with the paper in human-readable form, preferably in a trusted repository with a persistent identifier." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M307.34,-650.66C307.34,-650.66 229.12,-650.66 229.12,-650.66 223.12,-650.66 217.12,-644.66 217.12,-638.66 217.12,-638.66 217.12,-626.66 217.12,-626.66 217.12,-620.66 223.12,-614.66 229.12,-614.66 229.12,-614.66 307.34,-614.66 307.34,-614.66 313.34,-614.66 319.34,-620.66 319.34,-626.66 319.34,-626.66 319.34,-638.66 319.34,-638.66 319.34,-644.66 313.34,-650.66 307.34,-650.66"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M307.34,-650.66C307.34,-650.66 229.12,-650.66 229.12,-650.66 223.12,-650.66 217.12,-644.66 217.12,-638.66 217.12,-638.66 217.12,-626.66 217.12,-626.66 217.12,-620.66 223.12,-614.66 229.12,-614.66 229.12,-614.66 307.34,-614.66 307.34,-614.66 313.34,-614.66 319.34,-620.66 319.34,-626.66 319.34,-626.66 319.34,-638.66 319.34,-638.66 319.34,-644.66 313.34,-650.66 307.34,-650.66"></path>
 <text text-anchor="middle" x="268.23" y="-628.76" font-family="Helvetica,sans-Serif" font-size="13.00">Code deposit</text>
 </a>
 </g>
@@ -937,7 +937,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node5" class="node">
 <title>data deposit</title>
 <g id="a_node5"><a href="criteria/tier-1/data-deposit.html" title="The data needed to reproduce the reported results are publicly available with the paper, preferably in a trusted repository with a persistent identifier. This can be the raw data, the analysis data, or both; with analysis data only, results can be reproduced from the analysis data but not from the raw data." target="_top">
-<path fill="#d9ede8" stroke="#2a7f6f" stroke-width="1.5" d="M305.72,-402.66C305.72,-402.66 230.74,-402.66 230.74,-402.66 224.74,-402.66 218.74,-396.66 218.74,-390.66 218.74,-390.66 218.74,-378.66 218.74,-378.66 218.74,-372.66 224.74,-366.66 230.74,-366.66 230.74,-366.66 305.72,-366.66 305.72,-366.66 311.72,-366.66 317.72,-372.66 317.72,-378.66 317.72,-378.66 317.72,-390.66 317.72,-390.66 317.72,-396.66 311.72,-402.66 305.72,-402.66"></path>
+<path fill="#cd7f32" stroke="#8c5523" stroke-width="1.5" d="M305.72,-402.66C305.72,-402.66 230.74,-402.66 230.74,-402.66 224.74,-402.66 218.74,-396.66 218.74,-390.66 218.74,-390.66 218.74,-378.66 218.74,-378.66 218.74,-372.66 224.74,-366.66 230.74,-366.66 230.74,-366.66 305.72,-366.66 305.72,-366.66 311.72,-366.66 317.72,-372.66 317.72,-378.66 317.72,-378.66 317.72,-390.66 317.72,-390.66 317.72,-396.66 311.72,-402.66 305.72,-402.66"></path>
 <text text-anchor="middle" x="268.23" y="-380.76" font-family="Helvetica,sans-Serif" font-size="13.00">Data deposit</text>
 </a>
 </g>
@@ -988,7 +988,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node11" class="node">
 <title>code annotation</title>
 <g id="a_node11"><a href="criteria/tier-2/code-annotation.html" title="The code is commented and structured so that a reader can follow what each part does: script headers state purpose, inputs and outputs, and comments show which section produces which table or figure." target="_top">
-<path fill="none" stroke="#2f5d9c" stroke-width="1.5" stroke-dasharray="5,2" d="M551.04,-807.66C551.04,-807.66 453.21,-807.66 453.21,-807.66 447.21,-807.66 441.21,-801.66 441.21,-795.66 441.21,-795.66 441.21,-783.66 441.21,-783.66 441.21,-777.66 447.21,-771.66 453.21,-771.66 453.21,-771.66 551.04,-771.66 551.04,-771.66 557.04,-771.66 563.04,-777.66 563.04,-783.66 563.04,-783.66 563.04,-795.66 563.04,-795.66 563.04,-801.66 557.04,-807.66 551.04,-807.66"></path>
+<path fill="none" stroke="#7d7f83" stroke-width="1.5" stroke-dasharray="5,2" d="M551.04,-807.66C551.04,-807.66 453.21,-807.66 453.21,-807.66 447.21,-807.66 441.21,-801.66 441.21,-795.66 441.21,-795.66 441.21,-783.66 441.21,-783.66 441.21,-777.66 447.21,-771.66 453.21,-771.66 453.21,-771.66 551.04,-771.66 551.04,-771.66 557.04,-771.66 563.04,-777.66 563.04,-783.66 563.04,-783.66 563.04,-795.66 563.04,-795.66 563.04,-801.66 557.04,-807.66 551.04,-807.66"></path>
 <text text-anchor="middle" x="502.12" y="-785.76" font-family="Helvetica,sans-Serif" font-size="13.00">Code annotation</text>
 </a>
 </g>
@@ -1004,7 +1004,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node12" class="node">
 <title>dynamic code inspection</title>
 <g id="a_node12"><a href="criteria/tier-2/dynamic-code-inspection.html" title="A reproducer can explore how the code behaves by running it with small modifications, inspecting intermediate results, or applying code-analysis tools." target="_top">
-<path fill="none" stroke="#2f5d9c" stroke-width="1.5" stroke-dasharray="5,2" d="M575.14,-666.66C575.14,-666.66 429.11,-666.66 429.11,-666.66 423.11,-666.66 417.11,-660.66 417.11,-654.66 417.11,-654.66 417.11,-642.66 417.11,-642.66 417.11,-636.66 423.11,-630.66 429.11,-630.66 429.11,-630.66 575.14,-630.66 575.14,-630.66 581.14,-630.66 587.14,-636.66 587.14,-642.66 587.14,-642.66 587.14,-654.66 587.14,-654.66 587.14,-660.66 581.14,-666.66 575.14,-666.66"></path>
+<path fill="none" stroke="#7d7f83" stroke-width="1.5" stroke-dasharray="5,2" d="M575.14,-666.66C575.14,-666.66 429.11,-666.66 429.11,-666.66 423.11,-666.66 417.11,-660.66 417.11,-654.66 417.11,-654.66 417.11,-642.66 417.11,-642.66 417.11,-636.66 423.11,-630.66 429.11,-630.66 429.11,-630.66 575.14,-630.66 575.14,-630.66 581.14,-630.66 587.14,-636.66 587.14,-642.66 587.14,-642.66 587.14,-654.66 587.14,-654.66 587.14,-660.66 581.14,-666.66 575.14,-666.66"></path>
 <text text-anchor="middle" x="502.12" y="-644.76" font-family="Helvetica,sans-Serif" font-size="13.00">Dynamic code inspection</text>
 </a>
 </g>
@@ -1027,7 +1027,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node14" class="node">
 <title>codes consistent with claims</title>
 <g id="a_node14"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
-<path fill="#ebe1f3" stroke="#6b3f8f" stroke-width="1.5" d="M871.35,-758.66C871.35,-758.66 702.56,-758.66 702.56,-758.66 696.56,-758.66 690.56,-752.66 690.56,-746.66 690.56,-746.66 690.56,-734.66 690.56,-734.66 690.56,-728.66 696.56,-722.66 702.56,-722.66 702.56,-722.66 871.35,-722.66 871.35,-722.66 877.35,-722.66 883.35,-728.66 883.35,-734.66 883.35,-734.66 883.35,-746.66 883.35,-746.66 883.35,-752.66 877.35,-758.66 871.35,-758.66"></path>
+<path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M871.35,-758.66C871.35,-758.66 702.56,-758.66 702.56,-758.66 696.56,-758.66 690.56,-752.66 690.56,-746.66 690.56,-746.66 690.56,-734.66 690.56,-734.66 690.56,-728.66 696.56,-722.66 702.56,-722.66 702.56,-722.66 871.35,-722.66 871.35,-722.66 877.35,-722.66 883.35,-728.66 883.35,-734.66 883.35,-734.66 883.35,-746.66 883.35,-746.66 883.35,-752.66 877.35,-758.66 871.35,-758.66"></path>
 <text text-anchor="middle" x="786.96" y="-736.76" font-family="Helvetica,sans-Serif" font-size="13.00">Codes consistent with claims</text>
 </a>
 </g>
@@ -1190,7 +1190,7 @@ ul.task-list li input[type="checkbox"] {
 <g id="node10" class="node">
 <title>code runs without manual intervention</title>
 <g id="a_node10"><a href="criteria/tier-2/code-runs-without-manual-intervention.html" title="The full analysis runs from a single entry point (e.g. a master script or Makefile) in the correct order and non-interactively, with no manual steps, GUI clicks or copying of results between scripts." target="_top">
-<path fill="none" stroke="#2f5d9c" stroke-width="1.5" stroke-dasharray="5,2" d="M898.81,-356.66C898.81,-356.66 675.1,-356.66 675.1,-356.66 669.1,-356.66 663.1,-350.66 663.1,-344.66 663.1,-344.66 663.1,-332.66 663.1,-332.66 663.1,-326.66 669.1,-320.66 675.1,-320.66 675.1,-320.66 898.81,-320.66 898.81,-320.66 904.81,-320.66 910.81,-326.66 910.81,-332.66 910.81,-332.66 910.81,-344.66 910.81,-344.66 910.81,-350.66 904.81,-356.66 898.81,-356.66"></path>
+<path fill="none" stroke="#7d7f83" stroke-width="1.5" stroke-dasharray="5,2" d="M898.81,-356.66C898.81,-356.66 675.1,-356.66 675.1,-356.66 669.1,-356.66 663.1,-350.66 663.1,-344.66 663.1,-344.66 663.1,-332.66 663.1,-332.66 663.1,-326.66 669.1,-320.66 675.1,-320.66 675.1,-320.66 898.81,-320.66 898.81,-320.66 904.81,-320.66 910.81,-326.66 910.81,-332.66 910.81,-332.66 910.81,-344.66 910.81,-344.66 910.81,-350.66 904.81,-356.66 898.81,-356.66"></path>
 <text text-anchor="middle" x="786.96" y="-334.76" font-family="Helvetica,sans-Serif" font-size="13.00">Code runs without manual intervention</text>
 </a>
 </g>

@@ -4,9 +4,10 @@ subtitle: '[Tier 3 · Reproducible - Gold]{.badge .tier-3} [core]{.badge .status
   [structural]{.badge .reason tabindex="0" role="button" data-bs-toggle="popover"
   data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why
   is this criterion core?" data-bs-content="<p>endorsement: invoked by at least 20
-  sources and stated as a rule by at least 50% of them.</p><p><b>structural: fails
-  that rule but is named as a parent of another criterion on a link asserted by at
-  least 3 sources.</b></p><a href=''../../about.html''>All column definitions</a>"}'
+  sources and framed as a rule (injunctive) by at least 50% of them (10 sources).</p><p><b>structural:
+  fails that rule but is named as a parent of another criterion on a link asserted
+  by at least 3 sources.</b></p><a href=''../../about.html#definitions-from-the-workbook''>All
+  column definitions</a>"}'
 description: 'The code does what the paper says it does: data preparation, samples,
   model specifications and estimators match the description in the paper, and results
   are computed by the code rather than copied in. This can be checked by reading the
@@ -58,11 +59,11 @@ Check order: **3**
 :::
 ::::
 
-## In the corpus
+## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page "What these numbers mean"){.heading-info aria-label="What these numbers mean"}
 
-| Sources | Injunctive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
-|--:|--:|--:|--:|--:|--:|--:|
-| 17 | 47.1% | 52.9% | 23.5% | 5.9% | 70.6% | 3 |
+| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |
+|--:|--:|--:|--:|--:|--:|--:|--:|
+| 17 | 47.1% | 0% | 52.9% | 23.5% | 5.9% | 70.6% | 3 |
 
 ## Text evidence (19 quotes)
 

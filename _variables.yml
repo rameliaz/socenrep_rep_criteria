@@ -10,3 +10,9 @@ min_strong: 3
 tier_1: Tier 1 · Available - Bronze
 tier_2: Tier 2 · Executable - Silver
 tier_3: Tier 3 · Reproducible - Gold
+n_tier_1: 6
+n_tier_2: 11
+n_tier_3: 4
+n_core_tier_1: 5
+n_core_tier_2: 4
+n_core_tier_3: 3
