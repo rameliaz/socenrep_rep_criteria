@@ -7,21 +7,9 @@ two files in `source/`:
 - `10_final_set.xlsx`, a copy of `litsearch/output/search_output/10_final_set.xlsx`,
   for the source list
 
-## What is automatically generated, what is hand-written
-
-| File | Edit? |
-|---|---|
-| `index.qmd`, `graph.qmd`, `sources.qmd`, `about.qmd`, `pipeline.qmd` | Yes: text of each page |
-| `_quarto.yml`, `theme.scss` | Yes: navigation, sidebar, theme, colors |
-| `_notes/<page name>.md` | Yes: a note placed at the top of that criterion's page (e.g. `_notes/third-party-certification.md`) |
-| `criteria/tier-*/*.qmd` | No: one page per criterion, regenerated on every render |
-| `_generated/*`, `_variables.yml` | No: tables, graphs and counts, regenerated on every render |
-| `docs/` | No: the rendered site |
-
-Cell comments on the **met**/**partially met**/**not met** columns appear under each anchor, and `#ID`s in them link to the source list. The core-reason badge on each criterion
-page (**endorsement**/**structural**) opens the two rules from the workbook's `Addinfo`
-sheet when clicked.
-
 ## Comments
 
 Hypothesis annotations are switched on (`comments: hypothesis` in `_quarto.yml`).
+
+## Funding statement
+This project is funded by Deutsche Forschungsgemeinschaft (DFG), No. 551687338 <https://gepris.dfg.de/project/551687338>
