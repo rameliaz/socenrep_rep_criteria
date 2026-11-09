@@ -4,7 +4,7 @@ title: "How to use the rubric"
 
 ## Tiers and badges
 
-The rubric has {{< var n_criteria >}} criteria in three tiers. Each tier matches a badge, and a criterion's tier follows from its coded dimension:
+The rubric has {{< var n_criteria >}} criteria in three tiers. Each tier corresponds to a badge, and a criterion's tier follows from its coded dimension:
 
 | Tier | Dimension | Criteria | The criteria ask whether… |
 |:----------|:--------------|:--------|:---------------------------------------------------------|
@@ -12,47 +12,31 @@ The rubric has {{< var n_criteria >}} criteria in three tiers. Each tier matches
 | {{< var tier_2 >}} | Executability | {{< var n_tier_2 >}} ({{< var n_core_tier_2 >}} core) | code runs on another machine and fully functional |
 | {{< var tier_3 >}} | Consistency | {{< var n_tier_3 >}} ({{< var n_core_tier_3 >}} core) | reproduced outputs exactly match what is reported in the article, apart from rounding and formatting |
 
-Each criterion is either **core** (required for its tier) or **recommended** (good practice, not required). Core criteria also show why they are core, **endorsement** or **structural**. Click that badge on a criterion page to see the rule.
+Each criterion is either **core** (required for its tier) or **recommended** (good practice, but not required for obtain a badge). 
 
-## Rating a criterion
+Core criteria also show why they are core, **endorsement** or **structural**.
 
-Every criterion page states what a package must show for the criterion to be **met**, **partially met** or **not met**. The note under each rating lists the sources it is based on; the #IDs link to the [Sources](sources.qmd) page.
+The full verification process is available on the [badge pipeline](pipeline.qmd) page.
 
-A criterion is **not applicable** only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met.
 
-## A snippet of the badge system
+## Evidence on the criterion page
+### In the corpus
 
-1. In order to get a badge, a reproduction package must fully meet all applicable core criteria of that tier and of every lower tier.
-2. Each reproduction package gets a badge and a summary of how many criteria (core and recommended) are met, partially met, not met, and not applicable.
-3. If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments.
-4. If not all datasets needed are in the package but the package has third-party certification, the core criteria that need the data (path resolution, coding error handling, numerical output match, and table and figure match) are rated from the certificate. A criterion is fully met only if the certificate, issued by an independent party, explicitly confirms it, e.g. that the code ran to completion (Silver) or that all results were reproduced (Gold).
+This section provides information regarding a criterion extracted from {{< var n_papers >}} papers in the scoping review, and covers:
 
-## Order of checking
+* `Sources`: the number of sources that mention the criterion.
+* `Injunctive`: the share of sources mentioning the criterion that frame it as a rule/requirement or a barrier to reproduce, using prescriptive or proscriptive languages.
+   - **key words**: must, should, require, etc. 
+   - **examples**: “*Authors must provide all data and code necessary to replicate all reported analyses*”, “*Code must execute without errors when run sequentially from the master script*”, or “*unavailable source codes is a critical barrier to reproduce results*”
+* `Descriptive`: the share of sources mentioning the criterion that describe it as a common practice.
+   - **key words**: most journals, most researchers, typically, common practice, widespread norms, etc. 
+   - **examples**: “*Researchers typically include a master script to facilitate automated re-execution*” or “*Most CCS journals now expect replication packages to be deposited upon acceptance*”
+* `Tacit`: inferred by the coder that the author(s) require(s) this criterion as a part of reproducibility check, but it is *not stated explicitly* as a rule.
+   - **example**: a paper outlining a reproducibility attempt flagged hardcoded path errors during execution but doesn’t explicitly mention path resolution as a criterion.
+* `Automatable`: the share of sources mentioning the criterion, which state that it can be checked automatically.
+* `Manual check`: the share of sources mentioning the criterion, which state it should be verified manually.
+* `Automation unclear`: no clear information available in the text regarding the automation of that criterion.
+* `LLM sources`: among sources confirming automation potential (`Automatable`), how many of them do involve large language model.
 
-A reproduction package contains the manuscript, a README and the code (R or Stata), plus, *optionally*, the datasets (included, or deposited separately under a PID/DOI) and a log file (Stata). It is checked in three steps:
-
-1. **General criteria.** These can be checked without the data being in the package:
-   - core: [documentation](criteria/tier-1/documentation.qmd), [data provenance](criteria/tier-1/data-provenance.qmd), [license](criteria/tier-1/license.qmd), [code deposit](criteria/tier-1/code-deposit.qmd), [data deposit](criteria/tier-1/data-deposit.qmd), [dependency resolution](criteria/tier-2/dependency-resolution.qmd), [computing environment](criteria/tier-2/computing-environment.qmd), [codes consistent with claims](criteria/tier-3/codes-consistent-with-claims.qmd)
-   - recommended: [artifacts longevity/sustainability](criteria/tier-1/artifacts-longevity-sustainability.qmd), [code annotation](criteria/tier-2/code-annotation.qmd), [workflow/reproduction tree](criteria/tier-2/workflow-reproduction-tree.qmd), [version control](criteria/tier-2/version-control.qmd), [commands logs traceability](criteria/tier-2/commands-logs-traceability.qmd), [test code coverage](criteria/tier-2/test-code-coverage.qmd)
-2. **Data.** The data situation decides which tiers are possible:
-   - All datasets are fully generated by the code (not downloaded): all tiers are possible.
-   - All datasets needed are included in the package: all tiers are possible if the analysis dataset is available, or if the cleaning code is there to produce it. Otherwise no tier is possible.
-   - Not all datasets needed are in the package: check that the reason for not sharing the data and how to obtain full access are documented, and that the authors commit to preserving the data. If not, no tier is possible. If so, all tiers are possible with [third-party certification](criteria/tier-3/third-party-certification.qmd), and at most Bronze without it.
-3. **Criteria that need the data to verify**, if Tier 2 or 3 is still possible:
-   - core: [path resolution](criteria/tier-2/path-resolution.qmd), [coding error handling](criteria/tier-2/coding-error-handling.qmd), [numerical output match](criteria/tier-3/numerical-output-match.qmd), [table and figure match](criteria/tier-3/table-and-figure-match.qmd)
-   - recommended: [code runs without manual intervention](criteria/tier-2/code-runs-without-manual-intervention.qmd), [dynamic code inspection](criteria/tier-2/dynamic-code-inspection.qmd)
-
-Within a step, check criteria with a lower **check order** first. The number counts the prerequisite steps above a criterion (0 = no prerequisite coded, — = no prerequisite links coded at all). Each criterion page lists what it **builds on** and what it is a **prerequisite for**; the [Dependency graph](graph.qmd) shows all links at once.
-
-The full process will be described on the [Badge pipeline](pipeline.qmd) page.
-
-## Evidence on each criterion page
-
-- **In the corpus**: how many of the {{< var n_papers >}} papers in the scoping review contain the criterion (`Sources`); the share of them that state it as a rule (`Injunctive`), as a common practice (`Descriptive`) or report it implicitly (`Tacit`); the share that say the check can be automated (`Automatable`), should be done manually (`Manual check`), or don't say (`Automation unclear`); and how many involve a large language model in the automated check (`LLM sources`).
-- **Text evidence**: the quotes from those papers that the definition is synthesized from. Click "Show quotes" to expand them.
-
-## Definitions from the workbook
-
-Column explanations, N/A conditions and the scope rule, as written in the workbook's `Addinfo` sheet.
-
-{{< include _generated/addinfo.md >}}
+### Text evidence
+the quotes from those papers that the definition is synthesized from. Click "Show quotes" to expand them.

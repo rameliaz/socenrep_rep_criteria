@@ -151,14 +151,47 @@ walk(c(unique(dirname(path_of)), "_generated"), \(d) dir.create(here::here(d), r
 anchor_box   <- c(criterion_met = "tip", criterion_partially_met = "warning", criterion_not_met = "important")
 anchor_title <- c(criterion_met = "Met", criterion_partially_met = "Partially met", criterion_not_met = "Not met")
 
+# Markup shared by the click-to-open popovers (core-reason badge, corpus columns)
+popover_span <- function(text, classes, title, content) {
+  as.character(glue('[{text}]{{{classes} tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" ',
+                    'data-bs-placement="bottom" data-bs-html="true" data-bs-title="{title}" data-bs-content="{content}"}}'))
+}
+
+# Popovers on the "In the corpus" columns. The text is read from the bullets under
+# "### In the corpus" in about.qmd (* `Column`: text, with "- " sub-bullets), so that
+# page stays the only place to edit it.
+corpus_cols <- c("Sources", "Injunctive", "Descriptive", "Tacit", "Automatable", "Manual check", "Automation unclear", "LLM sources")
+about_lines <- readLines(here::here("about.qmd"), encoding = "UTF-8", warn = FALSE)
+section_start <- match("### In the corpus", about_lines)
+section <- if (is.na(section_start)) character() else about_lines[-seq_len(section_start)]
+column_help <- tibble(line = section[cumsum(str_starts(section, "#")) == 0]) |>
+  filter(str_detect(line, "^(\\* `|\\s+- )")) |>
+  mutate(column = str_match(line, "^\\* `([^`]+)`")[, 2],
+         text = line |> str_remove("^(\\* `[^`]+`:|\\s+-)") |> str_trim() |>
+           str_replace_all("\\*\\*(.+?)\\*\\*", "<b>\\1</b>") |>
+           str_replace_all("\\*(.+?)\\*", "<i>\\1</i>") |>
+           str_replace_all("`(.+?)`", "<code>\\1</code>") |>
+           str_replace_all('"', "&quot;")) |>
+  fill(column) |>
+  summarise(content = paste0("<p>", text, "</p>", collapse = ""), .by = column)
+no_help <- setdiff(corpus_cols, column_help$column)
+if (length(no_help)) warning("No definition under '### In the corpus' in about.qmd for: ", toString(no_help))
+corpus_header <- tibble(column = corpus_cols) |>
+  left_join(column_help, by = "column") |>
+  mutate(cell = if_else(is.na(content), column, popover_span(
+    column, ".col-info", column, paste0(content, "<a href='../../about.html#in-the-corpus'>All column definitions</a>")))) |>
+  pull(cell) |>
+  paste(collapse = " | ")
+corpus_header <- paste0("| ", corpus_header, " |")
+
 # Popover on the core-reason badge: both rules from the Addinfo explanation of
 # core_reason, with the criterion's own rule in bold
 reason_rules <- addinfo$value[addinfo$key %in% "core_reason"] |>
   str_extract_all("\\b(endorsement|structural): [^.]+\\.") |> unlist()
-if (!length(reason_rules)) warning("Addinfo 'core_reason' no longer defines endorsement/structural; popovers show only the link")
+if (!length(reason_rules)) warning("Addinfo 'core_reason' no longer defines endorsement/structural; the core-reason popovers will be empty")
 reason_popover <- function(reason) {
   rules <- if_else(str_starts(reason_rules, reason), paste0("<b>", reason_rules, "</b>"), reason_rules)
-  paste0(paste0("<p>", rules, "</p>", collapse = ""), "<a href='../../about.html#definitions-from-the-workbook'>All column definitions</a>")
+  paste0("<p>", rules, "</p>", collapse = "")
 }
 
 prereq_lines <- function(df, label_col, empty) {
@@ -200,10 +233,8 @@ render_criterion <- function(r) {
     ))
 
   # Quarto shows the subtitle (badges) and description (definition) under the title
-  reason_badge <- if (is.na(r$core_reason)) "" else glue(
-    ' [{r$core_reason}]{{.badge .reason tabindex="0" role="button" data-bs-toggle="popover" ',
-    'data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Why is this criterion core?" ',
-    'data-bs-content="{reason_popover(r$core_reason)}"}}')
+  reason_badge <- if (is.na(r$core_reason)) "" else
+    paste0(" ", popover_span(r$core_reason, ".badge .reason", "Why is this criterion core?", reason_popover(r$core_reason)))
   badges <- glue("[{r$tier_label}]{{.badge .tier-{r$tier}}} [{r$status}]{{.badge .status-{r$status}}}{reason_badge}")
   front <- list(title = sentence(r$criterion), subtitle = as.character(badges),
                 description = r$definition, order = r$row)
@@ -228,12 +259,14 @@ render_criterion <- function(r) {
     "**Prerequisite for**", "",
     prereq_lines(needed_by, "to", "*No criterion builds on this one.*"),
     ":::", "::::", "",
-    paste0("## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#evidence-on-each-criterion-page ",
+    paste0("## In the corpus [[]{.bi .bi-info-circle}](../../about.qmd#in-the-corpus ",
            "\"What these numbers mean\"){.heading-info aria-label=\"What these numbers mean\"}"), "",
-    "| Sources | Injunctive | Descriptive | Tacit | Automatable | Manual check | Automation unclear | LLM sources |",
+    "::: {.corpus-table}",
+    corpus_header,
     "|--:|--:|--:|--:|--:|--:|--:|--:|",
     glue("| {r$sources} | {r$pct_injunctive}% | {r$pct_descriptive}% | {r$pct_tacit}% | {r$pct_automatable_yes}% | ",
-         "{r$pct_automatable_no}% | {r$pct_automatable_unclear}% | {r$llm_sources} |"), "",
+         "{r$pct_automatable_no}% | {r$pct_automatable_unclear}% | {r$llm_sources} |"),
+    ":::", "",
     glue("## Text evidence ({n_word(nrow(ev), 'quote')})"), "",
     "::: {.callout-note collapse=\"true\" appearance=\"minimal\" title=\"Show quotes\"}",
     paste(ev$item, collapse = "\n\n---\n\n"),
@@ -327,6 +360,7 @@ about <- addinfo |>
             glue("| {md(b$key[-1])} | {md_inline(b$value[-1])} |"), ""), collapse = "\n")
   })
 write_if_changed(about, here::here("_generated", "addinfo.md"))
+write_if_changed(about[str_starts(about, "\\| N/A")], here::here("_generated", "na_conditions.md"))  # shown on pipeline.qmd
 
 tiers <- summarise(rubric, tier_label = first(tier_label), n = n(), n_core = sum(status == "core"), .by = tier) |>
   arrange(tier)

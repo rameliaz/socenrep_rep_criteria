@@ -47,9 +47,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="site_libs/bootstrap/bootstrap-dark-cec90fdeb6904c903ed8a09193984353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-c64270251998a95166903100ae668fc0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="site_libs/bootstrap/bootstrap-dark-248a4b930a147c6eeb96ecc276b64611.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="site_libs/bootstrap/bootstrap-c64270251998a95166903100ae668fc0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -486,11 +486,11 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#tiers-and-badges" id="toc-tiers-and-badges" class="nav-link active" data-scroll-target="#tiers-and-badges">Tiers and badges</a></li>
-  <li><a href="#rating-a-criterion" id="toc-rating-a-criterion" class="nav-link" data-scroll-target="#rating-a-criterion">Rating a criterion</a></li>
-  <li><a href="#a-snippet-of-the-badge-system" id="toc-a-snippet-of-the-badge-system" class="nav-link" data-scroll-target="#a-snippet-of-the-badge-system">A snippet of the badge system</a></li>
-  <li><a href="#order-of-checking" id="toc-order-of-checking" class="nav-link" data-scroll-target="#order-of-checking">Order of checking</a></li>
-  <li><a href="#evidence-on-each-criterion-page" id="toc-evidence-on-each-criterion-page" class="nav-link" data-scroll-target="#evidence-on-each-criterion-page">Evidence on each criterion page</a></li>
-  <li><a href="#definitions-from-the-workbook" id="toc-definitions-from-the-workbook" class="nav-link" data-scroll-target="#definitions-from-the-workbook">Definitions from the workbook</a></li>
+  <li><a href="#evidence-on-the-criterion-page" id="toc-evidence-on-the-criterion-page" class="nav-link" data-scroll-target="#evidence-on-the-criterion-page">Evidence on the criterion page</a>
+  <ul class="collapse">
+  <li><a href="#in-the-corpus" id="toc-in-the-corpus" class="nav-link" data-scroll-target="#in-the-corpus">In the corpus</a></li>
+  <li><a href="#text-evidence" id="toc-text-evidence" class="nav-link" data-scroll-target="#text-evidence">Text evidence</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -519,7 +519,7 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="tiers-and-badges" class="level2">
 <h2 class="anchored" data-anchor-id="tiers-and-badges">Tiers and badges</h2>
-<p>The rubric has 21 criteria in three tiers. Each tier matches a badge, and a criterion’s tier follows from its coded dimension:</p>
+<p>The rubric has 21 criteria in three tiers. Each tier corresponds to a badge, and a criterion’s tier follows from its coded dimension:</p>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 11%">
@@ -556,183 +556,43 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
-<p>Each criterion is either <strong>core</strong> (required for its tier) or <strong>recommended</strong> (good practice, not required). Core criteria also show why they are core, <strong>endorsement</strong> or <strong>structural</strong>. Click that badge on a criterion page to see the rule.</p>
+<p>Each criterion is either <strong>core</strong> (required for its tier) or <strong>recommended</strong> (good practice, but not required for obtain a badge).</p>
+<p>Core criteria also show why they are core, <strong>endorsement</strong> or <strong>structural</strong>.</p>
+<p>The full verification process is available on the <a href="./pipeline.html">badge pipeline</a> page.</p>
 </section>
-<section id="rating-a-criterion" class="level2">
-<h2 class="anchored" data-anchor-id="rating-a-criterion">Rating a criterion</h2>
-<p>Every criterion page states what a package must show for the criterion to be <strong>met</strong>, <strong>partially met</strong> or <strong>not met</strong>. The note under each rating lists the sources it is based on; the #IDs link to the <a href="./sources.html">Sources</a> page.</p>
-<p>A criterion is <strong>not applicable</strong> only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met.</p>
-</section>
-<section id="a-snippet-of-the-badge-system" class="level2">
-<h2 class="anchored" data-anchor-id="a-snippet-of-the-badge-system">A snippet of the badge system</h2>
-<ol type="1">
-<li>In order to get a badge, a reproduction package must fully meet all applicable core criteria of that tier and of every lower tier.</li>
-<li>Each reproduction package gets a badge and a summary of how many criteria (core and recommended) are met, partially met, not met, and not applicable.</li>
-<li>If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments.</li>
-<li>If not all datasets needed are in the package but the package has third-party certification, the core criteria that need the data (path resolution, coding error handling, numerical output match, and table and figure match) are rated from the certificate. A criterion is fully met only if the certificate, issued by an independent party, explicitly confirms it, e.g.&nbsp;that the code ran to completion (Silver) or that all results were reproduced (Gold).</li>
-</ol>
-</section>
-<section id="order-of-checking" class="level2">
-<h2 class="anchored" data-anchor-id="order-of-checking">Order of checking</h2>
-<p>A reproduction package contains the manuscript, a README and the code (R or Stata), plus, <em>optionally</em>, the datasets (included, or deposited separately under a PID/DOI) and a log file (Stata). It is checked in three steps:</p>
-<ol type="1">
-<li><strong>General criteria.</strong> These can be checked without the data being in the package:
+<section id="evidence-on-the-criterion-page" class="level2">
+<h2 class="anchored" data-anchor-id="evidence-on-the-criterion-page">Evidence on the criterion page</h2>
+<section id="in-the-corpus" class="level3">
+<h3 class="anchored" data-anchor-id="in-the-corpus">In the corpus</h3>
+<p>This section provides information regarding a criterion extracted from 145 papers in the scoping review, and covers:</p>
 <ul>
-<li>core: <a href="./criteria/tier-1/documentation.html">documentation</a>, <a href="./criteria/tier-1/data-provenance.html">data provenance</a>, <a href="./criteria/tier-1/license.html">license</a>, <a href="./criteria/tier-1/code-deposit.html">code deposit</a>, <a href="./criteria/tier-1/data-deposit.html">data deposit</a>, <a href="./criteria/tier-2/dependency-resolution.html">dependency resolution</a>, <a href="./criteria/tier-2/computing-environment.html">computing environment</a>, <a href="./criteria/tier-3/codes-consistent-with-claims.html">codes consistent with claims</a></li>
-<li>recommended: <a href="./criteria/tier-1/artifacts-longevity-sustainability.html">artifacts longevity/sustainability</a>, <a href="./criteria/tier-2/code-annotation.html">code annotation</a>, <a href="./criteria/tier-2/workflow-reproduction-tree.html">workflow/reproduction tree</a>, <a href="./criteria/tier-2/version-control.html">version control</a>, <a href="./criteria/tier-2/commands-logs-traceability.html">commands logs traceability</a>, <a href="./criteria/tier-2/test-code-coverage.html">test code coverage</a></li>
+<li><code>Sources</code>: the number of sources that mention the criterion.</li>
+<li><code>Injunctive</code>: the share of sources mentioning the criterion that frame it as a rule/requirement or a barrier to reproduce, using prescriptive or proscriptive languages.
+<ul>
+<li><strong>key words</strong>: must, should, require, etc.</li>
+<li><strong>examples</strong>: “<em>Authors must provide all data and code necessary to replicate all reported analyses</em>”, “<em>Code must execute without errors when run sequentially from the master script</em>”, or “<em>unavailable source codes is a critical barrier to reproduce results</em>”</li>
 </ul></li>
-<li><strong>Data.</strong> The data situation decides which tiers are possible:
+<li><code>Descriptive</code>: the share of sources mentioning the criterion that describe it as a common practice.
 <ul>
-<li>All datasets are fully generated by the code (not downloaded): all tiers are possible.</li>
-<li>All datasets needed are included in the package: all tiers are possible if the analysis dataset is available, or if the cleaning code is there to produce it. Otherwise no tier is possible.</li>
-<li>Not all datasets needed are in the package: check that the reason for not sharing the data and how to obtain full access are documented, and that the authors commit to preserving the data. If not, no tier is possible. If so, all tiers are possible with <a href="./criteria/tier-3/third-party-certification.html">third-party certification</a>, and at most Bronze without it.</li>
+<li><strong>key words</strong>: most journals, most researchers, typically, common practice, widespread norms, etc.</li>
+<li><strong>examples</strong>: “<em>Researchers typically include a master script to facilitate automated re-execution</em>” or “<em>Most CCS journals now expect replication packages to be deposited upon acceptance</em>”</li>
 </ul></li>
-<li><strong>Criteria that need the data to verify</strong>, if Tier 2 or 3 is still possible:
+<li><code>Tacit</code>: inferred by the coder that the author(s) require(s) this criterion as a part of reproducibility check, but it is <em>not stated explicitly</em> as a rule.
 <ul>
-<li>core: <a href="./criteria/tier-2/path-resolution.html">path resolution</a>, <a href="./criteria/tier-2/coding-error-handling.html">coding error handling</a>, <a href="./criteria/tier-3/numerical-output-match.html">numerical output match</a>, <a href="./criteria/tier-3/table-and-figure-match.html">table and figure match</a></li>
-<li>recommended: <a href="./criteria/tier-2/code-runs-without-manual-intervention.html">code runs without manual intervention</a>, <a href="./criteria/tier-2/dynamic-code-inspection.html">dynamic code inspection</a></li>
+<li><strong>example</strong>: a paper outlining a reproducibility attempt flagged hardcoded path errors during execution but doesn’t explicitly mention path resolution as a criterion.</li>
 </ul></li>
-</ol>
-<p>Within a step, check criteria with a lower <strong>check order</strong> first. The number counts the prerequisite steps above a criterion (0 = no prerequisite coded, — = no prerequisite links coded at all). Each criterion page lists what it <strong>builds on</strong> and what it is a <strong>prerequisite for</strong>; the <a href="./graph.html">Dependency graph</a> shows all links at once.</p>
-<p>The full process will be described on the <a href="./pipeline.html">Badge pipeline</a> page.</p>
-</section>
-<section id="evidence-on-each-criterion-page" class="level2">
-<h2 class="anchored" data-anchor-id="evidence-on-each-criterion-page">Evidence on each criterion page</h2>
-<ul>
-<li><strong>In the corpus</strong>: how many of the 145 papers in the scoping review contain the criterion (<code>Sources</code>); the share of them that state it as a rule (<code>Injunctive</code>), as a common practice (<code>Descriptive</code>) or report it implicitly (<code>Tacit</code>); the share that say the check can be automated (<code>Automatable</code>), should be done manually (<code>Manual check</code>), or don’t say (<code>Automation unclear</code>); and how many involve a large language model in the automated check (<code>LLM sources</code>).</li>
-<li><strong>Text evidence</strong>: the quotes from those papers that the definition is synthesized from. Click “Show quotes” to expand them.</li>
+<li><code>Automatable</code>: the share of sources mentioning the criterion, which state that it can be checked automatically.</li>
+<li><code>Manual check</code>: the share of sources mentioning the criterion, which state it should be verified manually.</li>
+<li><code>Automation unclear</code>: no clear information available in the text regarding the automation of that criterion.</li>
+<li><code>LLM sources</code>: among sources confirming automation potential (<code>Automatable</code>), how many of them do involve large language model.</li>
 </ul>
 </section>
-<section id="definitions-from-the-workbook" class="level2">
-<h2 class="anchored" data-anchor-id="definitions-from-the-workbook">Definitions from the workbook</h2>
-<p>Column explanations, N/A conditions and the scope rule, as written in the workbook’s <code>Addinfo</code> sheet.</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 72%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">Column</th>
-<th style="text-align: left;">Explanation</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">tier</td>
-<td style="text-align: left;">Rubric tier of the criterion: 1, 2 or 3. Set by the criterion’s coded dimension (Availability = 1, Executability = 2, Consistency = 3). Computed by rubric_tiers.R.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">tier_name</td>
-<td style="text-align: left;">Name of the tier: Available/Bronze (1), Executable/Silver (2), Reproducible/Gold (3). Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">criterion</td>
-<td style="text-align: left;">Criterion label from the criteria extraction coding.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">definition</td>
-<td style="text-align: left;">What the criterion covers in this rubric, synthesized from the quotes in the ‘Text evidence’ sheet.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">status</td>
-<td style="text-align: left;">core = required to award the tier; recommended = good practice, not required for the tier. Computed. Important: third-party certification is recommended in general, but when not all datasets needed are in the package it decides whether Tiers 2-3 can be assessed (see the scope rule).</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">core_reason</td>
-<td style="text-align: left;">Why a criterion is core. endorsement: invoked by at least 20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources). structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">check_order</td>
-<td style="text-align: left;">Depth in the prerequisite graph: the number of prerequisite steps above the criterion along the longest chain (0 = no prerequisite coded). Within a tier, check criteria with lower numbers first. Blank = no prerequisite links coded at all. Computed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">sources</td>
-<td style="text-align: left;">Number of papers in the corpus that contain the criterion. Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">pct_injunctive</td>
-<td style="text-align: left;">Percentage of those sources that state the criterion as a rule or requirement. Computed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">pct_tacit</td>
-<td style="text-align: left;">Percentage of sources that rely on the criterion without stating it (inferred by the coder). Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">core_prerequisites</td>
-<td style="text-align: left;">Direct prerequisites of the criterion that are themselves core, strongest first, each with the number of sources asserting the link, e.g.&nbsp;‘code deposit (7)’. Computed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">recommended_prerequisites</td>
-<td style="text-align: left;">Direct prerequisites that are only recommended, with the number of sources. Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">pct_automatable_yes</td>
-<td style="text-align: left;">Percentage of sources saying that checking the criterion can be automated. Computed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">pct_automatable_no</td>
-<td style="text-align: left;">Percentage of sources saying that the check should be done manually. Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">pct_automatable_unclear</td>
-<td style="text-align: left;">Percentage of sources that do not say whether the check can be automated. Computed.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">llm_sources</td>
-<td style="text-align: left;">Number of sources in which the automated check involves a large language model. Computed.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">criterion_met</td>
-<td style="text-align: left;">What a replication package must show to fully meet the criterion.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">criterion_partially_met</td>
-<td style="text-align: left;">What a package shows when it meets the criterion only in part.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">criterion_not_met</td>
-<td style="text-align: left;">What a package shows when it fails the criterion.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">not_applicable</td>
-<td style="text-align: left;">When the criterion is not applicable (N/A). A criterion is N/A only under the conditions listed below; anything else that is missing counts as not met. N/A criteria are left out of the award rule (a tier requires all applicable core criteria of that tier and of every lower tier to be fully met) and are counted separately in the summary, with the reason, e.g.&nbsp;‘N/A (simulation)’. C3 and C4 cannot both apply.</td>
-</tr>
-</tbody>
-</table>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 27%">
-<col style="width: 72%">
-</colgroup>
-<thead>
-<tr class="header">
-<th style="text-align: left;">N/A package condition</th>
-<th style="text-align: left;">Definition</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td style="text-align: left;">C1 (simulation)</td>
-<td style="text-align: left;">All data are generated by the code itself (e.g.&nbsp;a simulation). Data the code downloads or scrapes do not count.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">C2 (all data in package)</td>
-<td style="text-align: left;">All data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.</td>
-</tr>
-<tr class="odd">
-<td style="text-align: left;">C3 (no tables/figures)</td>
-<td style="text-align: left;">The paper has no tables or figures.</td>
-</tr>
-<tr class="even">
-<td style="text-align: left;">C4 (no numerical results)</td>
-<td style="text-align: left;">The paper reports no numerical results, only figures.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Scope rule.</strong> If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments.</p>
+<section id="text-evidence" class="level3">
+<h3 class="anchored" data-anchor-id="text-evidence">Text evidence</h3>
+<p>the quotes from those papers that the definition is synthesized from. Click “Show quotes” to expand them.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

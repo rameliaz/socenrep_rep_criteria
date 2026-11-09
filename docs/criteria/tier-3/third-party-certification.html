@@ -49,9 +49,9 @@ ul.task-list li input[type="checkbox"] {
 <link href="../../site_libs/quarto-html/quarto-syntax-highlighting-64a204ab8560d761af7679ceaba22944.css" rel="stylesheet" class="quarto-color-scheme-extra" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
-<link href="../../site_libs/bootstrap/bootstrap-dark-cec90fdeb6904c903ed8a09193984353.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
-<link href="../../site_libs/bootstrap/bootstrap-618bdf69a9faf56ac925e5b0f3a40e30.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-c64270251998a95166903100ae668fc0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-dark-248a4b930a147c6eeb96ecc276b64611.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme quarto-color-alternate" id="quarto-bootstrap" data-mode="dark">
+<link href="../../site_libs/bootstrap/bootstrap-c64270251998a95166903100ae668fc0.min.css" rel="stylesheet" append-hash="true" class="quarto-color-scheme-extra" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -534,7 +534,20 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>This criterion is recommended in general. For packages that do not contain all datasets needed because some cannot be shared, it becomes a core criterion: without a third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. With a certification, the core criteria that need the data are rated from the certificate, so Silver and Gold become possible. See rules 3 and 4 in <a href="../../about.html#a-snippet-of-the-badge-system">How to read the rubric</a>.</p>
+<p>This criterion is recommended in general. For packages that do not contain all datasets needed because some cannot be shared, it becomes a core criterion: without a third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. With a certification, the core criteria that need the data are rated from the certificate, so Silver and Gold become possible. See rules 3 and 4 in <a href="../../pipeline.html#rules-of-the-badge-system">Rules of the badge system</a>.</p>
+</div>
+</div>
+<div class="callout callout-style-default callout-note callout-titled">
+<div class="callout-header d-flex align-content-center">
+<div class="callout-icon-container">
+<i class="callout-icon"></i>
+</div>
+<div class="callout-title-container flex-fill">
+<span class="screen-reader-only">Note</span>Who counts as independent
+</div>
+</div>
+<div class="callout-body-container callout-body">
+<p>An independent party is someone who is not an author of the paper and had no part in its data collection or analysis. The certificate or signed letter must state the reproducer’s name, affiliation and relationship to the authors, what was reproduced, and how.</p>
 </div>
 </div>
 <section id="rating" class="level2">
@@ -609,7 +622,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </section>
 <section id="in-the-corpus" class="level2">
-<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus <a href="../../about.html#evidence-on-each-criterion-page" class="heading-info" aria-label="What these numbers mean" title="What these numbers mean"><span class="bi bi-info-circle"></span></a></h2>
+<h2 class="anchored" data-anchor-id="in-the-corpus">In the corpus <a href="../../about.html#in-the-corpus" class="heading-info" aria-label="What these numbers mean" title="What these numbers mean"><span class="bi bi-info-circle"></span></a></h2>
+<div class="corpus-table">
 <table class="caption-top table">
 <colgroup>
 <col style="width: 12%">
@@ -623,14 +637,14 @@ ul.task-list li input[type="checkbox"] {
 </colgroup>
 <thead>
 <tr class="header">
-<th style="text-align: right;">Sources</th>
-<th style="text-align: right;">Injunctive</th>
-<th style="text-align: right;">Descriptive</th>
-<th style="text-align: right;">Tacit</th>
-<th style="text-align: right;">Automatable</th>
-<th style="text-align: right;">Manual check</th>
-<th style="text-align: right;">Automation unclear</th>
-<th style="text-align: right;">LLM sources</th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Sources" data-bs-content="<p>the number of sources that mention the criterion.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Sources</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Injunctive" data-bs-content="<p>the share of sources mentioning the criterion that frame it as a rule/requirement or a barrier to reproduce, using prescriptive or proscriptive languages.</p><p><b>key words</b>: must, should, require, etc.</p><p><b>examples</b>: “<i>Authors must provide all data and code necessary to replicate all reported analyses</i>”, “<i>Code must execute without errors when run sequentially from the master script</i>”, or “<i>unavailable source codes is a critical barrier to reproduce results</i>”</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Injunctive</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Descriptive" data-bs-content="<p>the share of sources mentioning the criterion that describe it as a common practice.</p><p><b>key words</b>: most journals, most researchers, typically, common practice, widespread norms, etc.</p><p><b>examples</b>: “<i>Researchers typically include a master script to facilitate automated re-execution</i>” or “<i>Most CCS journals now expect replication packages to be deposited upon acceptance</i>”</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Descriptive</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Tacit" data-bs-content="<p>inferred by the coder that the author(s) require(s) this criterion as a part of reproducibility check, but it is <i>not stated explicitly</i> as a rule.</p><p><b>example</b>: a paper outlining a reproducibility attempt flagged hardcoded path errors during execution but doesn’t explicitly mention path resolution as a criterion.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Tacit</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Automatable" data-bs-content="<p>the share of sources mentioning the criterion, which state that it can be checked automatically.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Automatable</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Manual check" data-bs-content="<p>the share of sources mentioning the criterion, which state it should be verified manually.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Manual check</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="Automation unclear" data-bs-content="<p>no clear information available in the text regarding the automation of that criterion.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">Automation unclear</span></th>
+<th style="text-align: right;"><span class="col-info" tabindex="0" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-placement="bottom" data-bs-html="true" data-bs-title="LLM sources" data-bs-content="<p>among sources confirming automation potential (<code>Automatable</code>), how many of them do involve large language model.</p><a href='../../about.html#in-the-corpus'>All column definitions</a>">LLM sources</span></th>
 </tr>
 </thead>
 <tbody>
@@ -646,11 +660,12 @@ ul.task-list li input[type="checkbox"] {
 </tr>
 </tbody>
 </table>
+</div>
 </section>
 <section id="text-evidence-1-quote" class="level2">
 <h2 class="anchored" data-anchor-id="text-evidence-1-quote">Text evidence (1 quote)</h2>
 <div class="callout callout-style-simple callout-note no-icon callout-titled" title="Show quotes">
-<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-6-contents" aria-controls="callout-6" aria-expanded="false" aria-label="Toggle callout">
+<div class="callout-header d-flex align-content-center collapsed" data-bs-toggle="collapse" data-bs-target=".callout-7-contents" aria-controls="callout-7" aria-expanded="false" aria-label="Toggle callout">
 <div class="callout-icon-container">
 <i class="callout-icon no-icon"></i>
 </div>
@@ -659,7 +674,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-btn-toggle d-inline-block border-0 py-1 ps-1 pe-0 float-end"><i class="callout-toggle"></i></div>
 </div>
-<div id="callout-6" class="callout-6-contents callout-collapse collapse">
+<div id="callout-7" class="callout-7-contents callout-collapse collapse">
 <div class="callout-body-container callout-body">
 <p><strong><a href="../../sources.html#p131">#131</a></strong> Guide for Accelerating Computational Reproducibility in the Social Sciences · <em>injunctive</em></p>
 <blockquote class="blockquote">

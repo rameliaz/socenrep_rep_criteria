@@ -55,7 +55,7 @@
     "href": "criteria/tier-3/third-party-certification.html",
     "title": "Third-party certification",
     "section": "",
-    "text": "NotePackages containing datasets that cannot be shared\n\n\n\nThis criterion is recommended in general. For packages that do not contain all datasets needed because some cannot be shared, it becomes a core criterion: without a third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. With a certification, the core criteria that need the data are rated from the certificate, so Silver and Gold become possible. See rules 3 and 4 in How to read the rubric.",
+    "text": "NotePackages containing datasets that cannot be shared\n\n\n\nThis criterion is recommended in general. For packages that do not contain all datasets needed because some cannot be shared, it becomes a core criterion: without a third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. With a certification, the core criteria that need the data are rated from the certificate, so Silver and Gold become possible. See rules 3 and 4 in Rules of the badge system.",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -91,7 +91,7 @@
     "href": "criteria/tier-3/third-party-certification.html#in-the-corpus",
     "title": "Third-party certification",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n100%\n0%\n0",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -151,7 +151,7 @@
     "href": "criteria/tier-3/numerical-output-match.html#in-the-corpus",
     "title": "Numerical output match",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n49\n69.4%\n8.2%\n22.4%\n16.3%\n10.2%\n73.5%\n4",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n49\n69.4%\n8.2%\n22.4%\n16.3%\n10.2%\n73.5%\n4",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -211,7 +211,7 @@
     "href": "criteria/tier-2/workflow-reproduction-tree.html#in-the-corpus",
     "title": "Workflow/reproduction tree",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n0%\n0%\n100%\n100%\n0%\n0%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n0%\n0%\n100%\n100%\n0%\n0%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -271,7 +271,7 @@
     "href": "criteria/tier-2/test-code-coverage.html#in-the-corpus",
     "title": "Test code coverage",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -331,7 +331,7 @@
     "href": "criteria/tier-2/dynamic-code-inspection.html#in-the-corpus",
     "title": "Dynamic code inspection",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -391,7 +391,7 @@
     "href": "criteria/tier-2/computing-environment.html#in-the-corpus",
     "title": "Computing environment",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n69\n58%\n2.9%\n39.1%\n40.6%\n4.3%\n55.1%\n2",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n69\n58%\n2.9%\n39.1%\n40.6%\n4.3%\n55.1%\n2",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -451,7 +451,7 @@
     "href": "criteria/tier-2/coding-error-handling.html#in-the-corpus",
     "title": "Coding error handling",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n28\n53.6%\n0%\n46.4%\n17.9%\n32.1%\n50%\n3",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n28\n53.6%\n0%\n46.4%\n17.9%\n32.1%\n50%\n3",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -511,7 +511,7 @@
     "href": "criteria/tier-2/code-annotation.html#in-the-corpus",
     "title": "Code annotation",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n6\n83.3%\n0%\n16.7%\n0%\n0%\n100%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n6\n83.3%\n0%\n16.7%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -571,7 +571,7 @@
     "href": "criteria/tier-1/documentation.html#in-the-corpus",
     "title": "Documentation",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n83\n77.1%\n3.6%\n19.3%\n13.3%\n7.2%\n79.5%\n1",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n83\n77.1%\n3.6%\n19.3%\n13.3%\n7.2%\n79.5%\n1",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -631,7 +631,7 @@
     "href": "criteria/tier-1/data-deposit.html#in-the-corpus",
     "title": "Data deposit",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n94\n76.6%\n9.6%\n13.8%\n1.1%\n7.4%\n91.5%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n94\n76.6%\n9.6%\n13.8%\n1.1%\n7.4%\n91.5%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -691,7 +691,7 @@
     "href": "criteria/tier-1/artifacts-longevity-sustainability.html#in-the-corpus",
     "title": "Artifacts longevity/sustainability",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n9\n100%\n0%\n0%\n0%\n0%\n100%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n9\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -715,49 +715,21 @@
     "href": "about.html",
     "title": "How to use the rubric",
     "section": "",
-    "text": "The rubric has 21 criteria in three tiers. Each tier matches a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, not required). Core criteria also show why they are core, endorsement or structural. Click that badge on a criterion page to see the rule."
+    "text": "The rubric has 21 criteria in three tiers. Each tier corresponds to a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, but not required for obtain a badge).\nCore criteria also show why they are core, endorsement or structural.\nThe full verification process is available on the badge pipeline page."
   },
   {
     "objectID": "about.html#tiers-and-badges",
     "href": "about.html#tiers-and-badges",
     "title": "How to use the rubric",
     "section": "",
-    "text": "The rubric has 21 criteria in three tiers. Each tier matches a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, not required). Core criteria also show why they are core, endorsement or structural. Click that badge on a criterion page to see the rule."
+    "text": "The rubric has 21 criteria in three tiers. Each tier corresponds to a badge, and a criterion’s tier follows from its coded dimension:\n\n\n\n\n\n\n\n\n\nTier\nDimension\nCriteria\nThe criteria ask whether…\n\n\n\n\nTier 1 · Available - Bronze\nAvailability\n6 (5 core)\nthe reproduction package contains everything needed for a reproduction, or documents how to obtain what cannot be shared\n\n\nTier 2 · Executable - Silver\nExecutability\n11 (4 core)\ncode runs on another machine and fully functional\n\n\nTier 3 · Reproducible - Gold\nConsistency\n4 (3 core)\nreproduced outputs exactly match what is reported in the article, apart from rounding and formatting\n\n\n\nEach criterion is either core (required for its tier) or recommended (good practice, but not required for obtain a badge).\nCore criteria also show why they are core, endorsement or structural.\nThe full verification process is available on the badge pipeline page."
   },
   {
-    "objectID": "about.html#rating-a-criterion",
-    "href": "about.html#rating-a-criterion",
+    "objectID": "about.html#evidence-on-the-criterion-page",
+    "href": "about.html#evidence-on-the-criterion-page",
     "title": "How to use the rubric",
-    "section": "Rating a criterion",
-    "text": "Rating a criterion\nEvery criterion page states what a package must show for the criterion to be met, partially met or not met. The note under each rating lists the sources it is based on; the #IDs link to the Sources page.\nA criterion is not applicable only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met."
-  },
-  {
-    "objectID": "about.html#a-snippet-of-the-badge-system",
-    "href": "about.html#a-snippet-of-the-badge-system",
-    "title": "How to use the rubric",
-    "section": "A snippet of the badge system",
-    "text": "A snippet of the badge system\n\nIn order to get a badge, a reproduction package must fully meet all applicable core criteria of that tier and of every lower tier.\nEach reproduction package gets a badge and a summary of how many criteria (core and recommended) are met, partially met, not met, and not applicable.\nIf not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments.\nIf not all datasets needed are in the package but the package has third-party certification, the core criteria that need the data (path resolution, coding error handling, numerical output match, and table and figure match) are rated from the certificate. A criterion is fully met only if the certificate, issued by an independent party, explicitly confirms it, e.g. that the code ran to completion (Silver) or that all results were reproduced (Gold)."
-  },
-  {
-    "objectID": "about.html#order-of-checking",
-    "href": "about.html#order-of-checking",
-    "title": "How to use the rubric",
-    "section": "Order of checking",
-    "text": "Order of checking\nA reproduction package contains the manuscript, a README and the code (R or Stata), plus, optionally, the datasets (included, or deposited separately under a PID/DOI) and a log file (Stata). It is checked in three steps:\n\nGeneral criteria. These can be checked without the data being in the package:\n\ncore: documentation, data provenance, license, code deposit, data deposit, dependency resolution, computing environment, codes consistent with claims\nrecommended: artifacts longevity/sustainability, code annotation, workflow/reproduction tree, version control, commands logs traceability, test code coverage\n\nData. The data situation decides which tiers are possible:\n\nAll datasets are fully generated by the code (not downloaded): all tiers are possible.\nAll datasets needed are included in the package: all tiers are possible if the analysis dataset is available, or if the cleaning code is there to produce it. Otherwise no tier is possible.\nNot all datasets needed are in the package: check that the reason for not sharing the data and how to obtain full access are documented, and that the authors commit to preserving the data. If not, no tier is possible. If so, all tiers are possible with third-party certification, and at most Bronze without it.\n\nCriteria that need the data to verify, if Tier 2 or 3 is still possible:\n\ncore: path resolution, coding error handling, numerical output match, table and figure match\nrecommended: code runs without manual intervention, dynamic code inspection\n\n\nWithin a step, check criteria with a lower check order first. The number counts the prerequisite steps above a criterion (0 = no prerequisite coded, — = no prerequisite links coded at all). Each criterion page lists what it builds on and what it is a prerequisite for; the Dependency graph shows all links at once.\nThe full process will be described on the Badge pipeline page."
-  },
-  {
-    "objectID": "about.html#evidence-on-each-criterion-page",
-    "href": "about.html#evidence-on-each-criterion-page",
-    "title": "How to use the rubric",
-    "section": "Evidence on each criterion page",
-    "text": "Evidence on each criterion page\n\nIn the corpus: how many of the 145 papers in the scoping review contain the criterion (Sources); the share of them that state it as a rule (Injunctive), as a common practice (Descriptive) or report it implicitly (Tacit); the share that say the check can be automated (Automatable), should be done manually (Manual check), or don’t say (Automation unclear); and how many involve a large language model in the automated check (LLM sources).\nText evidence: the quotes from those papers that the definition is synthesized from. Click “Show quotes” to expand them."
-  },
-  {
-    "objectID": "about.html#definitions-from-the-workbook",
-    "href": "about.html#definitions-from-the-workbook",
-    "title": "How to use the rubric",
-    "section": "Definitions from the workbook",
-    "text": "Definitions from the workbook\nColumn explanations, N/A conditions and the scope rule, as written in the workbook’s Addinfo sheet.\n\n\n\n\n\n\n\nColumn\nExplanation\n\n\n\n\ntier\nRubric tier of the criterion: 1, 2 or 3. Set by the criterion’s coded dimension (Availability = 1, Executability = 2, Consistency = 3). Computed by rubric_tiers.R.\n\n\ntier_name\nName of the tier: Available/Bronze (1), Executable/Silver (2), Reproducible/Gold (3). Computed.\n\n\ncriterion\nCriterion label from the criteria extraction coding.\n\n\ndefinition\nWhat the criterion covers in this rubric, synthesized from the quotes in the ‘Text evidence’ sheet.\n\n\nstatus\ncore = required to award the tier; recommended = good practice, not required for the tier. Computed. Important: third-party certification is recommended in general, but when not all datasets needed are in the package it decides whether Tiers 2-3 can be assessed (see the scope rule).\n\n\ncore_reason\nWhy a criterion is core. endorsement: invoked by at least 20 sources and framed as a rule (injunctive) by at least 50% of them (10 sources). structural: fails that rule but is named as a parent of another criterion on a link asserted by at least 3 sources. Blank for recommended criteria. Computed.\n\n\ncheck_order\nDepth in the prerequisite graph: the number of prerequisite steps above the criterion along the longest chain (0 = no prerequisite coded). Within a tier, check criteria with lower numbers first. Blank = no prerequisite links coded at all. Computed.\n\n\nsources\nNumber of papers in the corpus that contain the criterion. Computed.\n\n\npct_injunctive\nPercentage of those sources that state the criterion as a rule or requirement. Computed.\n\n\npct_tacit\nPercentage of sources that rely on the criterion without stating it (inferred by the coder). Computed.\n\n\ncore_prerequisites\nDirect prerequisites of the criterion that are themselves core, strongest first, each with the number of sources asserting the link, e.g. ‘code deposit (7)’. Computed.\n\n\nrecommended_prerequisites\nDirect prerequisites that are only recommended, with the number of sources. Computed.\n\n\npct_automatable_yes\nPercentage of sources saying that checking the criterion can be automated. Computed.\n\n\npct_automatable_no\nPercentage of sources saying that the check should be done manually. Computed.\n\n\npct_automatable_unclear\nPercentage of sources that do not say whether the check can be automated. Computed.\n\n\nllm_sources\nNumber of sources in which the automated check involves a large language model. Computed.\n\n\ncriterion_met\nWhat a replication package must show to fully meet the criterion.\n\n\ncriterion_partially_met\nWhat a package shows when it meets the criterion only in part.\n\n\ncriterion_not_met\nWhat a package shows when it fails the criterion.\n\n\nnot_applicable\nWhen the criterion is not applicable (N/A). A criterion is N/A only under the conditions listed below; anything else that is missing counts as not met. N/A criteria are left out of the award rule (a tier requires all applicable core criteria of that tier and of every lower tier to be fully met) and are counted separately in the summary, with the reason, e.g. ‘N/A (simulation)’. C3 and C4 cannot both apply.\n\n\n\n\n\n\n\n\n\n\nN/A package condition\nDefinition\n\n\n\n\nC1 (simulation)\nAll data are generated by the code itself (e.g. a simulation). Data the code downloads or scrapes do not count.\n\n\nC2 (all data in package)\nAll data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.\n\n\nC3 (no tables/figures)\nThe paper has no tables or figures.\n\n\nC4 (no numerical results)\nThe paper reports no numerical results, only figures.\n\n\n\nScope rule. If not all datasets needed are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other general criteria can be reported as comments."
+    "section": "Evidence on the criterion page",
+    "text": "Evidence on the criterion page\n\nIn the corpus\nThis section provides information regarding a criterion extracted from 145 papers in the scoping review, and covers:\n\nSources: the number of sources that mention the criterion.\nInjunctive: the share of sources mentioning the criterion that frame it as a rule/requirement or a barrier to reproduce, using prescriptive or proscriptive languages.\n\nkey words: must, should, require, etc.\nexamples: “Authors must provide all data and code necessary to replicate all reported analyses”, “Code must execute without errors when run sequentially from the master script”, or “unavailable source codes is a critical barrier to reproduce results”\n\nDescriptive: the share of sources mentioning the criterion that describe it as a common practice.\n\nkey words: most journals, most researchers, typically, common practice, widespread norms, etc.\nexamples: “Researchers typically include a master script to facilitate automated re-execution” or “Most CCS journals now expect replication packages to be deposited upon acceptance”\n\nTacit: inferred by the coder that the author(s) require(s) this criterion as a part of reproducibility check, but it is not stated explicitly as a rule.\n\nexample: a paper outlining a reproducibility attempt flagged hardcoded path errors during execution but doesn’t explicitly mention path resolution as a criterion.\n\nAutomatable: the share of sources mentioning the criterion, which state that it can be checked automatically.\nManual check: the share of sources mentioning the criterion, which state it should be verified manually.\nAutomation unclear: no clear information available in the text regarding the automation of that criterion.\nLLM sources: among sources confirming automation potential (Automatable), how many of them do involve large language model.\n\n\n\nText evidence\nthe quotes from those papers that the definition is synthesized from. Click “Show quotes” to expand them."
   },
   {
     "objectID": "criteria/tier-1/code-deposit.html",
@@ -800,7 +772,7 @@
     "href": "criteria/tier-1/code-deposit.html#in-the-corpus",
     "title": "Code deposit",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n103\n80.6%\n6.8%\n12.6%\n1%\n8.7%\n90.3%\n1",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n103\n80.6%\n6.8%\n12.6%\n1%\n8.7%\n90.3%\n1",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -860,7 +832,7 @@
     "href": "criteria/tier-1/data-provenance.html#in-the-corpus",
     "title": "Data provenance",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n48\n70.8%\n2.1%\n27.1%\n10.4%\n10.4%\n79.2%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n48\n70.8%\n2.1%\n27.1%\n10.4%\n10.4%\n79.2%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -920,7 +892,7 @@
     "href": "criteria/tier-1/license.html#in-the-corpus",
     "title": "License",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n90%\n3.3%\n6.7%\n3.3%\n16.7%\n80%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n90%\n3.3%\n6.7%\n3.3%\n16.7%\n80%\n0",
     "crumbs": [
       "Criteria",
       "Tier 1 · Available - Bronze",
@@ -980,7 +952,7 @@
     "href": "criteria/tier-2/code-runs-without-manual-intervention.html#in-the-corpus",
     "title": "Code runs without manual intervention",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n4\n50%\n0%\n50%\n100%\n0%\n0%\n2",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n4\n50%\n0%\n50%\n100%\n0%\n0%\n2",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1040,7 +1012,7 @@
     "href": "criteria/tier-2/commands-logs-traceability.html#in-the-corpus",
     "title": "Commands logs traceability",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n1\n100%\n0%\n0%\n0%\n0%\n100%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1100,7 +1072,7 @@
     "href": "criteria/tier-2/dependency-resolution.html#in-the-corpus",
     "title": "Dependency resolution",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n59\n55.9%\n1.7%\n42.4%\n47.5%\n5.1%\n47.5%\n5",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n59\n55.9%\n1.7%\n42.4%\n47.5%\n5.1%\n47.5%\n5",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1160,7 +1132,7 @@
     "href": "criteria/tier-2/path-resolution.html#in-the-corpus",
     "title": "Path resolution",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n36.7%\n0%\n63.3%\n50%\n16.7%\n33.3%\n4",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n30\n36.7%\n0%\n63.3%\n50%\n16.7%\n33.3%\n4",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1220,7 +1192,7 @@
     "href": "criteria/tier-2/version-control.html#in-the-corpus",
     "title": "Version control",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n12\n66.7%\n0%\n33.3%\n50%\n0%\n50%\n0",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n12\n66.7%\n0%\n33.3%\n50%\n0%\n50%\n0",
     "crumbs": [
       "Criteria",
       "Tier 2 · Executable - Silver",
@@ -1280,7 +1252,7 @@
     "href": "criteria/tier-3/codes-consistent-with-claims.html#in-the-corpus",
     "title": "Codes consistent with claims",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n17\n47.1%\n0%\n52.9%\n23.5%\n5.9%\n70.6%\n3",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n17\n47.1%\n0%\n52.9%\n23.5%\n5.9%\n70.6%\n3",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1340,7 +1312,7 @@
     "href": "criteria/tier-3/table-and-figure-match.html#in-the-corpus",
     "title": "Table and figure match",
     "section": "In the corpus ",
-    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n24\n54.2%\n4.2%\n41.7%\n16.7%\n20.8%\n62.5%\n1",
+    "text": "In the corpus \n\n\n\n\n\n\n\n\n\n\n\n\n\n\nSources\nInjunctive\nDescriptive\nTacit\nAutomatable\nManual check\nAutomation unclear\nLLM sources\n\n\n\n\n24\n54.2%\n4.2%\n41.7%\n16.7%\n20.8%\n62.5%\n1",
     "crumbs": [
       "Criteria",
       "Tier 3 · Reproducible - Gold",
@@ -1371,6 +1343,34 @@
     "href": "pipeline.html",
     "title": "Badge pipeline",
     "section": "",
-    "text": "Will be available soon"
+    "text": "Every criterion page states what a package must show for the criterion to be met, partially met or not met. The note under each rating lists the sources it is based on; the #IDs link to the Sources page.\nA criterion is not applicable only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met.\n\n\n\n\n\n\n\nN/A package condition\nDefinition\n\n\n\n\nC1 (simulation)\nAll data are generated by the code itself (e.g. a simulation). Data the code downloads or scrapes do not count.\n\n\nC2 (all data in package)\nAll data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.\n\n\nC3 (no tables/figures)\nThe paper has no tables or figures.\n\n\nC4 (no numerical results)\nThe paper reports no numerical results, only figures."
+  },
+  {
+    "objectID": "pipeline.html#evaluating-a-criterion",
+    "href": "pipeline.html#evaluating-a-criterion",
+    "title": "Badge pipeline",
+    "section": "",
+    "text": "Every criterion page states what a package must show for the criterion to be met, partially met or not met. The note under each rating lists the sources it is based on; the #IDs link to the Sources page.\nA criterion is not applicable only under the four conditions C1–C4 defined below. Anything else that is missing counts as not met.\n\n\n\n\n\n\n\nN/A package condition\nDefinition\n\n\n\n\nC1 (simulation)\nAll data are generated by the code itself (e.g. a simulation). Data the code downloads or scrapes do not count.\n\n\nC2 (all data in package)\nAll data needed are in the package (included, or deposited separately under a PID/DOI) or generated by the code.\n\n\nC3 (no tables/figures)\nThe paper has no tables or figures.\n\n\nC4 (no numerical results)\nThe paper reports no numerical results, only figures."
+  },
+  {
+    "objectID": "pipeline.html#rules-of-the-badge-system",
+    "href": "pipeline.html#rules-of-the-badge-system",
+    "title": "Badge pipeline",
+    "section": "Rules of the badge system",
+    "text": "Rules of the badge system\n\nIn order to get a badge, a reproduction package must fully meet all applicable core criteria of that tier and of every lower tier.\nEach reproduction package gets a summary of how many criteria (core and recommended) are met, partially met, not met, and not applicable, and a badge if rule 1 is met.\nIf not all input datasets are in the package and there is no third-party certification, only the Tier 1 criteria are assessed, so the package can get at most Bronze. The summary then covers only the Tier 1 criteria; findings on the other data-independent criteria can be reported as comments.\nIf not all input datasets are in the package but the package has third-party certification, the data-dependent, core criteria (path resolution, coding error handling, numerical output match, and table and figure match) are rated from the certificate or the signed letter.\n\nA criterion is fully met only if the certificate or a signed letter, issued by an independent party, explicitly confirms it, e.g. that the code ran to completion (Silver) or that all results were reproduced (Gold)."
+  },
+  {
+    "objectID": "pipeline.html#order-of-checking",
+    "href": "pipeline.html#order-of-checking",
+    "title": "Badge pipeline",
+    "section": "Order of checking",
+    "text": "Order of checking\nA reproduction package contains the manuscript, a README, the code (R or Stata) and a codebook (not needed if all data are generated by the code), plus, optionally, the datasets (included in the package, or deposited separately under a PID/DOI) and a log file (Stata). It is checked in four steps:\n\nData situation check. This sorts the package into one of four routes:\n\nRoute 1a: all datasets are generated by the code (not downloaded). All tiers are possible, and N/A conditions C1 and C2 apply.\nRoute 1b: all input datasets are in the package (included or under a PID/DOI). All tiers are possible, and N/A condition C2 applies.\nRoute 1c: not all input datasets are in the package, but there is third-party certification or a signed letter from an independent party. All tiers are possible.\nRoute 1d: not all input datasets are in the package, and there is no certification. The package can get at most Bronze.\n\nData-independent criteria check. These can be checked without the data being in the package:\n\ncore: documentation, data provenance, license, code deposit, data deposit, dependency resolution, computing environment, codes consistent with claims\nrecommended: artifacts longevity/sustainability, code annotation, workflow/reproduction tree, version control, commands logs traceability, test code coverage\ntwo of these depend on the data situation. Code deposit: if only raw data are included, the cleaning code must be included too. Data deposit: if data cannot be shared, the reason, how to obtain full access, and a commitment to preserve the data must be documented.\n\nData-dependent criteria check. These can only be checked with the data, so this step depends on the route:\n\nStep 3a (routes 1a and 1b): run the code and check the core criteria path resolution, coding error handling, numerical output match and table and figure match, and the recommended criteria code runs without manual intervention and dynamic code inspection.\nStep 3b (route 1c): evaluate the four core criteria from the signed letter from independent reproducers or the certificate (rule 4). See third-party certification.\nNo Step 3 (route 1d): only the Tier 1 criteria are assessed (rule 3).\n\nAward the badge. Apply rule 1:\n\nNo badge: not all applicable Tier 1 core criteria are fully met.\nBronze: all applicable Tier 1 core criteria are fully met, but the package is on route 1d or not all applicable Tier 2 core criteria are fully met.\nSilver: all applicable Tier 1 and Tier 2 core criteria are fully met, but not all applicable Tier 3 core criteria.\nGold: all applicable core criteria of all three tiers are fully met.\n\n\nWithin criteria checks (step 2 and 3), always check criteria with a lower check order first. The number counts the prerequisite steps above a criterion (0 = no prerequisite coded, — = no prerequisite links coded at all). Each criterion page lists what it builds on and what it is a prerequisite for; the Dependency graph shows all links at once."
+  },
+  {
+    "objectID": "pipeline.html#visual-illustration-of-the-pipeline",
+    "href": "pipeline.html#visual-illustration-of-the-pipeline",
+    "title": "Badge pipeline",
+    "section": "Visual illustration of the pipeline",
+    "text": "Visual illustration of the pipeline"
   }
 ]
