@@ -3,7 +3,7 @@ project:
   output-dir: docs
   pre-render: build_criteria.R
   resources:
-    - .nojekyll  # copied into docs/ so GitHub Pages skips Jekyll
+    - .nojekyll 
   render:
     - "*.qmd"
     - "criteria/**/*.qmd"
@@ -11,7 +11,19 @@ project:
 website:
   title: "SocEnRep rubric"
   page-navigation: true
+  repo-url: https://github.com/rameliaz/socenrep_rep_criteria
+  repo-actions: [source, issue]
   navbar:
+    right:
+      - icon: github
+        aria-label: GitHub
+        menu:
+          - text: Source code
+            href: https://github.com/rameliaz/socenrep_rep_criteria
+          - text: Report an issue
+            href: https://github.com/rameliaz/socenrep_rep_criteria/issues/new
+          - text: Version history
+            href: https://github.com/rameliaz/socenrep_rep_criteria/commits/main
     left:
       - text: Criteria
         href: index.qmd
