@@ -350,17 +350,37 @@ write_if_changed(c("| # | Paper | Text evidence for |", "|--:|:--------|:-----|"
            here::here("_generated", "sources.md"))
 
 # Addinfo: column table, N/A conditions, scope rule (blank rows separate the blocks)
-about <- addinfo |>
+blocks <- addinfo |>
   mutate(block = cumsum(is.na(key))) |>
   filter(!is.na(key)) |>
-  group_split(block) |>
-  map_chr(function(b) {
+  group_split(block)
+about <- map_chr(blocks, function(b) {
     if (nrow(b) == 1) return(glue("**{md(b$key)}.** {md_inline(b$value)}\n"))
     paste(c(glue("| {md(b$key[1])} | {md(b$value[1])} |"), "|:--|:-------|",
             glue("| {md(b$key[-1])} | {md_inline(b$value[-1])} |"), ""), collapse = "\n")
   })
 write_if_changed(about, here::here("_generated", "addinfo.md"))
-write_if_changed(about[str_starts(about, "\\| N/A")], here::here("_generated", "na_conditions.md"))  # shown on pipeline.qmd
+
+# N/A conditions (shown on pipeline.qmd) with the criteria each one switches off. A
+# criterion's not_applicable text names its condition in parentheses, e.g. "(A)"; texts
+# starting with "Never" only adjust the rating (documentation under A), so they don't count.
+na <- detect(blocks, \(b) str_starts(b$key[1], "N/A"))
+na_crit <- rubric |>
+  filter(!str_starts(not_applicable, "Never")) |>
+  mutate(code = str_extract_all(not_applicable, "(?<=\\()[A-Z](?=\\))")) |>
+  unnest(code, keep_empty = TRUE) |>
+  arrange(tier, row)
+na_rows <- tibble(key = na$key[-1], value = na$value[-1], code = str_extract(key, "^[A-Z]\\b")) |>
+  left_join(summarise(na_crit, criteria = paste(crit_link(criterion, ""), collapse = ", "), .by = code), by = "code")
+if (anyNA(na_crit$code) || !all(na_crit$code %in% na_rows$code))
+  warning("not_applicable names no condition, or one missing from Addinfo, for: ",
+          toString(filter(na_crit, is.na(code) | !code %in% na_rows$code)$criterion))
+# Widths go in tbl-colwidths: Quarto ignores the dash ratio in tables that contain links
+write_if_changed(c(glue("| {md(na$key[1])} | {md(na$value[1])} | Criteria that do not apply |"),
+                   "|:--|:--|:--|",
+                   glue("| {md(na_rows$key)} | {md_inline(na_rows$value)} | {na_dash(na_rows$criteria)} |"), "",
+                   ': {tbl-colwidths="[22,48,30]"}'),
+                 here::here("_generated", "na_conditions.md"))
 
 tiers <- summarise(rubric, tier_label = first(tier_label), n = n(), n_core = sum(status == "core"), .by = tier) |>
   arrange(tier)

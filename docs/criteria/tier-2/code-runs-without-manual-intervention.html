@@ -289,6 +289,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../pipeline.html"> 
 <span class="menu-text">Badge pipeline</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -1144,6 +1148,16 @@ ul.task-list li input[type="checkbox"] {
 <script>
 // Click-to-open explanations, e.g. on the core-reason badge of criterion pages
 document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+// Navbar: highlight the current page. Quarto marks "Criteria" on every page because
+// the sidebar shown everywhere also links to index.html; criterion pages keep "Criteria".
+const page = path => path.replace(/\/(index\.html)?$/, '/index.html');  // ".../" = ".../index.html"
+const here = page(location.pathname);
+document.querySelectorAll('#quarto-header .navbar-nav .nav-link:not(.dropdown-toggle)').forEach(a => {
+  const target = page(new URL(a.href, location).pathname);
+  const on = target === here || (target.endsWith('/index.html') && here.includes('/criteria/'));
+  a.classList.toggle('active', on);
+  on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
+});
 </script>
 
 

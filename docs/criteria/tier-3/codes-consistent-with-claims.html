@@ -6,7 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).">
+<meta name="description" content="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).">
 
 <title>Codes consistent with claims – SocEnRep rubric</title>
 <style>
@@ -289,6 +289,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../pipeline.html"> 
 <span class="menu-text">Badge pipeline</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../../project.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -530,7 +534,7 @@ ul.task-list li input[type="checkbox"] {
 
 <div>
   <div class="description">
-    The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).
+    The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper. This can be checked by reading the code against the paper, without running it (i.e., static code analysis).
   </div>
 </div>
 
@@ -560,7 +564,8 @@ ul.task-list li input[type="checkbox"] {
 </div>
 </div>
 <div class="callout-body-container callout-body">
-<p>Reading the code against the paper (without running it) shows that data preparation (sample restrictions, exclusions, variable construction), model specifications and estimators (including controls and the level of standard-error clustering) match the paper’s description for all reported results, and every result is computed by the code rather than hard-coded or copied in.</p>
+<p>Reading the code against the paper (without running it) shows that data preparation (sample restrictions, exclusions, variable construction), model specifications and estimators (including controls and the level of standard-error clustering) match the paper’s description for all reported results.</p>
+<p><span class="source-note">Based on: <a href="../../sources.html#p17" title="Transparency, reproducibility, and the credibility of economics research">#17</a> ‘indisputably does not correctly carry out the test as described’, <a href="../../sources.html#p98" title="Mass reproducibility and replicability: a new hope">#98</a> clustering example, <a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a> check description vs.&nbsp;code, objective errors vs.&nbsp;analytical choices, <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a> minor errors not changing major findings, <a href="../../sources.html#p141" title="Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)">#141</a> citations of descriptions vs.&nbsp;code.</span></p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-warning callout-titled" title="Partially met">
@@ -574,6 +579,7 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>The code matches the paper for the main results, but minor discrepancies are found that do not change the main findings (e.g.&nbsp;an undocumented outlier rule or control variable), or some results (e.g.&nbsp;in the appendix) cannot be traced to any code.</p>
+<p><span class="source-note">Based on: <a href="../../sources.html#p17" title="Transparency, reproducibility, and the credibility of economics research">#17</a> ‘indisputably does not correctly carry out the test as described’, <a href="../../sources.html#p98" title="Mass reproducibility and replicability: a new hope">#98</a> clustering example, <a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a> check description vs.&nbsp;code, objective errors vs.&nbsp;analytical choices, <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a> minor errors not changing major findings, <a href="../../sources.html#p136" title="Artisan: agentic artifact evaluation">#136</a> copied results rejected, <a href="../../sources.html#p141" title="Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)">#141</a> citations of descriptions vs.&nbsp;code.</span></p>
 </div>
 </div>
 <div class="callout callout-style-simple callout-important callout-titled" title="Not met">
@@ -587,9 +593,9 @@ ul.task-list li input[type="checkbox"] {
 </div>
 <div class="callout-body-container callout-body">
 <p>The code indisputably does something different from what the paper states for one or more main results (e.g.&nbsp;a different subsample, standard errors clustered at a different level, a different estimator), or results are hard-coded or copied in instead of computed. Differences in defensible analytical choices count as discrepancies only if the paper describes something else.</p>
-</div>
-</div>
 <p><span class="source-note">Based on: <a href="../../sources.html#p17" title="Transparency, reproducibility, and the credibility of economics research">#17</a> ‘indisputably does not correctly carry out the test as described’, <a href="../../sources.html#p98" title="Mass reproducibility and replicability: a new hope">#98</a> clustering example, <a href="../../sources.html#p109" title="A protocol for structured robustness reproductions and replicability assessments">#109</a> check description vs.&nbsp;code, objective errors vs.&nbsp;analytical choices, <a href="../../sources.html#p134" title="PaperRepro: automated computational reproducibility assessment for social science papers">#134</a> minor errors not changing major findings, <a href="../../sources.html#p136" title="Artisan: agentic artifact evaluation">#136</a> copied results rejected, <a href="../../sources.html#p141" title="Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)">#141</a> citations of descriptions vs.&nbsp;code.</span></p>
+</div>
+</div>
 <div class="callout callout-style-simple callout-note callout-titled" title="Not applicable">
 <div class="callout-header d-flex align-content-center">
 <div class="callout-icon-container">
@@ -1226,6 +1232,16 @@ ul.task-list li input[type="checkbox"] {
 <script>
 // Click-to-open explanations, e.g. on the core-reason badge of criterion pages
 document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+// Navbar: highlight the current page. Quarto marks "Criteria" on every page because
+// the sidebar shown everywhere also links to index.html; criterion pages keep "Criteria".
+const page = path => path.replace(/\/(index\.html)?$/, '/index.html');  // ".../" = ".../index.html"
+const here = page(location.pathname);
+document.querySelectorAll('#quarto-header .navbar-nav .nav-link:not(.dropdown-toggle)').forEach(a => {
+  const target = page(new URL(a.href, location).pathname);
+  const on = target === here || (target.endsWith('/index.html') && here.includes('/criteria/'));
+  a.classList.toggle('active', on);
+  on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
+});
 </script>
 
 

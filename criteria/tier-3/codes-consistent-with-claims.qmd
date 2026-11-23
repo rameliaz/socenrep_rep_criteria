@@ -8,9 +8,9 @@ subtitle: '[Tier 3 · Reproducible - Gold]{.badge .tier-3} [core]{.badge .status
   fails that rule but is named as a parent of another criterion on a link asserted
   by at least 3 sources.</b></p>"}'
 description: 'The code does what the paper says it does: data preparation, samples,
-  model specifications and estimators match the description in the paper, and results
-  are computed by the code rather than copied in. This can be checked by reading the
-  code against the paper, without running it (i.e., static code analysis).'
+  model specifications and estimators match the description in the paper. This can
+  be checked by reading the code against the paper, without running it (i.e., static
+  code analysis).'
 order: 19
 ---
 
@@ -19,16 +19,21 @@ order: 19
 ## Rating
 
 ::: {.callout-tip appearance="simple" title="Met"}
-Reading the code against the paper (without running it) shows that data preparation (sample restrictions, exclusions, variable construction), model specifications and estimators (including controls and the level of standard-error clustering) match the paper's description for all reported results, and every result is computed by the code rather than hard-coded or copied in.
+Reading the code against the paper (without running it) shows that data preparation (sample restrictions, exclusions, variable construction), model specifications and estimators (including controls and the level of standard-error clustering) match the paper's description for all reported results.
+
+[Based on: [#17](../../sources.qmd#p17 "Transparency, reproducibility, and the credibility of economics research") 'indisputably does not correctly carry out the test as described', [#98](../../sources.qmd#p98 "Mass reproducibility and replicability: a new hope") clustering example, [#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments") check description vs. code, objective errors vs. analytical choices, [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers") minor errors not changing major findings, [#141](../../sources.qmd#p141 "Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)") citations of descriptions vs. code.]{.source-note}
 :::
 ::: {.callout-warning appearance="simple" title="Partially met"}
 The code matches the paper for the main results, but minor discrepancies are found that do not change the main findings (e.g. an undocumented outlier rule or control variable), or some results (e.g. in the appendix) cannot be traced to any code.
+
+[Based on: [#17](../../sources.qmd#p17 "Transparency, reproducibility, and the credibility of economics research") 'indisputably does not correctly carry out the test as described', [#98](../../sources.qmd#p98 "Mass reproducibility and replicability: a new hope") clustering example, [#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments") check description vs. code, objective errors vs. analytical choices, [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers") minor errors not changing major findings, [#136](../../sources.qmd#p136 "Artisan: agentic artifact evaluation") copied results rejected, [#141](../../sources.qmd#p141 "Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)") citations of descriptions vs. code.]{.source-note}
 :::
 ::: {.callout-important appearance="simple" title="Not met"}
 The code indisputably does something different from what the paper states for one or more main results (e.g. a different subsample, standard errors clustered at a different level, a different estimator), or results are hard-coded or copied in instead of computed. Differences in defensible analytical choices count as discrepancies only if the paper describes something else.
-:::
 
 [Based on: [#17](../../sources.qmd#p17 "Transparency, reproducibility, and the credibility of economics research") 'indisputably does not correctly carry out the test as described', [#98](../../sources.qmd#p98 "Mass reproducibility and replicability: a new hope") clustering example, [#109](../../sources.qmd#p109 "A protocol for structured robustness reproductions and replicability assessments") check description vs. code, objective errors vs. analytical choices, [#134](../../sources.qmd#p134 "PaperRepro: automated computational reproducibility assessment for social science papers") minor errors not changing major findings, [#136](../../sources.qmd#p136 "Artisan: agentic artifact evaluation") copied results rejected, [#141](../../sources.qmd#p141 "Understanding cultural persistence and change: A replication of Giuliano and Nunn (2021)") citations of descriptions vs. code.]{.source-note}
+:::
+
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
 Never.

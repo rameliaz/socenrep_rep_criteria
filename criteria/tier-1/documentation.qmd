@@ -37,7 +37,7 @@ Neither README nor codebook are present.
 
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-Never. When a replication package is a simulation study (C1), evaluate this criteria on the README alone.
+Never. When a reproduction package is a simulation study (A), evaluate this criterion on the README alone, without the codebook.
 :::
 
 ## Prerequisites

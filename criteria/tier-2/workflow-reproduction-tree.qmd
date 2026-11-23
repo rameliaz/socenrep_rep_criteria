@@ -24,7 +24,7 @@ No mapping is given; the reproducer must work out which code and data produce wh
 [Based on: [#131](../../sources.qmd#p131 "Guide for Accelerating Computational Reproducibility in the Social Sciences") only (SSRP reproduction tree).]{.source-note}
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-Manuscript has no table or figure (C3)
+When the manuscript has no table or figure (C), this criterion doesn't apply.
 :::
 
 ## Prerequisites

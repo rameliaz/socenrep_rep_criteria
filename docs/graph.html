@@ -286,6 +286,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="./pipeline.html"> 
 <span class="menu-text">Badge pipeline</span></a>
   </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="./project.html"> 
+<span class="menu-text">About</span></a>
+  </li>  
 </ul>
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item dropdown ">
@@ -643,7 +647,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- codes consistent with claims -->
 <g id="node8" class="node">
 <title>codes consistent with claims</title>
-<g id="a_node8"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
+<g id="a_node8"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
 <path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M535.55,-451.83C535.55,-451.83 366.76,-451.83 366.76,-451.83 360.76,-451.83 354.76,-445.83 354.76,-439.83 354.76,-439.83 354.76,-427.83 354.76,-427.83 354.76,-421.83 360.76,-415.83 366.76,-415.83 366.76,-415.83 535.55,-415.83 535.55,-415.83 541.55,-415.83 547.55,-421.83 547.55,-427.83 547.55,-427.83 547.55,-439.83 547.55,-439.83 547.55,-445.83 541.55,-451.83 535.55,-451.83"></path>
 <text text-anchor="middle" x="451.15" y="-429.93" font-family="Helvetica,sans-Serif" font-size="13.00">Codes consistent with claims</text>
 </a>
@@ -1049,7 +1053,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- codes consistent with claims -->
 <g id="node14" class="node">
 <title>codes consistent with claims</title>
-<g id="a_node14"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper, and results are computed by the code rather than copied in. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
+<g id="a_node14"><a href="criteria/tier-3/codes-consistent-with-claims.html" title="The code does what the paper says it does: data preparation, samples, model specifications and estimators match the description in the paper. This can be checked by reading the code against the paper, without running it (i.e., static code analysis)." target="_top">
 <path fill="#ffd700" stroke="#b39500" stroke-width="1.5" d="M871.35,-758.66C871.35,-758.66 702.56,-758.66 702.56,-758.66 696.56,-758.66 690.56,-752.66 690.56,-746.66 690.56,-746.66 690.56,-734.66 690.56,-734.66 690.56,-728.66 696.56,-722.66 702.56,-722.66 702.56,-722.66 871.35,-722.66 871.35,-722.66 877.35,-722.66 883.35,-728.66 883.35,-734.66 883.35,-734.66 883.35,-746.66 883.35,-746.66 883.35,-752.66 877.35,-758.66 871.35,-758.66"></path>
 <text text-anchor="middle" x="786.96" y="-736.76" font-family="Helvetica,sans-Serif" font-size="13.00">Codes consistent with claims</text>
 </a>
@@ -1720,6 +1724,16 @@ ul.task-list li input[type="checkbox"] {
 <script>
 // Click-to-open explanations, e.g. on the core-reason badge of criterion pages
 document.querySelectorAll('[data-bs-toggle="popover"]').forEach(el => new bootstrap.Popover(el));
+// Navbar: highlight the current page. Quarto marks "Criteria" on every page because
+// the sidebar shown everywhere also links to index.html; criterion pages keep "Criteria".
+const page = path => path.replace(/\/(index\.html)?$/, '/index.html');  // ".../" = ".../index.html"
+const here = page(location.pathname);
+document.querySelectorAll('#quarto-header .navbar-nav .nav-link:not(.dropdown-toggle)').forEach(a => {
+  const target = page(new URL(a.href, location).pathname);
+  const on = target === here || (target.endsWith('/index.html') && here.includes('/criteria/'));
+  a.classList.toggle('active', on);
+  on ? a.setAttribute('aria-current', 'page') : a.removeAttribute('aria-current');
+});
 </script>
 
 

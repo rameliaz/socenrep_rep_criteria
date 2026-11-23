@@ -37,7 +37,7 @@ No third-party certification is provided when the data are confidential and the 
 [Based on: [#131](../../sources.qmd#p131 "Guide for Accelerating Computational Reproducibility in the Social Sciences") only (ACRE, adjusting levels for confidential/proprietary data); see also [#52](../../sources.qmd#p52 "CODECHECK: an open science initiative for the independent execution of computations underlying research articles during peer review to improve reproducibility") CODECHECK certificate, [#56](../../sources.qmd#p56 "Reproducibility badging and definitions") ROR-R badge.]{.source-note}
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-All datasets needed for reproduction are included the package (C2)
+When all datasets needed for reproduction are included in the package (B), this criterion doesn't apply.
 :::
 
 ## Prerequisites

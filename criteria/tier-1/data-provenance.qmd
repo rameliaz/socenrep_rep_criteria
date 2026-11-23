@@ -37,7 +37,7 @@ No provenance information available.
 
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-A replication package is a simulation study (C1)
+When a reproduction package is a simulation study (A), this criterion doesn't apply
 :::
 
 ## Prerequisites

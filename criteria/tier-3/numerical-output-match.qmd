@@ -36,7 +36,7 @@ The numerical results cannot be reproduced, or they deviate beyond the tolerance
 
 
 ::: {.callout-note appearance="simple" title="Not applicable"}
-Manuscript has no numerical results (C4)
+When the manuscript has no numerical results (D), this criterion doesn't apply.
 :::
 
 ## Prerequisites

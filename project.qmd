@@ -1,0 +1,25 @@
+---
+title: "About"
+toc: false
+---
+
+**SocEnRep**: *Automating Reproducibility in Economics and the Social Sciences* is a project funded by the German Research Foundation (DFG).
+
+Studies have repeatedly found that a substantial share of published research in economics and the social sciences cannot be reproduced. Checking reproducibility takes a lot of time and earns little recognition, so it often gets skipped, whether authors are checking their own work or editors, reviewers and other researchers are checking someone else's.
+
+SocEnRep develops and evaluates an e-research toolchain that automates these checks. The toolchain takes a paper (PDF or HTML) and its replication package (code and data), runs the Stata or R code, compares the results with the regression tables in the paper, and reports any inconsistencies. It is built for authors, reviewers and journal editors. The information it extracts, such as regression specifications and results, will also go into a searchable database for meta-research. Training materials and workshops, mainly for early-career researchers, support the use of the tools.
+
+## This rubric
+
+The rubric comes from the project's work at the Center for Advanced Internet Studies (CAIS), which covers requirements analysis and best practices, reproducibility badges, and dissemination and training. Its criteria are drawn from a scoping review of {{< var n_papers >}} publications on assessing reproducibility, listed on the [Sources](sources.qmd) page. The rubric is a *working draft* of the criteria for the Bronze, Silver and Gold badges described on the [Badge pipeline](pipeline.qmd) page.
+
+## Team
+
+The principal investigators are [Johannes Breuer](https://cais-research.de/en/team/johannes-breuer/) (CAIS), [Arnim Bleier](https://www.gesis.org/en/institute/about-us/staff/person/arnim.bleier) (GESIS – Leibniz Institute for the Social Sciences), [Jörg Ankel-Peters](https://www.rwi-essen.de/en/rwi/team/person/joerg-ankel-peters) (RWI – Leibniz Institute for Economic Research), and [Sebastian Kranz](https://www.uni-ulm.de/mawi/mawi-wiwi/institut/mitarbeiter/skranz/), [Alexander Rieber](https://www.uni-ulm.de/mawi/stuko-wiwi/mitarbeiter/rieber/) and [Ansgar Scherp](https://www.uni-ulm.de/in/iui-dbis/forschungsgruppen/forschungsgruppe-scherp/mitarbeiter/) (Ulm University). 
+
+The team at CAIS is Johannes Breuer and [Rizqy Amelia Zein](https://cais-research.de/en/team/rizqy-amelia-zein/).
+
+## More information
+
+- [SocEnRep in DFG's GEPRIS](https://gepris.dfg.de/project/551687338), the DFG's project database (project number 551687338)
+- [SocEnRep at CAIS](https://cais-research.de/en/research/socenrep/)
